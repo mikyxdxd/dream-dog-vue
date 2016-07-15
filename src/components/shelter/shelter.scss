@@ -1,0 +1,50 @@
+#shelter{
+
+  padding: 3vh 0;
+  background: white;
+  #caption{
+
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+    color: #b7b49f;
+  }
+  #shelter_icon{
+
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 1em;
+    .s_icon{
+
+      display: inline-block;
+      width: 19%;
+      height: 100px;
+      border: 1px solid gainsboro;
+    }
+  }
+
+  #recent_adopt{
+
+    margin-top: 5em;
+    background: #dede22;
+    min-height: 30vh;
+
+    #caption{
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-width: 700px;
+      font-size: 2em;
+      padding: 0px 40px;
+      padding-top: 14px;
+      padding-bottom: 15px;
+      color: white;
+      font-size: 2em;
+    }
+  }
+  //min-height:80vh;
+}
