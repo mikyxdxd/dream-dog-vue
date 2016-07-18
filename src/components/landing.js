@@ -24,6 +24,7 @@ module.exports = Vue.extend({
         feature:require('./feature/feature'),
         navbar:require('./navbar/navbar'),
         contact: require('./contact/contact'),
+        foot: require('./footer/footer'),   //can not use footer as tag name in Vue since its a standard HTML tag name
 
     }
 
