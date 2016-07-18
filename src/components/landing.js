@@ -22,7 +22,8 @@ module.exports = Vue.extend({
 
         shelter:require('./shelter/shelter'),
         feature:require('./feature/feature'),
-        navbar:require('./navbar/navbar')
+        navbar:require('./navbar/navbar'),
+        contact: require('./contact/contact'),
 
     }
 
