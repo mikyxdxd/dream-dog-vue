@@ -22,7 +22,9 @@ module.exports = Vue.extend({
 
         shelter:require('./shelter/shelter'),
         feature:require('./feature/feature'),
-        navbar:require('./navbar/navbar')
+        navbar:require('./navbar/navbar'),
+        contact: require('./contact/contact'),
+        foot: require('./footer/footer'),   //can not use footer as tag name in Vue since its a standard HTML tag name
 
     }
 

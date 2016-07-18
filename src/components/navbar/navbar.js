@@ -28,6 +28,12 @@ module.exports = Vue.extend({
                     }, 800);
                     break;
 
+                case 'contact':
+                    $('html,body').animate({
+                        scrollTop: $('#contact').position().top
+                    }, 800);
+                    break;
+
                 default:
                     break;
 

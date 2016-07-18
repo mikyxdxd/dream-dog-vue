@@ -1,0 +1,54 @@
+#contact{
+  padding: 8vh 0em;
+  border-bottom: 1px solid rgba(0,0,0,.07);
+
+  .team-member-wrapper{
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 560px;
+  }
+
+  #caption {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+    color: #b7b49f;
+    text-transform: uppercase;
+    padding-top: 3vh;
+  }
+
+  .form-wrapper{
+    padding-top: 3vh;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  input, textarea{
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    width: 100%;
+    color: #999999;
+    border-radius: 5vh;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+
+  }
+  #message{
+    height: 200px;
+    resize: none;
+    border-radius: 3vh;
+  }
+
+  #submit-but{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    max-width: 300px;
+    min-width: 100px;
+    background-color: #5a096f;
+    color: #ffffff;
+  }
+
+}
