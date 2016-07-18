@@ -13,7 +13,7 @@
 
     max-width: 1000px;
     margin: auto;
-    margin-top: 1em;
+    padding:5em 0em;
     .s_icon{
 
       display: inline-block;
@@ -26,8 +26,21 @@
   #recent_adopt{
 
     margin-top: 5em;
-    background: #dede22;
+    background: #fde46b;
     min-height: 30vh;
+    position: relative;
+
+    .container{
+
+      padding: 5em 0em;
+      .one_d{
+
+        display: inline-block;
+        width:24%;
+        margin-left: 0.5%;
+
+      }
+    }
 
     #caption{
 
@@ -36,6 +49,7 @@
       left: 50%;
       transform: translateX(-50%);
       background-size: contain;
+      background-image: url('../../resource/adopt_header.png');
       background-repeat: no-repeat;
       max-width: 700px;
       font-size: 2em;
@@ -44,6 +58,7 @@
       padding-bottom: 15px;
       color: white;
       font-size: 2em;
+      top: -1em;
     }
   }
   //min-height:80vh;

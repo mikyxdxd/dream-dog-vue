@@ -4,15 +4,35 @@
 
     padding-top: 5vh;
   }
+
+
   #hero_container{
 
     top:0;
     left: 0;
     width: 100vw;
-    height: 90vh;
-    background: #fafafa;
+    height: auto;
     padding: 2vh 10vw;
     text-align: center;
+    position: relative;
+
+    #main_container{
+
+      position: relative;
+    }
+
+
+
+    #bg{
+
+      position: absolute;
+      left: 0;
+      top:0;
+      height: 90vh;
+      width:100vw;
+      background:#fafafa;
+    }
+
 
     #screen{
 
@@ -55,7 +75,7 @@
       font-weight: 200;
       margin: auto;
       margin-top: 1em;
-      color:#875aab;
+      color:#9a87a9;
 
       .pur{
         color:#6b1198;

@@ -1,0 +1,50 @@
+#feature{
+
+  padding: 3vh 0em;
+  #caption{
+
+      font-size: 2em;
+      text-align: center;
+      font-weight: 600;
+      color: #b7b49f;
+     text-transform: uppercase;
+
+  }
+
+  #mockup_container{
+
+    margin-top:1em;
+
+    .one_mock{
+
+      display: inline-block;
+      width: 19%;
+      margin-left: 0.8%;
+      box-shadow: none;
+      vertical-align: top;
+
+      .caption{
+
+        font-size: 1.4em;
+        text-align: center;
+        font-weight: bold;
+        line-height: 1em;
+        padding: 1em 0;
+        color: #66077b;
+        text-transform: capitalize;
+        padding-bottom: 0.5em;
+
+      }
+
+      .detail{
+
+        text-align: center;
+        font-size: 1.1em;
+        color: #9a87a9;
+      }
+    }
+
+  }
+
+
+}
