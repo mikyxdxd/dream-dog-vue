@@ -51,9 +51,6 @@ module.exports = Vue.extend({
         var self = this;
 
         window.onscroll = function(){
-
-            console.log(self.$data.currentView);
-            // console.log(self.feature_p,$('body').scrollTop())
             
          if($('body').scrollTop() <= self.feature_p){
 

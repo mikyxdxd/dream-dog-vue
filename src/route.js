@@ -8,6 +8,17 @@ module.exports =  function(App){
         root: '/'
     });
 
+    router.beforeEach(function (transition) {
+        setTimeout(()=>{
+
+            window.scrollTo(0, 0)
+          //  $('body').css('overflow',hidden)
+
+
+        },100)
+        transition.next()
+    })
+
     router.map({
         '/': {
             component: require('./components/landing')

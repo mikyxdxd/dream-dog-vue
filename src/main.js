@@ -4,7 +4,6 @@ Vue.use(VueRouter);
 var App = Vue.extend({
 
     created:()=>{window.sr=ScrollReveal();}
-
 });
 require('./route')(App);
 

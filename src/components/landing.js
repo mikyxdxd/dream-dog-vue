@@ -15,7 +15,9 @@ module.exports = Vue.extend({
     ready:()=>{
 
         skrollr.init();
-        var self = this;
+        TweenLite.to($(".main_content"),1.5, {opacity:1,top:'0px',ease: 'Power4.easeOut'});
+        // TweenLite.to($(".pur"),0.5, {'font-size':'1.1em'});
+        // TweenLite.to($(".yel"),0.5, {'font-size':'1.1em'});
     },
 
     components:{
