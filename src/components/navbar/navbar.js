@@ -48,32 +48,47 @@ module.exports = Vue.extend({
         this.introduction_p = $('#hero_container').position().top;
         this.shelter_p=$('#shelter').position().top + $('#shelter').height() * 1/3;
         this.feature_p=$('#feature').position().top + $('#feature').height() * 1/3;
+        this.contact_p=$('#contact').position().top + 1000;
         var self = this;
 
         window.onscroll = function(){
-            
-         if($('body').scrollTop() <= self.feature_p){
 
 
-             if($('body').scrollTop() <= self.shelter_p){
-
-                 self.$set('currentView','introduction') ;
-                 $('#nav_bar').css('margin-top','-25px');
-                
-
-             }else{
-
-                 self.$set('currentView','shelter') ;
-                 $('#nav_bar').css('margin-top','-75px');
-             }
-
-         }else{
 
 
-             self.$set('currentView','feature') ;
-             $('#nav_bar').css('margin-top','-125px');
-         }
-            
+
+            if($('body').scrollTop() <= self.contact_p) {
+
+
+                if ($('body').scrollTop() <= self.feature_p) {
+
+
+                    if ($('body').scrollTop() <= self.shelter_p) {
+
+                        self.$set('currentView', 'introduction');
+                        $('#nav_bar').css('margin-top', '-25px');
+
+
+                    } else {
+
+                        self.$set('currentView', 'shelter');
+                        $('#nav_bar').css('margin-top', '-75px');
+                    }
+
+                } else {
+
+
+                    self.$set('currentView', 'feature');
+                    $('#nav_bar').css('margin-top', '-125px');
+                }
+
+            }else{
+
+                self.$set('currentView', 'contact');
+                $('#nav_bar').css('margin-top', '-175px');
+
+            }
+
         }
 
     },

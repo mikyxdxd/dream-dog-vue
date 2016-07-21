@@ -4,7 +4,7 @@
   background: white;
   #caption{
 
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
     font-weight: 600;
     color: #b7b49f;
@@ -18,8 +18,12 @@
 
       display: inline-block;
       width: 19%;
-      height: 100px;
-      border: 1px solid gainsboro;
+      margin-left: 0.8%;
+      cursor: pointer;
+      img{
+
+        width:100%;
+      }
     }
   }
 
