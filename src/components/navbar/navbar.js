@@ -48,6 +48,7 @@ module.exports = Vue.extend({
         this.introduction_p = $('#hero_container').position().top;
         this.shelter_p=$('#shelter').position().top + $('#shelter').height() * 1/3;
         this.feature_p=$('#feature').position().top + $('#feature').height() * 1/3;
+        this.contact_p=$('#contact').position().top + $('#contact').height() * 1/3;
         var self = this;
 
         window.onscroll = function(){
