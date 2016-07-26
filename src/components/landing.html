@@ -1,24 +1,23 @@
 <div id="landing">
 
-    <div id="hero_container" data-0="transform: translateY(0px);opacity:1" data-700="transform: translateY(-200px);opacity:0.3">
+    <div id="hero_container" data-0="transform:translateY(0px);opacity:1" data-700="transform: translateY(-200px);opacity:0.3">
 
         <div id="bg"></div>
 
         <div id="main_container">
 
             <div id="main_logo">
-                <img src="{{dreamDogLogo}}" />
+                <img :src="dreamDogLogo" />
             </div>
             <div class="main_content">
                 <b class="pur">Dogs aren't just pets,</b>they are family members!The <b class="yel">Dream Dog App </b>helps you find the perfect dog to add to your family by appearance,breed,location or shelter!
             </div>
             <div id="download">
-                <div class="dow"><img src="{{appStore}}"></div>
-                <div class="dow"><img src="{{gooStore}}"></div>
+                <div class="dow"><img :src="appStore"></div>
+                <div class="dow"><img :src="gooStore"></div>
             </div>
-
             <div id="screen">
-                <div id="scr" :src="'img/category/'+c.image"><img src="{{ screenShots }}" /></div>
+                <div id="scr"><img :src="screenShots"/></div>
             </div>
 
         </div>
