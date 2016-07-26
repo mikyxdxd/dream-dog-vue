@@ -10,13 +10,20 @@
                 teamMember: require('../../resource/team_members.png')
             }
         },
+        validators: {
+          email: function (val) {
 
+            return /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(val)
+
+          }
+
+        },
         methods: {
           submitForm: function(userName, email, message){
-            console.log("Submit Form from here");
-            console.log(userName);
-            console.log(email);
-            console.log(message);
+//            console.log("Submit Form from here");
+//            console.log(userName);
+//            console.log(email);
+//            console.log(message);
             this.$http.post('http://localhost:3000/email',
               {user: userName,
                 email: email,
@@ -25,14 +32,17 @@
               if(response.body.err){
                 console.log("SENT FAILED");
                 console.log(response);
+                alert("Message Sent Falied! Please Try Again!");
               }else{
                 console.log("SENT SUCCESS");
                 console.log(response);
+                alert("Message Sent! Thank You!")
               }
 
             }, (response)=>{
               console.log("ERROR MSG");
               console.log(response);
+              alert("Message Sent Falied! Please Try Again!")
             });
           }
         }

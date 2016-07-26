@@ -23,14 +23,15 @@ app.use(bodyParser.urlencoded(
     ));
 
 app.post('/email', function(req,res, next){
-    console.log("POST: ");
-    console.log(req.body);
-    let mailOpts, smtptrans;
+    // console.log("POST: ");
+    // console.log(req.body);
+    let mailOpts, smtptrans, sendText;
+    sendText = req.body.message + "/n" + "from: " + req.body.user + " email:" + req.body.email;
     mailOpts = {
         from: req.body.user + ":" + req.body.email,
         to: "smileskyli88@gmail.com",
         subject: 'Website contact form',
-        text: req.body.message
+        text: sendText,
     };
     smtptrans = nodemailer.createTransport({
         service: 'Gmail',
@@ -42,12 +43,12 @@ app.post('/email', function(req,res, next){
 
     smtptrans.sendMail(mailOpts, function(error, response){
         if (error){
-            console.log("EMAIL ERROR");
-            console.log(error);
+            // console.log("EMAIL ERROR");
+            // console.log(error);
             res.json({title: "DreamDog -Contact", msg:"Error Occured", err: true, page:'contact'});
             //res.render('contact', {title: "DreamDog -Contact", msg:"Error Occured", err: true, page:'contact'});
         }else{
-            console.log(response);
+            //console.log(response);
             res.json({ title: 'DreamDog - Contact', msg: 'Message sent! Thank you.', err: false, page: 'contact' });
             //res.render('contact', { title: 'DreamDog - Contact', msg: 'Message sent! Thank you.', err: false, page: 'contact' })
         }
