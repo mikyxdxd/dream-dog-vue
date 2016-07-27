@@ -52,7 +52,7 @@ app.post('/email', function(req,res, next){
     mailOpts = {
         from: req.body.user + ":" + req.body.email,
         to: "smileskyli88@gmail.com",
-        subject: 'Website contact form',
+        subject: 'Dreamdog contact form',
         text: sendText,
     };
     smtptrans = nodemailer.createTransport({

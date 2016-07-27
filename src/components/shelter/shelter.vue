@@ -11,13 +11,20 @@
 
             changeState: function (shelter) {
 
-                shelter.$set('hover', true);
+                ths.$set('hover', true);
             }
         },
 
         ready: function () {
-
-            sr.reveal('.s_icon', {duration: 2000}, 300);
+          var config = {
+            delay    : 100,
+            distance : '70px',
+            easing   : 'ease-in-out',
+            rotate   : { y: -10 },
+            scale    : 0,
+            duration: 1000
+          }
+            sr.reveal('.s_icon', config, 100);
 
         },
 
@@ -25,21 +32,25 @@
             return {
 
                 backgroundImage: require('../../resource/adopt_header.png'),
-                shelters: [{
-                    hover: false,
-                    bg: require('../../resource/Shelters/HSE_normal.png'),
-                    bg_h: require('../../resource/Shelters/HSE_hover_state.png')
-                },
+                shelters: [
+                    {
+                        hover: false,
+                        bg: require('../../resource/Shelters/HSE_normal.png'),
+                        bg_h: require('../../resource/Shelters/HSE_hover_state.png'),
+                        a: "http://www.huntingtonny.gov/animal-shelter"
+                    },
                     {
                         hover: false,
                         bg: require('../../resource/Shelters/KMR_normal.png'),
-                        bg_h: require('../../resource/Shelters/KMR_hover_state.png')
+                        bg_h: require('../../resource/Shelters/KMR_hover_state.png'),
+                        a: "http://www.kenmarrescue.org/our-adoptable-dogs/current-orphans/"
                     },
 
                     {
                         hover: false,
                         bg: require('../../resource/Shelters/SAH_normal.png'),
-                        bg_h: require('../../resource/Shelters/SAH_hover_state.png')
+                        bg_h: require('../../resource/Shelters/SAH_hover_state.png'),
+                        a: "http://statelineah.com/"
                     }
                 ]
             }

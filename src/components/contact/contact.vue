@@ -24,6 +24,14 @@
 //            console.log(userName);
 //            console.log(email);
 //            console.log(message);
+            var config = {
+              delay    : 100,
+              distance : '70px',
+              easing   : 'ease-in-out',
+              rotate   : { y: -10 },
+              scale    : 0,
+              duration: 1000
+            };
             this.$http.post('http://localhost:3000/email',
               {user: userName,
                 email: email,
@@ -38,6 +46,8 @@
                 console.log("SENT SUCCESS");
                 console.log(response);
                 $(".success").css("display", "block");
+
+                sr.reveal('.success', config, 100);
                 //alert("Message Sent! Thank You!")
               }
 
@@ -45,6 +55,8 @@
               console.log("ERROR MSG");
               console.log(response);
               $(".failed").css("display", "block");
+
+              sr.reveal('.failed', config, 100);
               //alert("Message Sent Falied! Please Try Again!")
             });
           }

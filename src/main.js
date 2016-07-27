@@ -11,7 +11,10 @@ Vue.use(VueValidator);
 //   components: { App }
 // })
 var app = Vue.extend({
-    created:()=>{window.sr=ScrollReveal();}
+
+    created:()=>{
+      window.sr=ScrollReveal();
+    }
 })
 import route from './route'
 route(app)

@@ -89,4 +89,14 @@
     box-shadow: none;
   }
 
+  .success, .failed{
+    margin-top: 20px !important;
+    margin: auto;
+    width: 40%;
+    background-color: #9ec19e;
+    color: white;
+    text-align: center;
+  }
+
+
 }
