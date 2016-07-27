@@ -9,7 +9,7 @@
 const express = require('express'),
   compress = require('compression'),
   engines = require('consolidate'),
-  defaultPort = 80,
+  defaultPort = 3000,
   bodyParser = require('body-parser'),
   nodemailer = require('nodemailer'),
   app = module.exports = express(),
@@ -78,4 +78,6 @@ app.post('/email', function(req,res, next){
 
 });
 
-app.listen(3000);
+
+console.log("Listening port 3000");
+http.createServer(app).listen(defaultPort);
