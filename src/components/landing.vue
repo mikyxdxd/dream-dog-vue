@@ -3,7 +3,9 @@
     export default {
         template: require('./landing.html'),
         ready(){
-            skrollr.init();
+          if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+            skrollr.init().refresh();
+          }
             TweenLite.to($(".main_content"),1.5, {opacity:1,top:'0px',ease: 'Power4.easeOut'});
             console.log(this.$data)
         },
