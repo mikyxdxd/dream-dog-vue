@@ -76,4 +76,17 @@
     color: #ffffff;
   }
 
+  .error{
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1px;
+    vertical-align: top;
+    background-color: #da8383;
+  }
+
+  .untouched{
+    border-bottom: 1px solid #fafafa !important;
+    box-shadow: none;
+  }
+
 }

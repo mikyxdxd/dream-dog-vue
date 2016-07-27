@@ -13,14 +13,16 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
-    "express": "^4.14.0",
-    "nodemailer": "^2.5.0",
     "babel-runtime": "^6.0.0",
-    "file-loader": "^0.8.5",
-    "vue": "^1.0.21",
-    "vue-router": "^0.7.13",
     "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "consolidate": "^0.14.1",
+    "express": "^4.14.0",
+    "file-loader": "^0.8.5",
+    "nodemailer": "^2.5.0",
+    "vue": "^1.0.21",
     "vue-resource": "^0.9.3",
+    "vue-router": "^0.7.13",
     "vue-validator": "^2.1.5"
   },
   "devDependencies": {

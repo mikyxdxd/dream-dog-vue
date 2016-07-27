@@ -32,17 +32,20 @@
               if(response.body.err){
                 console.log("SENT FAILED");
                 console.log(response);
-                alert("Message Sent Falied! Please Try Again!");
+                $(".failed").css("display", "block");
+                //alert("Message Sent Falied! Please Try Again!");
               }else{
                 console.log("SENT SUCCESS");
                 console.log(response);
-                alert("Message Sent! Thank You!")
+                $(".success").css("display", "block");
+                //alert("Message Sent! Thank You!")
               }
 
             }, (response)=>{
               console.log("ERROR MSG");
               console.log(response);
-              alert("Message Sent Falied! Please Try Again!")
+              $(".failed").css("display", "block");
+              //alert("Message Sent Falied! Please Try Again!")
             });
           }
         }

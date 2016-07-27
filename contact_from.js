@@ -4,12 +4,38 @@
 
 
 'use strict'
-const express = require('express'),
-    bodyParser = require('body-parser'),
-    nodemailer = require('nodemailer'),
-    app = express(),
-    port = 3000;
 
+
+const express = require('express'),
+  compress = require('compression'),
+  engines = require('consolidate'),
+  defaultPort = 80,
+  bodyParser = require('body-parser'),
+  nodemailer = require('nodemailer'),
+  app = module.exports = express(),
+  http = require('http');
+
+app.engine('html', engines.mustache),
+
+  app.set('view engine', 'html');
+
+app.use(express['static'](__dirname,{}));
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded(
+  {extended: true}
+));
+app.use(compress({
+  filter: function (req, res) {
+    return true;
+  }
+}));
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -17,16 +43,12 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded(
-    {extended: true}
-    ));
 
 app.post('/email', function(req,res, next){
     // console.log("POST: ");
     // console.log(req.body);
     let mailOpts, smtptrans, sendText;
-    sendText = req.body.message + "/n" + "from: " + req.body.user + " email:" + req.body.email;
+    sendText = req.body.message + "\n\n\n\n\n" + "from: " + req.body.user + " email:" + req.body.email;
     mailOpts = {
         from: req.body.user + ":" + req.body.email,
         to: "smileskyli88@gmail.com",
