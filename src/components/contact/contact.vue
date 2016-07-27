@@ -24,6 +24,8 @@
 //            console.log(userName);
 //            console.log(email);
 //            console.log(message);
+            $(".success").css("display", "none");
+            $(".failed").css("display", "none");
             var config = {
               delay    : 100,
               distance : '70px',
@@ -32,19 +34,19 @@
               scale    : 0,
               duration: 1000
             };
-            this.$http.post('http://localhost:3000/email',
+            this.$http.post('/email',
               {user: userName,
                 email: email,
                 message, message}).then((response) =>
             {
               if(response.body.err){
-                console.log("SENT FAILED");
-                console.log(response);
+                //console.log("SENT FAILED");
+                //console.log(response);
                 $(".failed").css("display", "block");
                 //alert("Message Sent Falied! Please Try Again!");
               }else{
-                console.log("SENT SUCCESS");
-                console.log(response);
+                //console.log("SENT SUCCESS");
+                //console.log(response);
                 $(".success").css("display", "block");
 
                 sr.reveal('.success', config, 100);
@@ -52,8 +54,8 @@
               }
 
             }, (response)=>{
-              console.log("ERROR MSG");
-              console.log(response);
+              //console.log("ERROR MSG");
+              //console.log(response);
               $(".failed").css("display", "block");
 
               sr.reveal('.failed', config, 100);

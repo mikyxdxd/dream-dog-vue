@@ -8,7 +8,7 @@
         <div class="s_icon"  v-for="shelter in shelters">
 
             <div class="icon" v-on:mouseover="changeState(shelter)" v-on:mouseleave="changeHoverState(shelter)">
-              <a :href="shelter.a"><img :src="shelter.hover?shelter.bg_h:shelter.bg"></img></a>
+              <a :href="shelter.a" target="_blank"><img :src="shelter.hover?shelter.bg_h:shelter.bg"></img></a>
             </div>
 
         </div>

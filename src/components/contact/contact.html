@@ -12,8 +12,7 @@
               <span v-if="$validation1.username.dirty && $validation1.username.required" class="error">Please enter a user name.</span>
               <input type="text" id="email"  v-model="email" placeholder="Email" v-validate:email="['email', 'required']"><br>
               <span v-if="$validation1.email.dirty && $validation1.email.email" class="error">Please enter a valid email address.</span>
-              <textarea id="message" rows="6"  v-model="message" placeholder="Your Message" v-validate:message="{ required: true }"></textarea>
-              <span v-if="$validation1.message.dirty && $validation1.message.required" class="error">Please enter a message.</span>
+              <textarea id="message" rows="6"  v-model="message" placeholder="Your Message" ></textarea>
 
               <!--<div>-->
                 <!--<div class="errors">-->

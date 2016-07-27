@@ -68,8 +68,8 @@
   #submit-but{
     width: 40%;
     margin-top:3em;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: auto;
+    display: block;
     max-width: 300px;
     min-width: 100px;
     background-color: #5a096f;
@@ -92,9 +92,8 @@
   .success, .failed{
     margin-top: 20px !important;
     margin: auto;
-    width: 40%;
-    background-color: #9ec19e;
-    color: white;
+    width: 30%;
+    color: #9ec19e;
     text-align: center;
   }
 

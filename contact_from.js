@@ -51,7 +51,7 @@ app.post('/email', function(req,res, next){
     sendText = req.body.message + "\n\n\n\n\n" + "from: " + req.body.user + " email:" + req.body.email;
     mailOpts = {
         from: req.body.user + ":" + req.body.email,
-        to: "smileskyli88@gmail.com",
+        to: "contact@dreamdogapp.com",
         subject: 'Dreamdog contact form',
         text: sendText,
     };
@@ -79,5 +79,5 @@ app.post('/email', function(req,res, next){
 });
 
 
-console.log("Listening port 3000");
+console.log("Listening port", defaultPort);
 http.createServer(app).listen(defaultPort);

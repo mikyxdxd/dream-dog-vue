@@ -6,12 +6,12 @@
 
             changeHoverState: function (shelter) {
 
-                shelter.$set('hover', false);
+                shelter.hover = false;
             },
 
             changeState: function (shelter) {
 
-                ths.$set('hover', true);
+              shelter.hover = true;
             }
         },
 
