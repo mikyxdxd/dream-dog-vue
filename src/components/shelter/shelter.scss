@@ -3,18 +3,21 @@
   padding: 3vh 0;
   background: white;
   display: none;
-  #caption{
+  #main_caption{
 
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     font-weight: 600;
     color: #b7b49f;
+    opacity: 0;
   }
   #shelter_icon{
 
     max-width: 1000px;
     margin: auto;
     padding:5em 0em;
+    //-vendor-animation-delay: 2s;
+
     .s_icon{
 
       display: inline-block;
@@ -25,6 +28,19 @@
       img{
 
         width:100%;
+      }
+
+      &:nth-child(1){
+
+        -webkit-animation-delay: 0s;
+      }
+      &:nth-child(2){
+
+        -webkit-animation-delay: 0.2s;
+      }
+      &:nth-child(3){
+
+        -webkit-animation-delay: 0.4s;
       }
     }
   }

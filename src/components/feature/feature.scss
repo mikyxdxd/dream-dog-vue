@@ -1,13 +1,17 @@
 #feature{
 
-  padding: 7em 0em;
+  //padding: 7em 0em;
+  background: white;
+  padding-top: 3vh;
+  display: none;
   #caption{
 
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     font-weight: 600;
     color: #b7b49f;
     text-transform: uppercase;
+    opacity: 0;
 
   }
 
@@ -22,6 +26,14 @@
       margin-left: 0.8%;
       box-shadow: none;
       vertical-align: top;
+      opacity: 1;
+      animation-duration:0.5s;
+
+      .card-content,.card-image{
+
+        opacity: 0;
+      }
+
 
       .caption{
 
