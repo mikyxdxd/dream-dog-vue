@@ -16,15 +16,15 @@
         },
 
         ready: function () {
-          var config = {
-            delay    : 100,
-            distance : '70px',
-            easing   : 'ease-in-out',
-            rotate   : { y: -10 },
-            scale    : 0,
-            duration: 1000
-          }
-            sr.reveal('.s_icon', config, 100);
+//          var config = {
+//            delay    : 100,
+//            distance : '70px',
+//            easing   : 'ease-in-out',
+//            rotate   : { y: -10 },
+//            scale    : 0,
+//            duration: 1000
+//          }
+//            sr.reveal('.s_icon', config, 100);
 
         },
 

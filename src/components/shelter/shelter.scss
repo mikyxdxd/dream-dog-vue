@@ -2,6 +2,7 @@
 
   padding: 3vh 0;
   background: white;
+  display: none;
   #caption{
 
     font-size: 3em;
@@ -19,6 +20,7 @@
       display: inline-block;
       width: 19%;
       margin-left: 0.8%;
+      opacity: 0;
       cursor: pointer;
       img{
 
