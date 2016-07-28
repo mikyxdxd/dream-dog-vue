@@ -36,6 +36,11 @@
                                     self.shelterPage('out');
                                     self.featurePage('in')
                                     break;
+
+                              case 3:
+                                    self.contactPage('in');
+                                    self.featurePage('out')
+                                    break;
                             }
                             break;
 
@@ -49,6 +54,10 @@
                           case 3:
                             self.featurePage('out');
                             self.shelterPage('in');
+                                break;
+                          case 4:
+                            self.contactPage('out');
+                            self.featurePage('in');
                         }
                         break;
                     }
@@ -66,13 +75,42 @@
 
         methods:{
 
+          contactPage(direction){
+
+            if(direction == 'in'){
+
+
+
+              $('#contact').delay(300).fadeIn(500,()=>{
+
+                $('.form-wrapper').addClass('animated flipInY')
+                $('.form-wrapper').css('opacity',1)
+
+              });
+
+            }else{
+
+              $('.form-wrapper').addClass('animated flipOutY')
+
+              $('#contact').delay(100).fadeOut(500,()=>{
+
+
+                $('.form-wrapper').css('opacity',0);
+              $('.form-wrapper').removeClass('animated flipInY flipOutY');
+
+
+              });
+
+            }
+          },
+
           featurePage(direction){
 
             if(direction == 'in') {
 
-              $('#feature #caption').addClass('animated flipInX')
-              $('#feature #caption').css('opacity',1);
               $('#feature').delay(100).fadeIn(500,()=>{
+                $('#feature #caption').addClass('animated flipInX')
+              $('#feature #caption').css('opacity',1);
                 $('#feature .card-content').each((i, ele)=>{
                 $(ele).addClass('animated fadeInUp')
                 $(ele).css('opacity',1);
@@ -85,6 +123,8 @@
 
 
             }else{
+
+              $('#feature #caption').addClass('animated flipOutX');
               $('#feature .card-content').each((i, ele)=>{
                 $(ele).addClass('fadeOutDown')
                 $(ele).css('opacity',0);
@@ -93,19 +133,19 @@
                 $(ele).addClass('fadeOut')
                 $(ele).css('opacity',0);
               })
-              $('#feature').delay(100).fadeOut(500,()=>{
+              $('#feature').delay(500).fadeOut(500,()=>{
+
+                $('#feature #caption').css('opacity',0);
+              $('#feature #caption').removeClass('animated flipOutX flipInX')
+
                 $('#feature .card-content').each((i, ele)=>{
-                  $(ele).removeClass('animated fadeOutUp fadeInUp')
+                  $(ele).removeClass('animated fadeInUp fadeOutDown')
                 })
               $('#feature .card-image').each((i, ele)=>{
                 $(ele).removeClass('animated fadeOut fadeIn')
             })
 
-
-
               })
-
-
 
             }
 
