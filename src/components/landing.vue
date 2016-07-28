@@ -10,8 +10,10 @@
 //            skrollr.init().refresh();
 //          }
               TweenLite.to($(".main_content"),1.5, {opacity:1,top:'0px',ease: 'Power4.easeOut'});
-              $('#landing').fullpage(
+
+               $('#landing').fullpage(
                 {
+
 
                   onLeave: function(index, nextIndex, direction){
                     console.log(index, nextIndex, direction)
