@@ -1,6 +1,16 @@
 #contact{
   padding: 8vh 0em;
   border-bottom: 1px solid rgba(0,0,0,.07);
+  display: none;
+
+  .input[type=text].valid{
+
+    border-bottom: 1px solid #4CAF50 !important;
+  }
+  .input[type=text].invalid{
+
+    border-bottom: 1px solid #F44336 !important;
+  }
 
   .team-member-wrapper{
     margin:auto;
@@ -9,17 +19,20 @@
 
     img{
 
-      max-width: 400px;
+      max-width: 200px;
+      display: block;
+      margin: auto;
     }
   }
 
   #caption {
+    line-height: 72px;
     font-size: 2em;
-    text-align: center;
-    font-weight: 600;
-    color: #b7b49f;
-    text-transform: uppercase;
-    padding-top: 3vh;
+    font-weight: 300;
+    color: #124b62;
+    border-bottom: 1px solid rgba(18, 75, 98, 0.17);
+    margin: auto;
+    display: inline-block;
   }
 
   .form-wrapper{
@@ -27,10 +40,12 @@
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0;
 
     input{
-      border: none;
-      border-bottom: 1px solid #fafafa;
+
+      border: 1px solid rgba(18, 75, 98, 0.24);
+      border-bottom: 1px solid rgba(18, 75, 98, 0.24);
       border-radius: 0px;
     }
   }
@@ -50,19 +65,19 @@
     height: 200px;
     resize: none;
     border-radius: 0px;
-    border: 1px dashed #eae7e7;
+    border: 1px dashed rgba(18, 75, 98, 0.24);
   }
 
   #message:focus{
 
     outline: none !important;
-    border-color: #26a69a;
+    border-color: rgba(18, 75, 98, 0.24);
   }
 
   #message:active{
 
     outline: none !important;
-    border-color: #26a69a;
+    border-color: rgba(18, 75, 98, 0.24);
   }
 
   #submit-but{

@@ -1,13 +1,22 @@
 #landing{
 
+  .active{
+
+    z-index:9999;
+  }
+
   .section{
     padding: 0;
     height: 100vh;
     width: 100vw;
+    padding: 0em 5em;
     overflow: hidden;
     position: absolute;
     top:0;
     left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 1500px;
 
     #bg{
       position: absolute;
@@ -33,7 +42,7 @@
 
     top:0;
     left: 0;
-    width: 100vw;
+    //width: 100vw;
     height: auto;
     padding: 2vh 10vw;
     text-align: center;
@@ -41,6 +50,9 @@
     top: 50%;
     transform: translateY(-50%);
     padding: 0;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 1px 1px 45px 5px #fafafa;
 
     #main_container{
 
