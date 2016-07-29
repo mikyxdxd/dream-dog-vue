@@ -1,24 +1,28 @@
 <template>
-  <div id="nav_bar">
-    <div class="one_nav" :class="{'selected':currentView=='introduction'}" v-on:click="toPosition('introduction')">
-      <div class="title">Introduction</div>
-      <div class="process_bar_container"></div>
-      <div class="process_bar" id="title_pb"></div>
+    <div class="vNav">
+      <ul class="vNav">
+        <li id="introduction">
+          <a class="active" v-on:click="toPosition('introduction')">
+
+          </a>
+        </li>
+        <li>
+          <a v-on:click="toPosition('shelter')">
+
+          </a>
+        </li>
+        <li>
+          <a v-on:click="toPosition('feature')">
+
+          </a>
+        </li>
+        <li>
+          <a v-on:click="toPosition('contact')">
+
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="one_nav" :class="{'selected':currentView=='shelter'}" v-on:click="toPosition('shelter')">
-      <div class="title">Shelter</div>
-      <div class="process_bar_container"></div>
-      <div class="process_bar" id="shelter_pb"></div>
-    </div>
-    <div class="one_nav" :class="{'selected':currentView=='feature'}" v-on:click="toPosition('feature')">
-      <div class="title">Feature</div>
-      <div class="process_bar_container"></div>
-      <div class="process_bar" id="feature_pb"></div>
-    </div>
-    <div class="one_nav" :class="{'selected':currentView=='contact'}" v-on:click="toPosition('contact')">
-      <div class="title">Contact</div>
-    </div>
-  </div>
 </template>
 <script>
   require('./navbar.scss')
@@ -26,37 +30,42 @@
     methods: {
 
       toPosition(view){
-
+        var self = this;
         if (view != this.$get('currentView'));
 
         switch (view) {
 
           case 'introduction':
-            $('html,body').animate({
-              scrollTop: 0
-            }, 800);
+            self.$set('currentView', 'introduction');
+            $.fn.fullpage.moveTo(1);
+            $('.vNav ul li a').removeClass('active');
+            $('.vNav ul li a:eq(0)').addClass("active");
             break;
 
           case 'shelter':
-            $('html,body').animate({
-              scrollTop: $('#shelter').position().top
-            }, 800);
+            self.$set('currentView', 'shelter');
+            $.fn.fullpage.moveTo(2);
+            $('.vNav ul li a').removeClass('active');
+            $('.vNav ul li a:eq(1)').addClass("active");
             break;
 
           case 'feature':
-            $('html,body').animate({
-              scrollTop: $('#feature').position().top
-            }, 800);
+            self.$set('currentView', 'feature');
+            $.fn.fullpage.moveTo(3);
+            $('.vNav ul li a').removeClass('active');
+            $('.vNav ul li a:eq(2)').addClass("active");
             break;
 
           case 'contact':
-            $('html,body').animate({
-              scrollTop: $('#contact').position().top
-            }, 800);
+            self.$set('currentView', 'contact');
+            $.fn.fullpage.moveTo(4);
+            $('.vNav ul li a').removeClass('active');
+            $('.vNav ul li a:eq(3)').addClass("active");
             break;
 
           default:
             break;
+
 
         }
 

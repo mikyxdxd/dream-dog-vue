@@ -10,10 +10,14 @@
 //            skrollr.init().refresh();
 //          }
               TweenLite.to($(".main_content"),1.5, {opacity:1,top:'0px',ease: 'Power4.easeOut'});
-              $('#landing').fullpage(
+
+               $('#landing').fullpage(
                 {
 
+
                   onLeave: function(index, nextIndex, direction){
+                    $('.vNav ul li a').removeClass('active');
+                    $($('.vNav ul li a').get(nextIndex-1)).addClass('active');
                     console.log(index, nextIndex, direction)
 
                     switch(direction){
@@ -24,21 +28,41 @@
 //                                    $('#container_left').addClass('animated fadeOutUp');
 //                                    $('#container_right').addClass('animated fadeOutUp');
 //                                    $('#landing_sec').delay(500).fadeOut();
-
-                                    self.landingPage('out');
-                                    self.shelterPage('in');
+                                    switch(nextIndex){
+                                      case 2:
+                                        self.landingPage('out');
+                                        self.shelterPage('in');
+                                        break;
+                                      case 3:
+                                        self.landingPage('out');
+                                        self.featurePage('in');
+                                        break;
+                                      case 4:
+                                        self.landingPage('out');
+                                        self.contactPage('in');
+                                        break;
+                                    }
                                     break;
 
                               case 2:
-
-                                    self.shelterPage('out');
-                                    self.featurePage('in')
+                                    switch(nextIndex){
+                                      case 3:
+                                        self.shelterPage('out');
+                                        self.featurePage('in');
+                                        break;
+                                      case 4:
+                                        self.shelterPage('out');
+                                        self.contactPage('in');
+                                        break;
+                                    }
                                     break;
 
                               case 3:
                                     self.contactPage('in');
                                     self.featurePage('out')
                                     break;
+
+
                             }
                             break;
 
@@ -50,12 +74,34 @@
                             break;
 
                           case 3:
-                            self.featurePage('out');
-                            self.shelterPage('in');
+                            switch(nextIndex){
+                              case 2:
+                                self.featurePage('out');
+                                self.shelterPage('in');
                                 break;
+                              case 1:
+                                self.featurePage('out');
+                                self.landingPage('in');
+                                break;
+                            }
+
+
                           case 4:
-                            self.contactPage('out');
-                            self.featurePage('in');
+                            switch(nextIndex){
+                              case 3:
+                                self.contactPage('out');
+                                self.featurePage('in');
+                                break;
+                              case 2:
+                                self.contactPage('out');
+                                self.shelterPage('in');
+                                break;
+                              case 1:
+                                self.contactPage('out');
+                                self.landingPage('in');
+                                break;
+                            }
+
                         }
                         break;
                     }
