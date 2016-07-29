@@ -2,23 +2,23 @@
     <div class="vNav">
       <ul class="vNav">
         <li id="introduction">
-          <a v-on:click="toPosition('introduction')">
-            <div class="label">Introduction</div>
+          <a class="active" v-on:click="toPosition('introduction')">
+
           </a>
         </li>
         <li>
           <a v-on:click="toPosition('shelter')">
-            <div class="label">Shelter</div>
+
           </a>
         </li>
         <li>
           <a v-on:click="toPosition('feature')">
-            <div class="label">Feature</div>
+
           </a>
         </li>
         <li>
           <a v-on:click="toPosition('contact')">
-            <div class="label">Contact</div>
+
           </a>
         </li>
       </ul>
@@ -39,28 +39,28 @@
             self.$set('currentView', 'introduction');
             $.fn.fullpage.moveTo(1);
             $('.vNav ul li a').removeClass('active');
-            $(this).addClass("active");
+            $('.vNav ul li a:eq(0)').addClass("active");
             break;
 
           case 'shelter':
             self.$set('currentView', 'shelter');
             $.fn.fullpage.moveTo(2);
             $('.vNav ul li a').removeClass('active');
-            $(this).addClass("active");
+            $('.vNav ul li a:eq(1)').addClass("active");
             break;
 
           case 'feature':
             self.$set('currentView', 'feature');
             $.fn.fullpage.moveTo(3);
             $('.vNav ul li a').removeClass('active');
-            $(this).addClass("active");
+            $('.vNav ul li a:eq(2)').addClass("active");
             break;
 
           case 'contact':
             self.$set('currentView', 'contact');
             $.fn.fullpage.moveTo(4);
             $('.vNav ul li a').removeClass('active');
-            $(this).addClass("active");
+            $('.vNav ul li a:eq(3)').addClass("active");
             break;
 
           default:

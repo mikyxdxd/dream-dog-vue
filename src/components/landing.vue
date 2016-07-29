@@ -16,6 +16,8 @@
 
 
                   onLeave: function(index, nextIndex, direction){
+                    $('.vNav ul li a').removeClass('active');
+                    $($('.vNav ul li a').get(nextIndex-1)).addClass('active');
                     console.log(index, nextIndex, direction)
 
                     switch(direction){
@@ -53,6 +55,7 @@
                                         self.contactPage('in');
                                         break;
                                     }
+                                    break;
 
                               case 3:
                                     self.contactPage('in');
