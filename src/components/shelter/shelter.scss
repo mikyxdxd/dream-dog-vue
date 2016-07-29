@@ -3,6 +3,9 @@
   padding: 3vh 0;
   background: white;
   display: none;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
   #main_caption{
 
     font-size: 3em;

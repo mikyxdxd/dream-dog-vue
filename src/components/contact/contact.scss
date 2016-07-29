@@ -3,6 +3,11 @@
   border-bottom: 1px solid rgba(0,0,0,.07);
   display: none;
 
+  .container{
+
+    max-width:1500px;
+  }
+
   .input[type=text].valid{
 
     border-bottom: 1px solid #4CAF50 !important;

@@ -1,9 +1,12 @@
 #feature{
 
-  //padding: 7em 0em;
+  padding: 3vh 0;
   background: white;
-  padding-top: 3vh;
   display: none;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+
   #caption{
 
     font-size: 3em;
@@ -17,7 +20,9 @@
 
   #mockup_container{
 
-    margin-top:1em;
+    margin-top: 1em;
+    max-width: 1400px;
+    margin: auto;
 
     .one_mock{
 
