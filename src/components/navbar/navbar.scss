@@ -150,10 +150,10 @@ nav{
   text-indent: -9999px;
 }
 .vNav a.active::before{
-  border: 5px #66077b solid;
+  border: 5px #f8d41f solid;
 }
 .vNav a::before{
-  border: 5px #66077b solid;
+  border: 5px #f8d41f solid;
 }
 
 .vNav a::before{
@@ -192,7 +192,7 @@ nav{
   display: block;
   width: 20px;
   height: 20px;
-  border: 2px #66077b solid;
+  border: 2px #f8d41f solid;
   border-radius: 50%;
   -moz-box-sizing: border-box;;
   -webkit-box-sizing: border-box;
@@ -213,7 +213,7 @@ nav{
 
 .vNav a:hover{
   border-radius: 50%;
-  background-color: #66077b;
+  background-color: #f8d41f;
   text-decoration: none;
   cursor: pointer;
 }

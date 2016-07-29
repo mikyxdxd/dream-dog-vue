@@ -10,6 +10,10 @@
                 teamMember: require('../../resource/team_members.png')
             }
         },
+        components:{
+
+          w_footer:require('../footer/footer.vue')
+        },
         validators: {
           email: function (val) {
 
