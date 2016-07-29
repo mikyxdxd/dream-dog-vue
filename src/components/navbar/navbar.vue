@@ -3,22 +3,22 @@
       <ul class="vNav">
         <li id="introduction">
           <a v-on:click="toPosition('introduction')">
-            <div class="label">Section01</div>
+            <div class="label">Introduction</div>
           </a>
         </li>
         <li>
           <a v-on:click="toPosition('shelter')">
-            <div class="label">Section02</div>
+            <div class="label">Shelter</div>
           </a>
         </li>
         <li>
           <a v-on:click="toPosition('feature')">
-            <div class="label">Section03</div>
+            <div class="label">Feature</div>
           </a>
         </li>
         <li>
-          <a v-on:click="toPosition('contact')>
-            <div class="label">Section04</div>
+          <a v-on:click="toPosition('contact')">
+            <div class="label">Contact</div>
           </a>
         </li>
       </ul>
@@ -30,29 +30,42 @@
     methods: {
 
       toPosition(view){
-
+        var self = this;
         if (view != this.$get('currentView'));
 
         switch (view) {
 
           case 'introduction':
-            $('#landing').fullpage.moveTo(1);
+            self.$set('currentView', 'introduction');
+            $.fn.fullpage.moveTo(1);
+            $('.vNav ul li a').removeClass('active');
+            $(this).addClass("active");
             break;
 
           case 'shelter':
-            $('#landing').fullpage.moveTo(2);
+            self.$set('currentView', 'shelter');
+            $.fn.fullpage.moveTo(2);
+            $('.vNav ul li a').removeClass('active');
+            $(this).addClass("active");
             break;
 
           case 'feature':
-            $('#landing').fullpage.moveTo(3);
+            self.$set('currentView', 'feature');
+            $.fn.fullpage.moveTo(3);
+            $('.vNav ul li a').removeClass('active');
+            $(this).addClass("active");
             break;
 
           case 'contact':
-            $('#landing').fullpage.moveTo(4);
+            self.$set('currentView', 'contact');
+            $.fn.fullpage.moveTo(4);
+            $('.vNav ul li a').removeClass('active');
+            $(this).addClass("active");
             break;
 
           default:
             break;
+
 
         }
 
