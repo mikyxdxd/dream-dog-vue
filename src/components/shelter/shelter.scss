@@ -3,6 +3,7 @@
   padding: 3vh 0;
   background: white;
   display: none;
+  height:100vh !important;
   top: 50%;
   position: relative;
   transform: translateY(-50%);
@@ -10,7 +11,6 @@
 
     font-size: 3em;
     text-align: center;
-    font-weight: 600;
     color: #b7b49f;
     opacity: 0;
   }
@@ -45,6 +45,14 @@
 
         -webkit-animation-delay: 0.4s;
       }
+      &:nth-child(4){
+
+        -webkit-animation-delay: 0.6s;
+      }
+      &:nth-child(5){
+
+        -webkit-animation-delay: 0.8s;
+      }
     }
   }
 
@@ -57,7 +65,7 @@
 
     .container{
 
-      padding: 5em 0em;
+      padding: 2em 0em;
       .one_d{
 
         display: inline-block;
@@ -65,7 +73,7 @@
         margin-left: 0.5%;
         .card-content{
 
-          font-size: 1.1em;
+          font-size: 0.8em;
         }
 
       }
@@ -81,12 +89,12 @@
       background-image: url('../../resource/adopt_header.png');
       background-repeat: no-repeat;
       max-width: 700px;
-      font-size: 2em;
+      //font-size: 2em;
       padding: 0px 40px;
-      padding-top: 10px;
+      padding-top: 1vw;
       padding-bottom: 15px;
       color: white;
-      font-size: 1.5vw;
+      font-size: 1.3vw;
       top: -1em;
     }
   }

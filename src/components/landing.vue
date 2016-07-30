@@ -130,20 +130,20 @@
 
               $('#contact').delay(300).fadeIn(500,()=>{
 
-                $('.form-wrapper').addClass('animated flipInY')
+                $('.form-wrapper').addClass('animated fadeInDown')
                 $('.form-wrapper').css('opacity',1)
 
               });
 
             }else{
 
-              $('.form-wrapper').addClass('animated flipOutY')
+              $('.form-wrapper').addClass('animated fadeOutUp')
 
               $('#contact').delay(100).fadeOut(500,()=>{
 
 
                 $('.form-wrapper').css('opacity',0);
-              $('.form-wrapper').removeClass('animated flipInY flipOutY');
+              $('.form-wrapper').removeClass('animated fadeInDown fadeOutUp');
 
 
               });
