@@ -6,7 +6,7 @@
         ready(){
 
             var self = this;
-          if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+          if((/Android|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
 //            skrollr.init().refresh();
               $('.vNav').hide();
               require('./landingResponsive.scss');
