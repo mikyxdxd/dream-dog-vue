@@ -6,12 +6,39 @@
         ready(){
 
             var self = this;
-          if((/Android|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-//            skrollr.init().refresh();
-              $('.vNav').hide();
-              require('./landingResponsive.scss');
+          if((/Android|iPhone|iPod|iPad|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+
+
+
+
+            require('./landing _res.scss');
+            require('./footer/footer_res.scss');
+            require('./shelter/shelter_res.scss');
+            require('./navbar/navbar_res.scss');
+            require('./contact/contact_res.scss');
+            require('./feature/feature_res.scss');
+
+
+
+//            skrollr.init().refresh();s
+//              $('.vNav').hide();
+//              require('./landingResponsive.scss');
+
+
+
+
           }else {
-            require('./landing.scss')
+
+            require('./landing.scss');
+            require('./footer/footer.scss');
+            require('./shelter/shelter.scss');
+            require('./navbar/navbar.scss');
+            require('./contact/contact.scss');
+            require('./feature/feature.scss');
+
+
+
+
             TweenLite.to($(".main_content"), 1.5, {opacity: 1, top: '0px', ease: 'Power4.easeOut'});
 
             $('#landing').fullpage(

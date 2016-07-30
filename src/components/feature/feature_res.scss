@@ -1,0 +1,69 @@
+#feature{
+
+  padding: 3vh 0;
+  //height:100vh !important;
+  background: white;
+  background-image:url('../../resource/background_feature.jpg');
+
+  #caption{
+
+    font-size: 7vw;
+    text-align: center;
+    color: #b7b49f;
+    //opacity: 0;
+    //animation-\
+
+  }
+
+  #mockup_container{
+
+    margin-top: 1em;
+    max-width: 1400px;
+    margin: auto;
+
+    .one_mock{
+
+      display: inline-block;
+      width: 100%;
+      padding: 2.5em;
+      background: transparent;
+      margin-left: 0.8%;
+      box-shadow: none;
+      vertical-align: top;
+      opacity: 1;
+      animation-duration:0.5s;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      padding-top: 1em;
+
+      .card-content,.card-image{
+
+        //opacity: 0;
+      }
+
+
+      .caption{
+
+        font-size: 1.3em;
+        text-align: center;
+        font-weight: bold;
+        line-height: 1em;
+        padding: 1em 0;
+        color: #66077b;
+        text-transform: capitalize;
+        padding-bottom: 0.5em;
+
+      }
+
+      .detail{
+
+        text-align: center;
+        font-size: 1em;
+        color: #9a87a9;
+      }
+    }
+
+  }
+
+
+}

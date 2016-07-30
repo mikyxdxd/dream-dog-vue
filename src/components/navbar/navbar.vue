@@ -27,7 +27,6 @@
     </div>
 </template>
 <script>
-  require('./navbar.scss')
   export default{
     methods: {
 
