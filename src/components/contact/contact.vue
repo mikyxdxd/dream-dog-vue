@@ -1,7 +1,11 @@
 <script>
-    require('./contact.scss')
     export default{
         template: require('./contact.html'),
+        ready(){
+          if(!(/Android|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+            require('./contact.scss')
+          }
+        },
         data:()=>{
             return{
                 userName: '',
