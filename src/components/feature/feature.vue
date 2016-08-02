@@ -24,9 +24,9 @@
                         detail: 'Save all your favourite breeds to quickly see when one of your dream dogs appear on the app!'
                     },
                     {
-                        img: require('../../resource/mock_up_features_search_shelter.png'),
-                        caption: 'search by breed',
-                        detail: 'Browse alphabetically or type in the desired breed name.'
+                        img: require('../../resource/mock_up_features_similar_image.png'),
+                        caption: 'similar image search',
+                        detail: 'Have a dog in mind? Now find all dogs that look similar to your ideal pup'
                     },
                     {
                         img: require('../../resource/mock_up_features_discover_breeds.png'),
