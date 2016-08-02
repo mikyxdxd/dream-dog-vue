@@ -1,46 +1,127 @@
-#nav_bar{
-
-  position: fixed;
-  left: 0;
-  top:  50%;
-  margin-top:-20px;
-  transition:.5s;
-  padding: 0em 1em;
-
-  #divider{
-
+.non-res {
+  nav {
+    background-color: white;
+    box-shadow: none;
+  }
+  .vNav {
     position: fixed;
-    left: 0;
-    top:  50%;
-    width:100%;
-    height: 1px;
-    background: grey;
-
+    top: 40%;
+    right: 8px;
+    z-index: 9999;
+    list-style-type: none;
   }
 
-  .one_nav{
+  .vNav ul {
+    position: relative;
+    padding: 3px;
+    padding-left: 35%;
+  }
 
-    background-size: contain;
-    color: black;
-    //font-weight: bold;
-    width: 120px;
-    height: 50px;
-    background-repeat: no-repeat;
-    padding-top: 0.85em;
-    font-size: 1em;
-    text-align:center;
-    cursor: pointer;
-    .title{
-
-      font-weight: bold;
+  .vNav ul li {
+    position: relative;
+    padding-bottom: 20px;
+    padding-left: 35%;
+    color: rgb(113, 135, 133);
+    .title {
+      position: absolute;
+      right: 15px;
+      top: -5px;
+      animation-duration: .5s;
+      opacity: 0;
     }
+    .title.show {
 
+      opacity: 1 !important;
+      animation: none !important;
+      animation-fill-mode: none !important;
+    }
   }
-  .one_nav.selected{
 
-    color:white;
-    cursor: inherit;
-    background-image: url('../../resource/bone.png');
+  .vNav a {
+    position: relative;
+    display: block;
+    width: 8px;
+    height: 8px;
+    text-indent: -9999px;
+  }
+  .vNav a.active::before {
+    border: 5px #f8d41f solid;
+  }
+  .vNav a::before {
+    border: 5px #f8d41f solid;
+  }
+
+  .vNav a::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px #718785 solid;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    -moz-transition: border 0.5s ease-in-out;
+    -o-transition: border 0.5s ease-in-out;
+    -webkit-transition: border 0.5s ease-in-out;
+    transition: border 0.5s ease-in-out;
+  }
+
+  .vNav a.active::after {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .vNav a::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px #f8d41f solid;
+    border-radius: 50%;
+    -moz-box-sizing: border-box;;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;;
+    left: -5px;
+    top: -6px;
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -moz-transition: -moz-transform 0.5s ease-in-out 0.5s;
+    -o-transition: -o-transform 0.5s ease-in-out 0.5s;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    -webkit-transition-delay: 0.5s;
+    transition: transform 0.5s ease-in-out 0.5s;
+  }
+
+  .vNav a:hover {
+    border-radius: 50%;
+    background-color: #f8d41f;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .label {
+    position: relative;
+    top: -60%;
+    left: -200%;
+    width: 100%;
+    text-align: right;
+    font-size: 1em;
+    color: rgb(113, 135, 133);
+    display: none;
   }
 
 }

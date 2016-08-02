@@ -1,7 +1,9 @@
 <script>
-    require('./feature.scss')
+
     export default{
         template:require('./feature.html'),
+        ready(){
+        },
         data(){
             return{
 

@@ -2,16 +2,37 @@
     <div class="container">
         <div class="team-member-wrapper">
             <img :src="teamMember" />
-            <div id="caption">Contact Our Team</div>
+            <div id="caption">Contact Us</div>
         </div>
 
         <div class="form-wrapper">
-            <form>
-                <input type="text" id="name" placeholder="Name"><br>
-                <input type="text" id="email" placeholder="Email"><br>
-                <textarea id="message" rows="6" placeholder="Your Message"></textarea>
-                <input type="submit" id="submit-but" value="Submit">
+          <validator name="validation1">
+            <form v-on:submit.prevent="submitForm(userName, email, message)" novalidate>
+              <input type="text" id="userName" v-model="userName"  placeholder="Name" v-validate:userName="{ required: true}">
+              <div v-if="$validation1.username.dirty && $validation1.username.required" class="error">Please enter a user name.</div>
+              <input type="text" id="email"  v-model="email" placeholder="Email" v-validate:email="['email', 'required']">
+              <div v-if="$validation1.email.dirty && $validation1.email.email" class="error">Please enter a valid email address.</div>
+              <textarea id="message" rows="6"  v-model="message" placeholder="Your Message" ></textarea>
+
+              <!--<div>-->
+                <!--<div class="errors">-->
+                  <!--<p v-if="$validation1.username.required">required username</p>-->
+                  <!--<p v-if="$validation1.email.email">invalid email address</p>-->
+                  <!--<p v-if="$validation1.email.required">required email address</p>-->
+                  <!--<p v-if="$validation1.message.required">required message</p>-->
+                <!--</div>-->
+              <!--</div>-->
+              <input type="submit" id="submit-but" value="Submit" v-if="$validation1.valid">
+              <div class="success" style="display: none">
+                <p>Message Sent Successfully! Thank You!</p>
+              </div>
+              <div class="failed" style="display: none">
+                <p>Message Sent Falied! Please Try Again!</p>
+              </div>
             </form>
+          </validator>
+
         </div>
     </div>
+  <w_footer></w_footer>
 </div>
