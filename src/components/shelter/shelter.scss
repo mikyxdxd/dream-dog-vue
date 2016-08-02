@@ -1,149 +1,151 @@
-#shelter{
+.non-res {
+  #shelter{
 
-  padding: 3vh 0;
-  background: white;
-  display: none;
-  height:100vh !important;
-  top: 50%;
-  position: relative;
-  transform: translateY(-50%);
-  #main_caption{
+    padding: 3vh 0;
+    background: white;
+    display: none;
+    height:100vh !important;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    #main_caption{
 
-    font-size: 2em;
-    text-align: center;
-    color: #b7b49f;
-    margin-bottom: 0.5em;
-  }
-  #shelter_icon{
-
-    max-width: 800px;
-    margin: auto;
-    padding:1em 0em;
-    //-vendor-animation-delay: 2s;
-
-    .s_icon{
-
-      display: inline-block;
-      width: 19%;
-      margin-left: 0.8%;
-      opacity: 0;
-      cursor: pointer;
-      vertical-align: middle;
-      img{
-
-        width:100%;
-      }
-
-      &:nth-child(1){
-
-        -webkit-animation-delay: 0s;
-      }
-      &:nth-child(2){
-
-        -webkit-animation-delay: 0.2s;
-      }
-      &:nth-child(3){
-
-        -webkit-animation-delay: 0.4s;
-      }
-      &:nth-child(4){
-
-        -webkit-animation-delay: 0.6s;
-      }
-      &:nth-child(5){
-
-        -webkit-animation-delay: 0.8s;
-      }
+      font-size: 2em;
+      text-align: center;
+      color: #b7b49f;
+      margin-bottom: 0.5em;
     }
-  }
+    #shelter_icon{
 
-  #recent_adopt{
+      max-width: 800px;
+      margin: auto;
+      padding:1em 0em;
+      //-vendor-animation-delay: 2s;
 
-    margin-top: 5em;
-    background: #fde46b;
-    min-height: 30vh;
-    position: absolute;
-    width: 100vw;
-    bottom: 0;
+      .s_icon{
 
-    .container{
-
-      padding: 2em 0em;
-      width:80%;
-      .one_d{
-        background-color: transparent;
         display: inline-block;
-        width: 24%;
-        height: 300px;
-        margin-left: 0.5%;
-        vertical-align: top;
-        position: relative;
-        text-align: left;
+        width: 19%;
+        margin-left: 0.8%;
+        opacity: 0;
+        cursor: pointer;
+        vertical-align: middle;
+        img{
 
-        .card{
-          position: relative;
-          height: 300px;
-          margin: 0;
-          background: transparent;
-          background-size: cover !important;
+          width:100%;
         }
 
-        .dog_info{
+        &:nth-child(1){
 
-          position: absolute;
-          padding:0.8em;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          background:rgba(107, 17, 152, 0.27);
-          color: white;
-          .name{
-
-            font-size: 1.3em;
-            padding-bottom: 0.2em;
-            font-weight: bold;
-
-
-
-          }
+          -webkit-animation-delay: 0s;
         }
-        .card-image{
+        &:nth-child(2){
 
-          height:300px;
-          overflow: hidden;
-
-          a{
-            //display: inline-block;
-            cursor: pointer;
-          }
+          -webkit-animation-delay: 0.2s;
         }
-        .card-content{
+        &:nth-child(3){
 
-          font-size: 0.8em;
+          -webkit-animation-delay: 0.4s;
         }
+        &:nth-child(4){
 
+          -webkit-animation-delay: 0.6s;
+        }
+        &:nth-child(5){
+
+          -webkit-animation-delay: 0.8s;
+        }
       }
     }
 
-    #caption{
+    #recent_adopt{
 
+      margin-top: 5em;
+      background: #fde46b;
+      min-height: 30vh;
       position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      background-size: contain;
-      background-image: url('../../resource/adopt_header.png');
-      background-repeat: no-repeat;
-      max-width: 700px;
-      //font-size: 2em;
-      padding: 0px 40px;
-      padding-top: 1vw;
-      padding-bottom: 15px;
-      color: white;
-      font-size: 1.3vw;
-      top: -1em;
+      width: 100vw;
+      bottom: 0;
+
+      .container{
+
+        padding: 2em 0em;
+        width:80%;
+        .one_d{
+          background-color: transparent;
+          display: inline-block;
+          width: 24%;
+          height: 300px;
+          margin-left: 0.5%;
+          vertical-align: top;
+          position: relative;
+          text-align: left;
+
+          .card{
+            position: relative;
+            height: 300px;
+            margin: 0;
+            background: transparent;
+            background-size: cover !important;
+          }
+
+          .dog_info{
+
+            position: absolute;
+            padding:0.8em;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background:rgba(107, 17, 152, 0.27);
+            color: white;
+            .name{
+
+              font-size: 1.3em;
+              padding-bottom: 0.2em;
+              font-weight: bold;
+
+
+
+            }
+          }
+          .card-image{
+
+            height:300px;
+            overflow: hidden;
+
+            a{
+              //display: inline-block;
+              cursor: pointer;
+            }
+          }
+          .card-content{
+
+            font-size: 0.8em;
+          }
+
+        }
+      }
+
+      #caption{
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-size: contain;
+        background-image: url('../../resource/adopt_header.png');
+        background-repeat: no-repeat;
+        max-width: 700px;
+        //font-size: 2em;
+        padding: 0px 40px;
+        padding-top: 1vw;
+        padding-bottom: 15px;
+        color: white;
+        font-size: 1.3vw;
+        top: -1em;
+      }
     }
+    //min-height:80vh;
   }
-  //min-height:80vh;
 }
