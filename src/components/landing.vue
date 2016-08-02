@@ -6,9 +6,10 @@
         ready(){
 
             var self = this;
+
           if((/Android|iPhone|iPod|iPad|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
 
-
+            $('#app').addClass('res');
 
 
             require('./landing _res.scss');
@@ -28,6 +29,8 @@
 
 
           }else {
+            $('#app').addClass('non-res');
+
 
             require('./landing.scss');
             require('./footer/footer.scss');
