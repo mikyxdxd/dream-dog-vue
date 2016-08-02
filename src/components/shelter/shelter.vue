@@ -38,20 +38,14 @@
 
                   name:'Trooper',
                   pic:'https://drpem3xzef3kf.cloudfront.net/photos/pets/33715293/1/?bust=1446813929&width=632&no_scale_up=1',
-                  intro:'Trooper is a high energy 2 year-old who loves to play and run. He knows basic commands and is training with leash-walking. Trooper still has puppy tendencies but shows no aggression when in contact with other dogs or people. He is neutered, negative for heart worm and is up to date on vaccinations. All dogs leave the shelter with HomeAgain mircochip which is registered for life.',
+                  intro:'Trooper is a high energy 2 year-old who loves to play and run. He knows basic commands and is training with leash-walking.',
                   url:'https://www.petfinder.com/petdetail/33715293'
 
                 },{
 
                   name:'Bordeaux',
                   pic:'https://drpem3xzef3kf.cloudfront.net/photos/pets/35729134/2/?bust=1469410735&width=632&no_scale_up=1',
-                  intro:`Meet Bordeaux! She is a loveable 2 yr., Welsh Pembroke Corgi blend. Bordeaux is full grown and weighs 14 lbs.
-
-                    Welsh Pembroke Corgi dogs are said to be a somewhat smaller version of Corgis.
-
-                      Bordeaux is spunky, energetic and pure puppy at heart.
-
-                      Bordeaux is up-to-date with all shots, microchipped and spayed.`,
+                  intro:`Meet Bordeaux! She is a loveable 2 yr. , Welsh Pembroke Corgi blend. Bordeaux is full grown and weighs 14 lbs.`,
                   url:'https://www.petfinder.com/petdetail/35729134'
 
                 },{

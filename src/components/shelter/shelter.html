@@ -21,9 +21,16 @@
         <div id="container" class="container">
             <div class="one_d" v-for="dog in dogs">
 
-                <div class="card">
-                    <div class="card-image">
-                        <a :href="dog.url" target="_blank"><img :src="dog.pic"></a>
+                <div class="card" :style="{'background':'url(' + dog.pic +')'}">
+                    <!--<div class="card-image">-->
+                       <!--<img :src="dog.pic">-->
+                    <!--</div>-->
+
+                    <div class="dog_info">
+
+                      <div class="name">{{dog.name}}</div>
+                      <div class="des">{{dog.intro}}</div>
+
                     </div>
                     <!--<div class="card-content">-->
                         <!--<p>I am a very simple card. I am good at containing small bits of information.-->
