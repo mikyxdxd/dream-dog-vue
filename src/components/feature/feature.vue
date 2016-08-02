@@ -3,9 +3,6 @@
     export default{
         template:require('./feature.html'),
         ready(){
-          if(!(/Android|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-            require('./feature.scss')
-          }
         },
         data(){
             return{

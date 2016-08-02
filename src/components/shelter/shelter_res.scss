@@ -1,34 +1,28 @@
 #shelter{
 
-  padding: 3vh 0;
+  padding: 5vh 0;
+  padding-bottom: 0;
   background: white;
-  display: none;
-  height:100vh !important;
-  top: 50%;
-  position: relative;
-  transform: translateY(-50%);
   #main_caption{
 
-    font-size: 3em;
+    font-size: 7vw;
     text-align: center;
     color: #b7b49f;
-    opacity: 0;
   }
   #shelter_icon{
 
-    max-width: 1000px;
     margin: auto;
-    padding:5em 0em;
+    padding:2em 0em;
     //-vendor-animation-delay: 2s;
 
     .s_icon{
 
       display: inline-block;
-      width: 19%;
-      margin-left: 0.8%;
-      opacity: 0;
+      width: 28%;
+      margin-left: 4%;
       cursor: pointer;
       vertical-align: middle;
+      margin-bottom: 1em;
       img{
 
         width:100%;
@@ -59,7 +53,7 @@
 
   #recent_adopt{
 
-    margin-top: 5em;
+    margin-top: 1em;
     background: #fde46b;
     min-height: 30vh;
     position: relative;
@@ -70,8 +64,8 @@
       .one_d{
 
         display: inline-block;
-        width:24%;
-        margin-left: 0.5%;
+        width: 48%;
+        margin-left: 1%;
         .card-content{
 
           font-size: 0.8em;
@@ -83,21 +77,49 @@
     #caption{
 
       position: absolute;
-      top: 0;
       left: 50%;
+      min-width: 250px;
       transform: translateX(-50%);
       background-size: contain;
       background-image: url('../../resource/adopt_header.png');
       background-repeat: no-repeat;
       max-width: 700px;
-      //font-size: 2em;
-      padding: 0px 40px;
-      padding-top: 1vw;
+      padding-left: 4%;
+      padding-right: 0 !important;
+      padding-top: 6px;
       padding-bottom: 15px;
       color: white;
-      font-size: 1.3vw;
+      font-size: 1em;
       top: -1em;
     }
   }
   //min-height:80vh;
 }
+
+
+
+@media only screen and (max-width: 440px){ //for nexus 6p 5x iphone 6+
+  #recent_adopt #caption{
+    min-width: 310px !important;
+    padding-left: 5% !important;
+  }
+}
+
+
+@media only screen and (max-width: 400px) { //for S5  iphone 6
+  #recent_adopt #caption{
+    min-width: 280px !important;
+    padding-left: 20px !important;
+    font-size: 0.9em !important;
+  }
+}
+
+@media only screen and (max-width: 350px) { //iphone 5
+  #recent_adopt #caption{
+    min-width: 250px !important;
+    padding-left: 18px !important;
+    font-size: 0.8em !important;
+  }
+}
+
+
