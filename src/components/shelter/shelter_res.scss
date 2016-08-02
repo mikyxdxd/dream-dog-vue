@@ -1,124 +1,123 @@
-#shelter{
+.res {
+  #shelter {
 
-  padding: 5vh 0;
-  padding-bottom: 0;
-  background: white;
-  #main_caption{
+    padding: 5vh 0;
+    padding-bottom: 0;
+    background: white;
+    #main_caption {
 
-    font-size: 7vw;
-    text-align: center;
-    color: #b7b49f;
-  }
-  #shelter_icon{
-
-    margin: auto;
-    padding:2em 0em;
-    //-vendor-animation-delay: 2s;
-
-    .s_icon{
-
-      display: inline-block;
-      width: 28%;
-      margin-left: 4%;
-      cursor: pointer;
-      vertical-align: middle;
-      margin-bottom: 1em;
-      img{
-
-        width:100%;
-      }
-
-      &:nth-child(1){
-
-        -webkit-animation-delay: 0s;
-      }
-      &:nth-child(2){
-
-        -webkit-animation-delay: 0.2s;
-      }
-      &:nth-child(3){
-
-        -webkit-animation-delay: 0.4s;
-      }
-      &:nth-child(4){
-
-        -webkit-animation-delay: 0.6s;
-      }
-      &:nth-child(5){
-
-        -webkit-animation-delay: 0.8s;
-      }
+      font-size: 7vw;
+      text-align: center;
+      color: #b7b49f;
     }
-  }
+    #shelter_icon {
 
-  #recent_adopt{
-
-    margin-top: 1em;
-    background: #fde46b;
-    min-height: 30vh;
-    position: relative;
-
-    .container{
-
+      margin: auto;
       padding: 2em 0em;
-      .one_d{
+      //-vendor-animation-delay: 2s;
+
+      .s_icon {
 
         display: inline-block;
-        width: 48%;
-        margin-left: 1%;
-        .card-content{
+        width: 28%;
+        margin-left: 4%;
+        cursor: pointer;
+        vertical-align: middle;
+        margin-bottom: 1em;
+        img {
 
-          font-size: 0.8em;
+          width: 100%;
         }
 
+        &:nth-child(1) {
+
+          -webkit-animation-delay: 0s;
+        }
+        &:nth-child(2) {
+
+          -webkit-animation-delay: 0.2s;
+        }
+        &:nth-child(3) {
+
+          -webkit-animation-delay: 0.4s;
+        }
+        &:nth-child(4) {
+
+          -webkit-animation-delay: 0.6s;
+        }
+        &:nth-child(5) {
+
+          -webkit-animation-delay: 0.8s;
+        }
       }
     }
 
-    #caption{
+    #recent_adopt {
 
-      position: absolute;
-      left: 50%;
-      min-width: 250px;
-      transform: translateX(-50%);
-      background-size: contain;
-      background-image: url('../../resource/adopt_header.png');
-      background-repeat: no-repeat;
-      max-width: 700px;
-      padding-left: 4%;
-      padding-right: 0 !important;
-      padding-top: 6px;
-      padding-bottom: 15px;
-      color: white;
-      font-size: 1em;
-      top: -1em;
+      margin-top: 1em;
+      background: #fde46b;
+      min-height: 30vh;
+      position: relative;
+
+      .container {
+
+        padding: 2em 0em;
+        .one_d {
+
+          display: inline-block;
+          width: 48%;
+          margin-left: 1%;
+          .card-content {
+
+            font-size: 0.8em;
+          }
+
+        }
+      }
+
+      #caption {
+
+        position: absolute;
+        left: 50%;
+        min-width: 250px;
+        transform: translateX(-50%);
+        background-size: contain;
+        background-image: url('../../resource/adopt_header.png');
+        background-repeat: no-repeat;
+        max-width: 700px;
+        padding-left: 4%;
+        padding-right: 0 !important;
+        padding-top: 6px;
+        padding-bottom: 15px;
+        color: white;
+        font-size: 1em;
+        top: -1em;
+      }
+    }
+    //min-height:80vh;
+  }
+
+  @media only screen and (max-width: 440px) { //for nexus 6p 5x iphone 6+
+    #recent_adopt #caption {
+      min-width: 310px !important;
+      padding-left: 5% !important;
     }
   }
-  //min-height:80vh;
-}
 
-
-
-@media only screen and (max-width: 440px){ //for nexus 6p 5x iphone 6+
-  #recent_adopt #caption{
-    min-width: 310px !important;
-    padding-left: 5% !important;
+  @media only screen and (max-width: 400px) { //for S5  iphone 6
+    #recent_adopt #caption {
+      min-width: 280px !important;
+      padding-left: 20px !important;
+      font-size: 0.9em !important;
+    }
   }
-}
 
-
-@media only screen and (max-width: 400px) { //for S5  iphone 6
-  #recent_adopt #caption{
-    min-width: 280px !important;
-    padding-left: 20px !important;
-    font-size: 0.9em !important;
-  }
-}
-
-@media only screen and (max-width: 350px) { //iphone 5
-  #recent_adopt #caption{
-    min-width: 250px !important;
-    padding-left: 18px !important;
-    font-size: 0.8em !important;
+  @media only screen and (max-width: 350px) { //iphone 5
+    #recent_adopt #caption {
+      min-width: 250px !important;
+      padding-left: 18px !important;
+      font-size: 0.8em !important;
+    }
   }
 }
 
