@@ -18,5 +18,3 @@ var app = Vue.extend({
 })
 import route from './route'
 route(app)
-
-open

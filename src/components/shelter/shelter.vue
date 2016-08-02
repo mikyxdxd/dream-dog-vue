@@ -1,4 +1,5 @@
 <script>
+    require('./shelter.scss')
     export default {
         template: require('./shelter.html'),
         methods: {
