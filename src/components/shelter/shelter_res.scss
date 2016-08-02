@@ -28,27 +28,6 @@
 
           width: 100%;
         }
-
-        &:nth-child(1) {
-
-          -webkit-animation-delay: 0s;
-        }
-        &:nth-child(2) {
-
-          -webkit-animation-delay: 0.2s;
-        }
-        &:nth-child(3) {
-
-          -webkit-animation-delay: 0.4s;
-        }
-        &:nth-child(4) {
-
-          -webkit-animation-delay: 0.6s;
-        }
-        &:nth-child(5) {
-
-          -webkit-animation-delay: 0.8s;
-        }
       }
     }
 
@@ -88,7 +67,6 @@
           }
 
           .dog_info{
-
             display: none;
             position: absolute;
             padding:0.8em;
