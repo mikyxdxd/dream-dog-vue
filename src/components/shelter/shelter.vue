@@ -5,7 +5,9 @@
 
             changeHoverState: function (shelter) {
 
-                shelter.hover = false;
+
+               shelter.hover = false;
+
             },
 
             changeState: function (shelter) {
@@ -67,6 +69,7 @@
 
                 }
               ],
+
                 backgroundImage: require('../../resource/adopt_header.png'),
                 shelters: [
                     {
@@ -88,20 +91,19 @@
                         bg_h: require('../../resource/Shelters/SAH_hover_state.png'),
                         a: "http://statelineah.com/"
                     },
+                    {
+                      hover: false,
+                      bg: require('../../resource/Shelters/ADORE_normal.png'),
+                      bg_h: require('../../resource/Shelters/ADORE_hover_state.png'),
+                      a: "https://www.adorehouston.org/"
+                    },
 
-                  {
-                    hover: false,
-                    bg: require('../../resource/Shelters/ADORE_normal.png'),
-                    bg_h: require('../../resource/Shelters/ADORE_hover_state.png'),
-                    a: "https://www.adorehouston.org/"
-                  },
-
-                  {
-                    hover: false,
-                    bg: require('../../resource/Shelters/BLAPCWR_normal.png'),
-                    bg_h: require('../../resource/Shelters/BLAPCWR_hover_state.png'),
-                    a: "http://www.bullluvablepaws.com/"
-                  },
+                    {
+                      hover: false,
+                      bg: require('../../resource/Shelters/BLAPCWR_normal.png'),
+                      bg_h: require('../../resource/Shelters/BLAPCWR_hover_state.png'),
+                      a: "http://www.bullluvablepaws.com/"
+                    },
 
 
 
