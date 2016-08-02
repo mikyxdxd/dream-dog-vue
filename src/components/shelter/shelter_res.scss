@@ -77,49 +77,23 @@
     #caption{
 
       position: absolute;
+      top: 0;
       left: 50%;
-      min-width: 250px;
       transform: translateX(-50%);
       background-size: contain;
       background-image: url('../../resource/adopt_header.png');
       background-repeat: no-repeat;
-      max-width: 700px;
-      padding-left: 4%;
-      padding-right: 0 !important;
-      padding-top: 6px;
+      //max-width: 700px;
+      //font-size: 2em;
+      padding: 0px 40px;
+      padding-top: 1vw;
       padding-bottom: 15px;
       color: white;
-      font-size: 1em;
-      top: -1em;
+      top: -1.7em;
+      font-size: 0.6em;
+      width: 80vw;
+      padding-top: 1.2em;
     }
   }
   //min-height:80vh;
 }
-
-
-
-@media only screen and (max-width: 440px){ //for nexus 6p 5x iphone 6+
-  #recent_adopt #caption{
-    min-width: 310px !important;
-    padding-left: 5% !important;
-  }
-}
-
-
-@media only screen and (max-width: 400px) { //for S5  iphone 6
-  #recent_adopt #caption{
-    min-width: 280px !important;
-    padding-left: 20px !important;
-    font-size: 0.9em !important;
-  }
-}
-
-@media only screen and (max-width: 350px) { //iphone 5
-  #recent_adopt #caption{
-    min-width: 250px !important;
-    padding-left: 18px !important;
-    font-size: 0.8em !important;
-  }
-}
-
-

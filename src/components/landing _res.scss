@@ -6,14 +6,21 @@
   }
 
   .section{
-    display: block;
     padding: 0;
-    //height: 100vh;
-    width: 100%;
-    //padding: 0em 5em;
-    //overflow: hidden;
-    margin: auto;
-    //max-width: 1500px;
+    height: auto;
+    width: 100vw;
+
+    #bg{
+      position: absolute;
+      left: 0;
+      top:0;
+      width:100vw;
+      background:#fafafa;
+      background: url('https://images.unsplash.com/photo-1455845694919-f0b3826ea301?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=843&q=80');
+      height: 90vh;
+      -webkit-filter: blur(3px);
+      background-size: contain;
+    }
 
   }
 
@@ -32,23 +39,20 @@
     padding: 0;
     max-width: 1500px;
     margin: auto;
-    padding: 2vh 0;
+    padding: 5vh 0;
+    background: #fafafa;
+    top: 50%;
+    transform: translateY(-50%);
     #main_container{
 
       position: relative;
-      #container_left{
+      #container_left,#container_right{
         display: inline-block;
-        width: 45%;
-        vertical-align: middle;
-      }
-      #container_right{
-        position: relative;
-        top: 80px;
-        width: 35%;
-        display: inline-block;
+        width: 100%;
         vertical-align: middle;
       }
     }
+
 
     #screen{
 
@@ -56,23 +60,24 @@
       margin: auto;
       img{
 
-        width:120%;
+        width: 90%;
+        margin-bottom: 5vh;
       }
     }
 
 
     #download{
-      max-width: 350px;
+      //max-width: 350px;
       white-space:nowrap;
       margin: auto;
-      margin-top: 1em;
+      margin-top: 0em;
       img{
         width: 100%;
       }
       .dow{
 
         display: inline-block;
-        width: 90%;
+        width:35%;
         margin-left: 1%;
       }
     }
@@ -80,28 +85,32 @@
     #main_logo{
 
       img{
-        width: 180%;
+        width: 60vw;
+        margin-bottom: 5vh;
       }
     }
 
     .main_content{
 
-      font-size: 1em;
-      max-width: 500px;
-      font-weight: 200;
-      margin: auto;
-      position: relative;
-      top: -10px;
+
+      font-size: 5.5vw;
+      padding: 5vw;
+      max-width: inherit;
       margin: 1em auto;
+      margin-bottom: 0;
+      padding-top: 0;
+      margin-top:0;
+      font-weight: 200;
+      //opacity: 0;
       color:#9a87a9;
 
       .colr{
-        display: -webkit-box;
-        color: #f35626;
-        background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-animation: hue 60s infinite linear;
+
+        //color: #f35626;
+        //background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+        //-webkit-background-clip: text;
+        //-webkit-text-fill-color: transparent;
+        //-webkit-animation: hue 60s infinite linear;
 
       }
 
@@ -126,57 +135,3 @@
 
   }
 }
-
-
-
-
-@media only screen and (max-width: 440px){ //for nexus 6p 5x iphone 6+
-  #recent_adopt #caption{
-    min-width: 310px !important;
-    padding-left: 5% !important;
-  }
-
-  #hero_container #screen img {
-    width: 90% !important;
-  }
-
-  #container_right{
-    top: 100px !important;
-  }
-
-}
-
-
-@media only screen and (max-width: 400px) { //for S5  iphone 6
-  #recent_adopt #caption{
-    min-width: 280px !important;
-    padding-left: 20px !important;
-    font-size: 4.5vw !important;
-  }
-
-  #hero_container #screen img {
-    width: 110% !important;
-  }
-
-  #container_right {
-    top: 77px !important;
-  }
-}
-
-@media only screen and (max-width: 350px) { //iphone 5
-  #recent_adopt #caption{
-    min-width: 250px !important;
-    padding-left: 25px !important;
-    font-size: 4.5vw !important;
-  }
-
-  #hero_container #screen img {
-    width: 120% !important;
-  }
-
-  #container_right {
-    top: 80px !important;
-  }
-}
-
-
