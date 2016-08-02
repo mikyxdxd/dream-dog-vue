@@ -137,7 +137,7 @@
 
 
                 },
-                scrollingSpeed: 700,
+                scrollingSpeed: 1000,
                 scrollDelay: 1000,
                 easing: 'easeInOutCubic'
 

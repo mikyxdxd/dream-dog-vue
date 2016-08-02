@@ -117,10 +117,9 @@
               //font-size: 1.3em;
               padding-bottom: 0.2em;
               font-weight: bold;
-
-
-
             }
+
+
             .link{
 
               display: inline-block;
@@ -128,9 +127,16 @@
               border-radius: 10px;
               font-weight: bold;
               border: 0.15em solid;
-              float: right;
               margin: 1em 0;
               color: #f9dc92;
+            }
+            .arrow{
+              width: 0;
+              height: 0;
+              border-top: 5px solid transparent;
+              border-left: 10px solid #fde46b;
+              border-bottom: 5px solid transparent;
+              display: inline-block;
             }
           }
           .card-image{
