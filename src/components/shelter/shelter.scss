@@ -113,8 +113,26 @@
               //font-size: 1.3em;
               padding-bottom: 0.2em;
               font-weight: bold;
+            }
 
-
+            .link{
+              margin-top: 1em;
+              border: solid #fde46b;
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              border-radius: 10px;
+              width: 11vw;
+              padding: .5em;
+              a{
+                color: #fde46b;
+              }
+              .arrow{
+                width: 0;
+                height: 0;
+                border-top: 50px solid transparent;
+                border-left: 100px solid red;
+                border-bottom: 50px solid transparent;
+              }
 
             }
           }
