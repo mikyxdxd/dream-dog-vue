@@ -52,22 +52,95 @@
       }
     }
 
-    #recent_adopt {
 
-      margin-top: 1em;
+    #recent_adopt{
+
+      margin-top: 5em;
       background: #fde46b;
       min-height: 30vh;
       position: relative;
+      //position: absolute;
+      //width: 100vw;
+      //bottom: 0;
 
-      .container {
+      .container{
 
         padding: 2em 0em;
-        .one_d {
-
+        width:80%;
+        .one_d{
+          background-color: transparent;
           display: inline-block;
-          width: 48%;
-          margin-left: 1%;
-          .card-content {
+          width: 100%;
+          margin-top: 5%;
+          height: 300px;
+          //margin-left: 0.5%;
+          vertical-align: top;
+          position: relative;
+          text-align: left;
+          cursor: pointer;
+
+          .card{
+            position: relative;
+            height: 300px;
+            margin: 0;
+            background: transparent;
+            background-size: cover !important;
+          }
+
+          .dog_info{
+
+            display: none;
+            position: absolute;
+            padding:0.8em;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background:rgba(107, 17, 152, 0.27);
+            color: white;
+            .name{
+
+              font-size: 2em;
+              padding-bottom: 0.2em;
+              font-weight: bold;
+
+            }
+            .addr{
+
+              font-size: 0.75em;
+              max-width: 70%;
+              color: #fafafa;
+              margin: 0.5em 0;
+              //font-size: 1.3em;
+              padding-bottom: 0.2em;
+              font-weight: bold;
+
+
+
+            }
+            .link{
+
+              display: inline-block;
+              padding: .4em 1em;
+              border-radius: 10px;
+              font-weight: bold;
+              border: 0.15em solid;
+              float: right;
+              margin: 1em 0;
+              color: #f9dc92;
+            }
+          }
+          .card-image{
+
+            height:300px;
+            overflow: hidden;
+
+            a{
+              //display: inline-block;
+              cursor: pointer;
+            }
+          }
+          .card-content{
 
             font-size: 0.8em;
           }
@@ -75,22 +148,22 @@
         }
       }
 
-      #caption {
+      #caption{
 
         position: absolute;
+        top: 0;
         left: 50%;
-        min-width: 250px;
         transform: translateX(-50%);
         background-size: contain;
         background-image: url('../../resource/adopt_header.png');
         background-repeat: no-repeat;
         max-width: 700px;
-        padding-left: 4%;
-        padding-right: 0 !important;
-        padding-top: 6px;
+        //font-size: 2em;
+        padding: 0px 40px;
+        padding-top: 1vw;
         padding-bottom: 15px;
         color: white;
-        font-size: 1em;
+        font-size: 1.3vw;
         top: -1em;
       }
     }

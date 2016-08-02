@@ -10,6 +10,18 @@
 
             },
 
+          showInfo:function(i){
+
+            $($('.dog_info')[i]).slideDown();
+
+          },
+
+          hideInfo:function(i){
+
+            $($('.dog_info')[i]).slideUp();
+
+          },
+
             changeState: function (shelter) {
 
                shelter.hover = true;
@@ -41,7 +53,6 @@
                   addr:'Huntington Shelter and Adoption Center East Northport, NY',
                   intro:'Trooper is a high energy 2 year-old who loves to play and run. He knows basic commands and is training with leash-walking.',
                   url:'http://www.huntingtonny.gov/content/13749/13839/16437/16539/default.aspx'
-
                 },{
 
                   name:'Bordeaux',
@@ -52,9 +63,9 @@
 
                 },{
 
-                  name:'Roxi',
+                  name:'Kelle',
                   pic:'https://www.adorehouston.org/wp-content/uploads/2016/05/IMG_3611.jpg',
-                  addr:'',
+                  addr:'ADORE Houston Boston, MA',
                   intro:'Hey guys. I am Kelle and I am a 4 year old Border Collie mix. I am an awesome little girl that enjoys being the official ADORE greeter at adoption events because I love being the center of attention.',
                   url:'https://www.adorehouston.org/portfolio/kelle-2/'
 
