@@ -1,0 +1,53 @@
+#footer{
+  padding-top: 5vh;
+  //border-top: 1px solid rgba(0,0,0,.07);
+  //position: absolute;
+  //bottom: 0;
+  width: 100%;
+}
+
+.left-container{
+  display: inline-block;
+  width: 30%;
+  padding: 0;
+  img{
+    width: 100%;
+  }
+}
+
+.right-container{
+  display: inline-block;
+  width: 68%;
+  text-align: right;
+  vertical-align: sub;
+
+  .store{
+    //max-width: 120px;
+    //max-height: 90px;
+    display: inline-block;
+    width: 40%;
+  }
+  .email{
+    padding-bottom: 0.9vh;
+    padding-right: 0.6vh;
+
+    .email-icon{
+      max-width:20px;
+    }
+    a{
+      color: #5a096f;
+      //font-size: 2.9vh;
+      font-weight: 600;
+    }
+
+  }
+
+  .social{
+    padding-top: 0.9vh;
+  }
+  .social-icon{
+    max-width: 20px;
+    margin-left: 0.5em;
+  }
+
+}

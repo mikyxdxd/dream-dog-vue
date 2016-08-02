@@ -1,20 +1,16 @@
 #feature{
 
   padding: 3vh 0;
-  height:100vh !important;
+  //height:100vh !important;
   background: white;
-  display: none;
-  top: 50%;
-  position: relative;
-  transform: translateY(-50%);
   background-image:url('../../resource/background_feature.jpg');
 
   #caption{
 
-    font-size: 3em;
+    font-size: 7vw;
     text-align: center;
     color: #b7b49f;
-    opacity: 0;
+    //opacity: 0;
     //animation-\
 
   }
@@ -28,17 +24,21 @@
     .one_mock{
 
       display: inline-block;
-      width: 19%;
+      width: 100%;
+      padding: 2.5em;
       background: transparent;
       margin-left: 0.8%;
       box-shadow: none;
       vertical-align: top;
       opacity: 1;
       animation-duration:0.5s;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      padding-top: 1em;
 
       .card-content,.card-image{
-        padding: 1em 0;
-        opacity: 0;
+
+        //opacity: 0;
       }
 
 

@@ -2,32 +2,51 @@
     <div class="vNav">
       <ul class="vNav">
         <li id="introduction">
-          <a class="active" v-on:click="toPosition('introduction')">
+          <div class="title">Introduction</div>
+          <a class="active" v-on:click="toPosition('introduction')" v-on:mouseover="showTitle($event)" v-on:mouseleave="hideTitle($event)" >
+          </a>
+        </li>
+        <li>
+          <div class="title">Shelter</div>
+          <a v-on:click="toPosition('shelter')" v-on:mouseover="showTitle($event)" v-on:mouseleave="hideTitle($event)" >
 
           </a>
         </li>
         <li>
-          <a v-on:click="toPosition('shelter')">
+          <div class="title">Feature</div>
+          <a v-on:click="toPosition('feature')" v-on:mouseover="showTitle($event)" v-on:mouseleave="hideTitle($event)" >
 
           </a>
         </li>
-        <li>
-          <a v-on:click="toPosition('feature')">
-
-          </a>
-        </li>
-        <li>
-          <a v-on:click="toPosition('contact')">
-
+        <li >
+          <div class="title">Contact</div>
+          <a v-on:click="toPosition('contact')" v-on:mouseover="showTitle($event)" v-on:mouseleave="hideTitle($event)" >
           </a>
         </li>
       </ul>
     </div>
 </template>
 <script>
-  require('./navbar.scss')
   export default{
     methods: {
+
+      showTitle(event){
+
+        $(event.target).prev().removeClass('animated fadeOutDown fadeInUp')
+        $(event.target).prev().addClass('animated fadeInUp');
+//        $(event.target).prev().css('opacity',1);
+
+
+      },
+
+      hideTitle(event){
+
+        $(event.target).prev().removeClass('animated fadeOutDown fadeInUp')
+        $(event.target).prev().addClass('animated fadeOutDown');
+//        $(event.target).prev().css('opacity',0);
+//        $(event.target).prev().delay(500).removeClass('animated fadeOutDown fadeInUp')
+
+      },
 
       toPosition(view){
         var self = this;
