@@ -1,6 +1,7 @@
 .non-res {
   #feature {
 
+
     padding: 1vh 0;
     height: 100vh !important;
     background: white;
@@ -16,16 +17,17 @@
       text-align: center;
       color: #b7b49f;
       opacity: 0;
-      //animation-\
-
     }
 
     #mockup_container {
 
       margin-top: 1em;
-      max-width: 85vw;
+      max-width: 80vw;
       margin: auto;
-
+      div:nth-child(3){
+        position: relative;
+        top: -20px;
+      }
       .one_mock {
 
         display: inline-block;
