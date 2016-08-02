@@ -19,7 +19,7 @@
         <div id="caption">View our Adorable <b>Adoptable Dogs</b> Now!</div>
 
         <div id="container" class="container">
-            <div class="one_d" v-for="dog in dogs">
+            <div class="one_d" v-for="dog in dogs" @click="showInfo($index)" @mouseleave="hideInfo($index)">
 
                 <div class="card" :style="{'background':'url(' + dog.pic +')'}">
                     <!--<div class="card-image">-->
@@ -31,10 +31,11 @@
                       <div class="name">{{dog.name}}</div>
                       <div class="addr">{{dog.addr}}</div>
                       <div class="des">{{dog.intro}}</div>
-                      <div class="link">
-                        <a :href="dog.url">Read More</a>
-                        <div class="arrow"></div>
-                      </div>
+
+
+
+                      <a class="link" :href="dog.url" target="_blank">Read More <span class="arrow"></span></a>
+
 
                     </div>
                     <!--<div class="card-content">-->
