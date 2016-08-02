@@ -5,7 +5,7 @@
         methods: {
 
             changeHoverState: function (shelter) {
-              
+
                 shelter.hover = false;
             },
 
