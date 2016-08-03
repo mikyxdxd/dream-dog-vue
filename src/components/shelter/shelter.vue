@@ -96,12 +96,12 @@
                         a: "http://www.kenmarrescue.org/our-adoptable-dogs/current-orphans/"
                     },
 
-                    {
-                        hover: false,
-                        bg: require('../../resource/Shelters/SAH_normal.png'),
-                        bg_h: require('../../resource/Shelters/SAH_hover_state.png'),
-                        a: "http://statelineah.com/"
-                    },
+//                    {
+//                        hover: false,
+//                        bg: require('../../resource/Shelters/SAH_normal.png'),
+//                        bg_h: require('../../resource/Shelters/SAH_hover_state.png'),
+//                        a: "http://statelineah.com/"
+//                    },
                     {
                       hover: false,
                       bg: require('../../resource/Shelters/ADORE_normal.png'),
