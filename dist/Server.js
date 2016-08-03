@@ -4,7 +4,8 @@ var express = require('express'),
   compress = require('compression'),
   app = module.exports = express(),
   engines = require('consolidate'),
-  defaultPort = 9000;
+  nodemailer = require('nodemailer'),
+  defaultPort = 80;
 app.engine('html', engines.mustache);
 app.set('view engine', 'html');
 app.use(compress({
