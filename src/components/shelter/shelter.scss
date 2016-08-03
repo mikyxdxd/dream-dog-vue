@@ -18,6 +18,7 @@
     #shelter_icon{
 
       max-width: 70vw;
+      min-width: 900px;
       margin: auto;
       padding:1em 0em;
       //-vendor-animation-delay: 2s;
@@ -70,7 +71,7 @@
       .container{
 
         padding: 2em 0em;
-        width:80%;
+        width:90%;
         .one_d{
           background-color: transparent;
           display: inline-block;
