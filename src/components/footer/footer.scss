@@ -4,6 +4,27 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    min-width: 1000px;
+
+    .download{
+
+      position: relative;
+      #comingsS{
+
+        position: absolute;
+        top: 5px;
+        left: -85%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.5em;
+        color: black;
+        padding-top: 0.1em;
+        text-transform: none;
+        border-radius: 5px;
+      }
+    }
+
   }
 
   .left-container {
