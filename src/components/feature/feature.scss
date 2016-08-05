@@ -19,6 +19,8 @@
       opacity: 0;
     }
 
+
+
     #mockup_container {
 
       margin-top: 1em;
@@ -42,10 +44,13 @@
         opacity: 1;
         animation-duration: 0.5s;
 
+
         .card-content, .card-image {
           padding: 1em 0;
           opacity: 0;
         }
+
+
 
         .caption {
 
@@ -68,6 +73,27 @@
         }
       }
 
+    }
+
+    #mockup_container > div:nth-child(1) > div.card-image{
+      position: relative;
+      top: -25px;
+    }
+    #mockup_container > div:nth-child(2) > div.card-image{
+      position: relative;
+      top: -25px;
+    }
+    #mockup_container > div:nth-child(4) > div.card-image{
+      position: relative;
+      top: -25px;
+    }
+    #mockup_container > div:nth-child(5) > div.card-image{
+      position: relative;
+      top: -25px;
+    }
+    #mockup_container > div:nth-child(3) > div.card-content{
+      position:relative;
+      top: 25px;
     }
 
   }
