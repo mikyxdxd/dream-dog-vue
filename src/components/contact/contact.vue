@@ -51,8 +51,7 @@
                 //console.log("SENT SUCCESS");
                 //console.log(response);
                 $(".success").css("display", "block");
-
-                sr.reveal('.success', config, 100);
+                $('form')[0].reset();
                 //alert("Message Sent! Thank You!")
               }
 

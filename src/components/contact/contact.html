@@ -7,8 +7,8 @@
 
         <div class="form-wrapper">
           <validator name="validation1">
-            <form v-on:submit.prevent="submitForm(userName, email, message)" novalidate>
-              <input type="text" id="userName" v-model="userName"  placeholder="Name" v-validate:userName="{ required: true}">
+            <form id="myform" v-on:submit.prevent="submitForm(userName, email, message)" novalidate>
+              <input type="text" id="userName" v-model="userName"  placeholder="Name/Organization" v-validate:userName="{ required: true}">
               <div v-if="$validation1.username.dirty && $validation1.username.required" class="error">Please enter a user name.</div>
               <input type="text" id="email"  v-model="email" placeholder="Email" v-validate:email="['email', 'required']">
               <div v-if="$validation1.email.dirty && $validation1.email.email" class="error">Please enter a valid email address.</div>
