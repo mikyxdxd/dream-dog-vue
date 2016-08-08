@@ -24,11 +24,13 @@
     #mockup_container {
 
       margin-top: 1em;
-      max-width: 80vw;
+      max-width: 90vw;
       margin: auto;
       position: relative;
       top: 50%;
       transform: translateY(-50%);
+      max-width: 1500px;
+      min-width: 700px;
       div:nth-child(3){
         position: relative;
         top: -25px;
@@ -48,9 +50,10 @@
         .card-content, .card-image {
           padding: 1em 0;
           opacity: 0;
+          img{
+            width: 105%;
+          }
         }
-
-
 
         .caption {
 
