@@ -2,6 +2,30 @@
     export default {
         template: require('./shelter.html'),
         methods: {
+            submitForm: function(nameOrg, email){
+              nameOrg = nameOrg + "  (from:organization form)";
+              console.log(nameOrg);
+              this.$http.post('/email',
+                {user: nameOrg,
+                  email: email,
+                 }).then((response) =>
+              {
+                if(response.body.err){
+                  console.log('error')
+                $(".orgFormfailed").css("display", "block");
+              }else{
+                console.log("success")
+                $(".orgFormsuccess").css("display", "block");
+                $('form')[0].reset();
+              }
+
+            }, (response)=>{
+                console.log("failed")
+                $(".orgFormfailed").css("display", "block");
+
+
+              });
+            },
 
             changeHoverState: function (shelter) {
 
@@ -43,6 +67,8 @@
 
         data: function () {
             return {
+              nameOrg: '',
+              email: '',
 
               dogs:[
 
@@ -85,15 +111,15 @@
                 shelters: [
                     {
                         hover: false,
-                        bg: require('../../resource/Shelters/HSE_normal.png'),
-                        bg_h: require('../../resource/Shelters/HSE_hover_state.png'),
-                        a: "http://www.huntingtonny.gov/animal-shelter"
+                        bg: require('../../resource/Shelters/KMR_normal.png'),
+                        bg_h: require('../../resource/Shelters/KMR_hover_state.png'),
+                        a: "http://www.kenmarrescue.org/"
                     },
                     {
                         hover: false,
-                        bg: require('../../resource/Shelters/KMR_normal.png'),
-                        bg_h: require('../../resource/Shelters/KMR_hover_state.png'),
-                        a: "http://www.kenmarrescue.org/our-adoptable-dogs/current-orphans/"
+                        bg: require('../../resource/Shelters/ADORE_normal.png'),
+                        bg_h: require('../../resource/Shelters/ADORE_hover_state.png'),
+                        a: "https://www.adorehouston.org/"
                     },
 
 //                    {
@@ -104,9 +130,9 @@
 //                    },
                     {
                       hover: false,
-                      bg: require('../../resource/Shelters/ADORE_normal.png'),
-                      bg_h: require('../../resource/Shelters/ADORE_hover_state.png'),
-                      a: "https://www.adorehouston.org/"
+                      bg: require('../../resource/Shelters/HSE_normal.png'),
+                      bg_h: require('../../resource/Shelters/HSE_hover_state.png'),
+                      a: "http://www.huntingtonny.gov/animal-shelter"
                     },
 
                     {
