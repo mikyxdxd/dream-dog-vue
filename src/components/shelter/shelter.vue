@@ -11,19 +11,17 @@
                  }).then((response) =>
               {
                 if(response.body.err){
-                  console.log('error')
-                $(".orgFormfailed").css("display", "block");
+                toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                toastr.error('Message Sent Falied! Please Try Again!');
               }else{
-                console.log("success")
-                $(".orgFormsuccess").css("display", "block");
+                toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                toastr.success('Thank you for contacting us! We will get back to you within 24 hours!');
                 $('form')[0].reset();
               }
 
             }, (response)=>{
-                console.log("failed")
-                $(".orgFormfailed").css("display", "block");
-
-
+                toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                toastr.error('Message Sent Falied! Please Try Again!');
               });
             },
 

@@ -21,12 +21,12 @@
         <input type="text" placeholder="Email" v-model="email">
         <input type="submit" value="Send An Email">
       </form>
-      <div class="orgFormsuccess" style="display: none">
-        <p>Thank you for contacting us! We will get back to you within 24 hours!</p>
-      </div>
-      <div class="orgFormfailed" style="display: none">
-        <p>Message Sent Falied! Please Try Again!</p>
-      </div>
+      <!--<div class="orgFormsuccess" style="display: none">-->
+        <!--<p>Thank you for contacting us! We will get back to you within 24 hours!</p>-->
+      <!--</div>-->
+      <!--<div class="orgFormfailed" style="display: none">-->
+        <!--<p>Message Sent Falied! Please Try Again!</p>-->
+      <!--</div>-->
     </div>
 
     <div id="recent_adopt">
@@ -36,9 +36,7 @@
             <div class="one_d" v-for="dog in dogs" @click="showInfo($index)" @mouseleave="hideInfo($index)">
 
                 <div class="card" :style="{'background':'url(' + dog.pic +')'}">
-                    <!--<div class="card-image">-->
-                       <!--<img :src="dog.pic">-->
-                    <!--</div>-->
+
 
                     <div class="dog_info">
 
@@ -52,13 +50,6 @@
 
 
                     </div>
-                    <!--<div class="card-content">-->
-                        <!--<p>I am a very simple card. I am good at containing small bits of information.-->
-                            <!--I am convenient because I require little markup to use effectively.</p>-->
-                    <!--</div>-->
-                    <!--<div class="card-action">-->
-                        <!--<a href="#">This is a link</a>-->
-                    <!--</div>-->
                 </div>
 
             </div>
