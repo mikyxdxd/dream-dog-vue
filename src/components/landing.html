@@ -1,5 +1,5 @@
 <div id="landing">
-  <div class="section">
+  <div class="section" id="landing_top">
     <div id="hero_container">
       <div id="main_container">
         <div id="container_left">
@@ -10,8 +10,13 @@
           <b class="pur">Dogs aren't just pets, </b><span class="colr">they are family members! The</span> <b class="yel">Dream Dog App </b>
           helps you find the perfect dog to add to your family by appearance, breed, location or shelter!
         </div>
+        <div id="landing_form">
+          <input type="text" id="landing_form_email"><input type="button" value="submit" id="landing_form_sub">
+        </div>
         <div id="download">
-          <div id="cs">Coming Soon On</div>
+          <div id="cs">
+            <img :src="comingSoon" />
+          </div>
           <div class="dow"><img :src="appStore"></div>
           <div class="dow"><img :src="gooStore"></div>
         </div>

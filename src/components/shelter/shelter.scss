@@ -1,16 +1,14 @@
-#toast-container{
-  top: 2% !important;
-}
 .non-res {
   #shelter{
 
     padding: 3vh 0;
     background: white;
     //display: none;
-    height:100vh !important;
+    //height:100vh !important;
     top: 50%;
     position: relative;
-    transform: translateY(-50%);
+    padding-bottom: 0;
+    //transform: translateY(-50%);
     #main_caption{
 
       font-size: 2em;
@@ -19,51 +17,95 @@
       margin-bottom: 0.5em;
     }
     #main_caption_sm{
-
-      font-size: 1.5em;
-      text-align: center;
-      color: #b7b49f;
-      margin-bottom: 0.5em;
+      width: 55%;
+      margin: auto;
+      img{
+        width: 100%;
+      }
     }
-
     #org_contact{
-      form{
-        margin:auto;
-        width: 80%;
-        input[type=text]{
-          display: inline-block;
-          width: 39%;
-          margin-left: 1%;
-          border: 1px solid #b7b49f;
-          border-bottom: 1px solid #b7b49f;
-          border-radius: 7px;
-          padding: 0 5px;
+      -webkit-box-shadow: 0px 0px 71px 3px rgba(168,168,168,0.75);
+      -moz-box-shadow: 0px 0px 71px 3px rgba(168,168,168,0.75);
+      box-shadow: 0px 0px 71px 3px rgba(168,168,168,0.75);
+      width: 70%;
+      margin: auto;
+      padding: 30px;
+      label{
+        display: block;
+        margin-bottom: 5px;
+        color: #66077b;
+        font-weight: 600;
+      }
+      .requied_label{
+        display: inline-block;
+      }
+      input{
+        border: 2px solid #b7b49f;
+        padding: 1px 4px;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      span{
+        color: #00bed6;
+        font-weight: bold;
+        font-size: 26px;
+        display: inline-block;
+      }
+        .form_input{
+          width: 100%;
         }
-        input[type=submit]{
-          background-color: #66077b;
-          margin-left: 1%;
-          width: 15%;
-          height: 5vh;
-          color: white;
-          border-radius: 10px;
-          border: 0px;
+        .col-s6{
+          display: inline-block;
+          width: 49%;
+          white-space: nowrap;
+          //padding: 10px;
+        }
+        .col-s12{
+          display: inline-block;
+          width: 99%;
+          white-space: nowrap;
+          //padding: 10px;
+        }
+        #org{
+          width: 98%;
+          display: block;
+        }
+        #org_name{
+          width: 100%;
+          display: block;
+        }
+        #org_email{
+          width: 98%;
+          display: block;
+        }
+        #org_web{
+          width: 100%;
+          display: block;
+        }
+        .org_phone{
+          width: 33%;
+          display: inline-block;
         }
 
-      }
-      .orgFormfailed, .orgFormsuccess{
-        margin-top: 0 !important;
-        margin: auto;
-        width: 280px;
-        color: #9ec19e;
-        text-align: center;
-        position: relative;
-        top: -10px;
-      }
+        #org_sub{
+          -moz-border-radius:28px;
+          -webkit-border-radius:28px;
+          border-radius:28px;
+          padding: 15px 60px;
+          background-color: #66077b;
+          color: #ffffff;
+          position: relative;
+          position: relative;
+          left: 35%;
+          top: 55px;
+          border: none;
+        }
+
     }
     #shelter_icon{
 
       max-width: 70vw;
-      min-width: 900px;
+      min-width: 1000px;
       margin: auto;
       padding:1em 0em;
       text-align: center;
@@ -72,14 +114,14 @@
       .s_icon{
 
         display: inline-block;
-        width: 19%;
-        margin-left: 0.8%;
+        margin-left: 2%;
+        margin-bottom: 2%;
         //opacity: 0;
         cursor: pointer;
         vertical-align: middle;
         img{
 
-          width:70%;
+          height:100%;
         }
 
         &:nth-child(1){
@@ -110,18 +152,21 @@
       margin-top: 5em;
       background: #fde46b;
       min-height: 30vh;
-      position: absolute;
+      //position: absolute;
       width: 100vw;
+      position: relative;
       bottom: 0;
 
       .container{
+
+        padding: 2em 0em;
         padding-top: 3em;
         width:90%;
         .one_d{
           background-color: transparent;
           display: inline-block;
           width: 24%;
-          height: 250px;
+          height: 300px;
           margin-left: 0.5%;
           vertical-align: top;
           position: relative;
@@ -138,7 +183,7 @@
 
           .dog_info{
 
-            //display: none;
+            display: none;
             position: absolute;
             padding:0.8em;
             left: 0;
@@ -149,19 +194,19 @@
             color: white;
             .name{
 
-              font-size: 1.5em;
+              font-size: 2em;
               padding-bottom: 0.2em;
               font-weight: bold;
 
-          }
-          .addr{
+            }
+            .addr{
 
-            font-size: 0.75em;
-            max-width: 70%;
-            color: #fafafa;
-            margin: 0.2em 0;
+              font-size: 0.75em;
+              max-width: 70%;
+              color: #fafafa;
+              margin: 0.5em 0;
               //font-size: 1.3em;
-              padding-bottom: 0.1em;
+              padding-bottom: 0.2em;
               font-weight: bold;
             }
 
@@ -169,7 +214,7 @@
             .link{
 
               display: inline-block;
-              padding: .2em 1em;
+              padding: .4em 1em;
               border-radius: 10px;
               font-weight: bold;
               border: 0.15em solid;

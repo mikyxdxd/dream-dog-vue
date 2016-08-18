@@ -67,7 +67,6 @@
             return {
               nameOrg: '',
               email: '',
-
               dogs:[
 
                 {
@@ -106,6 +105,7 @@
               ],
 
                 backgroundImage: require('../../resource/adopt_header.png'),
+                formDog: require('../../resource/form_element.png'),
                 shelters: [
                     {
                         hover: false,
@@ -119,13 +119,6 @@
                         bg_h: require('../../resource/Shelters/ADORE_hover_state.png'),
                         a: "https://www.adorehouston.org/"
                     },
-
-//                    {
-//                        hover: false,
-//                        bg: require('../../resource/Shelters/SAH_normal.png'),
-//                        bg_h: require('../../resource/Shelters/SAH_hover_state.png'),
-//                        a: "http://statelineah.com/"
-//                    },
                     {
                       hover: false,
                       bg: require('../../resource/Shelters/HSE_normal.png'),
@@ -140,7 +133,10 @@
                       a: "http://www.bullluvablepaws.com/"
                     },
                     {
-
+                      hover: false,
+                      bg: require('../../resource/Shelters/PP_normal.png'),
+                      bg_h: require('../../resource/Shelters/PP_hover_state.png'),
+                      a:""
                     }
 
 

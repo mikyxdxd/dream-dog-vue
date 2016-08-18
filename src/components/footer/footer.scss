@@ -6,34 +6,38 @@
     width: 100%;
     min-width: 1000px;
 
-    .download{
 
-      position: relative;
-      #cs{
-
-        position: absolute;
-        top: 5px;
-        left: -90%;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        font-size: 1.5em;
-        color: black;
-        padding-top: 0.1em;
-        text-transform: none;
-        border-radius: 5px;
-      }
-    }
 
   }
 
   .left-container {
     display: inline-block;
     padding-left: 10vh;
-    max-width: 250px;
-    max-height: 290px;
-    img {
-      width: 100%;
+
+    #dog-logo{
+      display: inline-block;
+      max-height: 180px;
+      max-width: 180px;
+      img{
+        width: 100%;
+      }
+    }
+
+    .download{
+      margin-left: 20px;
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      top: 40px;
+      .cs{
+        width: 150px;
+        display: block;
+        position: relative;
+        right: -190px;
+      }
+      .store{
+          height: 60px;
+      }
     }
   }
 
@@ -43,8 +47,8 @@
     padding-right: 10vh;
     max-height: 280px;
     float: right;
-    vertical-align: middle;
-    padding-top: 5vh;
+    vertical-align: bottom;
+    padding-top: 12vh;
 
     .store {
       max-width: 120px;
@@ -67,6 +71,10 @@
 
     .social {
       padding-top: 0.9vh;
+      span{
+        vertical-align: top;
+        color: #bcb595;
+      }
     }
     .social-icon {
       max-width: 25px;

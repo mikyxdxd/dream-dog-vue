@@ -288,7 +288,8 @@
                 dreamDogLogo:require('../resource/Dream_dog_logo.png'),
                 appStore:require('../resource/app_store.png'),
                 gooStore:require('../resource/google_play.png'),
-                screenShots:require('../resource/app_mock_up.png')
+                screenShots:require('../resource/app_mock_up.png'),
+                comingSoon: require('../resource/coming_soon.png'),
             }
         },
         components:{
