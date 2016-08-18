@@ -4,10 +4,11 @@
     padding: 3vh 0;
     background: white;
     //display: none;
-    height:100vh !important;
+    //height:100vh !important;
     top: 50%;
     position: relative;
-    transform: translateY(-50%);
+    padding-bottom: 0;
+    //transform: translateY(-50%);
     #main_caption{
 
       font-size: 2em;
@@ -65,8 +66,9 @@
       margin-top: 5em;
       background: #fde46b;
       min-height: 30vh;
-      position: absolute;
+      //position: absolute;
       width: 100vw;
+      position: relative;
       bottom: 0;
 
       .container{

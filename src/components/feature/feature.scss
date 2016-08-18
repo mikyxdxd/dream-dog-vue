@@ -3,20 +3,15 @@
 
 
     padding: 1vh 0;
-    height: 100vh !important;
     background: white;
-    display: none;
-    top: 50%;
-    position: relative;
-    transform: translateY(-50%);
-    background-image: url('../../resource/background_feature.jpg');
+    background-image: url(/static/img/background_feature.e7e9f95.jpg);
 
     #caption {
 
       font-size: 3em;
       text-align: center;
       color: #b7b49f;
-      opacity: 0;
+      //opacity: 0;
     }
 
 
@@ -28,8 +23,9 @@
       margin: auto;
       position: relative;
       top: 50%;
-      transform: translateY(-50%);
+      //transform: translateY(-50%);
       max-width: 1500px;
+      margin-top: 3em;
       min-width: 700px;
       div:nth-child(3){
         position: relative;
@@ -49,7 +45,7 @@
 
         .card-content, .card-image {
           padding: 1em 0;
-          opacity: 0;
+          //opacity: 0;
           img{
             width: 105%;
           }
