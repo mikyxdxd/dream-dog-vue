@@ -31,7 +31,6 @@
           }else {
             $('#app').addClass('non-res');
 
-
             require('./landing.scss');
             require('./footer/footer.scss');
             require('./shelter/shelter.scss');
@@ -40,108 +39,106 @@
             require('./feature/feature.scss');
 
 
-
-
             TweenLite.to($(".main_content"), 1.5, {opacity: 1, top: '0px', ease: 'Power4.easeOut'});
 
-            $('#landing').fullpage(
-              {
-
-
-                onLeave: function (index, nextIndex, direction) {
-                  $('.vNav ul li a').removeClass('active');
-                  $($('.vNav ul li a').get(nextIndex - 1)).addClass('active');
-
-                  switch (direction) {
-
-                    case 'down':
-                      switch (index) {
-                        case 1:
-                          switch (nextIndex) {
-                            case 2:
-                              self.landingPage('out');
-                              self.shelterPage('in');
-                              break;
-                            case 3:
-                              self.landingPage('out');
-                              self.featurePage('in');
-                              break;
-                            case 4:
-                              self.landingPage('out');
-                              self.contactPage('in');
-                              break;
-                          }
-                          break;
-
-                        case 2:
-                          switch (nextIndex) {
-                            case 3:
-                              self.shelterPage('out');
-                              self.featurePage('in');
-                              break;
-                            case 4:
-                              self.shelterPage('out');
-                              self.contactPage('in');
-                              break;
-                          }
-                          break;
-
-                        case 3:
-                          self.contactPage('in');
-                          self.featurePage('out')
-                          break;
-
-
-                      }
-                      break;
-
-                    case 'up':
-                      switch (index) {
-                        case 2:
-                          self.shelterPage('out');
-                          self.landingPage('in');
-                          break;
-
-                        case 3:
-                          switch (nextIndex) {
-                            case 2:
-                              self.featurePage('out');
-                              self.shelterPage('in');
-                              break;
-                            case 1:
-                              self.featurePage('out');
-                              self.landingPage('in');
-                              break;
-                          }
-
-
-                        case 4:
-                          switch (nextIndex) {
-                            case 3:
-                              self.contactPage('out');
-                              self.featurePage('in');
-                              break;
-                            case 2:
-                              self.contactPage('out');
-                              self.shelterPage('in');
-                              break;
-                            case 1:
-                              self.contactPage('out');
-                              self.landingPage('in');
-                              break;
-                          }
-
-                      }
-                      break;
-                  }
-
-
-                },
-                scrollingSpeed: 1000,
-                scrollDelay: 1000,
-                easing: 'easeInOutCubic'
-
-              })
+//            $('#landing').fullpage(
+//              {
+//
+//
+//                onLeave: function (index, nextIndex, direction) {
+//                  $('.vNav ul li a').removeClass('active');
+//                  $($('.vNav ul li a').get(nextIndex - 1)).addClass('active');
+//
+//                  switch (direction) {
+//
+//                    case 'down':
+//                      switch (index) {
+//                        case 1:
+//                          switch (nextIndex) {
+//                            case 2:
+//                              self.landingPage('out');
+//                              self.shelterPage('in');
+//                              break;
+//                            case 3:
+//                              self.landingPage('out');
+//                              self.featurePage('in');
+//                              break;
+//                            case 4:
+//                              self.landingPage('out');
+//                              self.contactPage('in');
+//                              break;
+//                          }
+//                          break;
+//
+//                        case 2:
+//                          switch (nextIndex) {
+//                            case 3:
+//                              self.shelterPage('out');
+//                              self.featurePage('in');
+//                              break;
+//                            case 4:
+//                              self.shelterPage('out');
+//                              self.contactPage('in');
+//                              break;
+//                          }
+//                          break;
+//
+//                        case 3:
+//                          self.contactPage('in');
+//                          self.featurePage('out')
+//                          break;
+//
+//
+//                      }
+//                      break;
+//
+//                    case 'up':
+//                      switch (index) {
+//                        case 2:
+//                          self.shelterPage('out');
+//                          self.landingPage('in');
+//                          break;
+//
+//                        case 3:
+//                          switch (nextIndex) {
+//                            case 2:
+//                              self.featurePage('out');
+//                              self.shelterPage('in');
+//                              break;
+//                            case 1:
+//                              self.featurePage('out');
+//                              self.landingPage('in');
+//                              break;
+//                          }
+//
+//
+//                        case 4:
+//                          switch (nextIndex) {
+//                            case 3:
+//                              self.contactPage('out');
+//                              self.featurePage('in');
+//                              break;
+//                            case 2:
+//                              self.contactPage('out');
+//                              self.shelterPage('in');
+//                              break;
+//                            case 1:
+//                              self.contactPage('out');
+//                              self.landingPage('in');
+//                              break;
+//                          }
+//
+//                      }
+//                      break;
+//                  }
+//
+//
+//                },
+//                scrollingSpeed: 1000,
+//                scrollDelay: 1000,
+//                easing: 'easeInOutCubic'
+//
+//              })
           }
 
         },

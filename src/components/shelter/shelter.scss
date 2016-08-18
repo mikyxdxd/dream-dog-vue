@@ -6,7 +6,7 @@
 
     padding: 3vh 0;
     background: white;
-    display: none;
+    //display: none;
     height:100vh !important;
     top: 50%;
     position: relative;
@@ -74,7 +74,7 @@
         display: inline-block;
         width: 19%;
         margin-left: 0.8%;
-        opacity: 0;
+        //opacity: 0;
         cursor: pointer;
         vertical-align: middle;
         img{
@@ -138,7 +138,7 @@
 
           .dog_info{
 
-            display: none;
+            //display: none;
             position: absolute;
             padding:0.8em;
             left: 0;
