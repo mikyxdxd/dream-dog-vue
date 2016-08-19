@@ -15,6 +15,11 @@ var app = Vue.extend({
     // created:()=>{
     //   window.sr=ScrollReveal();
     // }
+
+  components:{
+
+    wheader:require('./components/header/header.vue')
+  }
 })
 import route from './route'
 route(app);
