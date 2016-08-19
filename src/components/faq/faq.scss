@@ -1,0 +1,50 @@
+ #faq{
+   #faq_top{
+
+     height: 300px;
+     background: #f6fafd;
+     position: relative;
+
+     #caption_content{
+
+       position: relative;
+       text-align: center;
+       top: 50%;
+       font-size: 2.5em;
+       //font-weight: bold;
+       transform: translateY(-50%);
+       #sub{
+         font-size: 0.5em;
+         color:grey;
+         font-weight:100;
+       }
+     }
+   }
+
+   #faq_content{
+
+     display: block;
+     vertical-align: top;
+     padding: 3em 0;
+     .one_faq{
+       display: inline-block;
+       width:48%;
+       margin-left: 2%;
+       vertical-align: top;
+       .caption{
+         font-size: 1.4em;
+         margin-bottom: 1em;
+       }
+       .content{
+         color:grey;
+         font-size: 1.1em;
+       }
+       //div{
+       //  display: block;
+       //  white-space: normal;
+       //}
+     }
+   }
+
+ }
+

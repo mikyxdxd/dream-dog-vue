@@ -16,9 +16,39 @@ var app = Vue.extend({
     //   window.sr=ScrollReveal();
     // }
 
+  ready(){
+
+    if((/Android|iPhone|iPod|iPad|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+
+      $('#app').addClass('res');
+
+
+      require('./components/landing _res.scss');
+      require('./components/footer/footer_res.scss');
+      require('./components/shelter/shelter_res.scss');
+      require('./components/navbar/navbar_res.scss');
+      require('./components/contact/contact_res.scss');
+      require('./components/feature/feature_res.scss');
+
+
+    }else {
+
+      $('#app').addClass('non-res');
+      require('./components/landing.scss');
+      require('./components/footer/footer.scss');
+      require('./components/shelter/shelter.scss');
+      require('./components/navbar/navbar.scss');
+      require('./components/contact/contact.scss');
+      require('./components/feature/feature.scss');
+
+    }
+
+  },
+
   components:{
 
-    wheader:require('./components/header/header.vue')
+    wheader:require('./components/header/header.vue'),
+    wfooter:require('./components/footer/footer.vue')
   }
 })
 import route from './route'

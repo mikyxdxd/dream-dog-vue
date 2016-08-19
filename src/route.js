@@ -14,6 +14,9 @@ export default (App) => {
   router.map({
     '/': {
       component: require('./components/landing.vue')
+    },
+    '/faq':{
+      component: require('./components/faq/faq.vue')
     }
   })
   router.start(App, '#app')

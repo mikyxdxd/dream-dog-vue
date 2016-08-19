@@ -1,0 +1,14 @@
+<div id="faq">
+  <div id="faq_top">
+      <div id="caption_content">Frequently Asked Questions<br><span id="sub">Some common questions we get about Dream Dog</span></div>
+  </div>
+  <div id="faq_content" class="container">
+    <div id="faqs">
+      <div class="one_faq" v-for="faq in faqs">
+        <div class="caption">{{faq.caption}}</div>
+        <div class="content">{{faq.content}}</div>
+      </div>
+    </div>
+  </div>
+  <contact></contact>
+</div>
