@@ -11,13 +11,31 @@
       color: #b7b49f;
     }
 
-    #main_caption_sm{
-
-      font-size: 6vw;
-      text-align: center;
-      color: #b7b49f;
+    #main_caption_sm {
+      width: 55%;
+      margin: auto;
+      img {
+        width: 100%;
+      }
     }
     #org_contact {
+      label{
+        display: block;
+        margin-bottom: 5px;
+        color: #66077b;
+        font-weight: 600;
+        margin-top: 1vh;
+      }
+      .requied_label{
+        display: inline-block;
+      }
+      span{
+        transform: translateY(15%);
+        color: #00bed6;
+        font-weight: bold;
+        font-size: 26px;
+        display: inline-block;
+      }
       form {
         margin: auto;
         width: 80%;
@@ -25,7 +43,7 @@
           display: block;
           width: 89%;
           margin: auto;
-          margin-top: 4vh;
+          margin-top: 1vh;
           border: 1px solid #b7b49f;
           border-bottom: 1px solid #b7b49f;
           border-radius: 7px;
