@@ -24,13 +24,13 @@
       }
     }
     #org_contact{
-      border-radius: 30px;
-      -webkit-box-shadow: 0px 25px 71px 3px rgba(168,168,168,0.75);
-      -moz-box-shadow: 0px 25px 71px 3px rgba(168,168,168,0.75);
-      box-shadow: 0px 25px 71px 3px rgba(168,168,168,0.75);
+      border-radius: 6px;
+      -webkit-box-shadow: 0px 0px 80px 1px rgba(168, 168, 168, 0.75);
+      -moz-box-shadow: 0px 0px 80px 1px rgba(168, 168, 168, 0.75);
+      box-shadow: 0px 0px 80px 1px rgba(168, 168, 168, 0.75);
       width: 70%;
       margin: auto;
-      padding: 30px;
+      padding: 3em 2em;
       label{
         display: block;
         margin-bottom: 5px;
@@ -41,7 +41,7 @@
         display: inline-block;
       }
       input{
-        border: 2px solid #b7b49f;
+        border: 1px solid #b7b49f;
         padding: 1px 4px;
         border-radius: 4px;
         box-sizing: border-box;
@@ -90,16 +90,16 @@
         }
 
         #org_sub{
-          -moz-border-radius:28px;
-          -webkit-border-radius:28px;
-          border-radius:28px;
+          -moz-border-radius: 10px;
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
           padding: 15px 60px;
           background-color: #66077b;
           color: #ffffff;
           position: relative;
-          left: 40%;
-          top: 55px;
-          border: none;
+          display: block;
+          margin: auto;
+          top: 70px;
         }
 
     }
