@@ -153,7 +153,7 @@
 
               $('#contact').delay(300).fadeIn(500,()=>{
 
-                $('.form-wrapper').addClass('animated fadeInDown')
+                $('.form-wrapper').addClass('animated fadeInDown');
                 $('.form-wrapper').css('opacity',1)
 
               });
