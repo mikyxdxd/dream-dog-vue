@@ -24,9 +24,10 @@
       }
     }
     #org_contact{
-      -webkit-box-shadow: 0px 0px 71px 3px rgba(168,168,168,0.75);
-      -moz-box-shadow: 0px 0px 71px 3px rgba(168,168,168,0.75);
-      box-shadow: 0px 0px 71px 3px rgba(168,168,168,0.75);
+      border-radius: 30px;
+      -webkit-box-shadow: 0px 25px 71px 3px rgba(168,168,168,0.75);
+      -moz-box-shadow: 0px 25px 71px 3px rgba(168,168,168,0.75);
+      box-shadow: 0px 25px 71px 3px rgba(168,168,168,0.75);
       width: 70%;
       margin: auto;
       padding: 30px;
@@ -46,6 +47,7 @@
         box-sizing: border-box;
       }
       span{
+        transform: translateY(15%);
         color: #00bed6;
         font-weight: bold;
         font-size: 26px;
@@ -95,8 +97,7 @@
           background-color: #66077b;
           color: #ffffff;
           position: relative;
-          position: relative;
-          left: 35%;
+          left: 40%;
           top: 55px;
           border: none;
         }
@@ -112,16 +113,15 @@
       //-vendor-animation-delay: 2s;
 
       .s_icon{
-
+        max-width: 200px;
+        vertical-align: top;
         display: inline-block;
-        margin-left: 2%;
+        margin-left: 0%;
         margin-bottom: 2%;
         //opacity: 0;
         cursor: pointer;
-        vertical-align: middle;
         img{
-
-          height:100%;
+          width:50%;
         }
 
         &:nth-child(1){
