@@ -2,12 +2,13 @@
     export default {
         template: require('./shelter.html'),
         methods: {
-            submitForm: function(nameOrg, email){
-              nameOrg = nameOrg + "  (from:organization form)";
-              console.log(nameOrg);
+            submitForm: function(){
+              let user = "Org name: " + this.org + " Contact name: " + this.org_name;
+              let message = "phone: " + this.org_phone0 + "-" + this.org_phone1 + "-" + this.org_phone2 + "\nWebsite:" + this.org_web;
               this.$http.post('/email',
-                {user: nameOrg,
-                  email: email,
+                {user: user,
+                  email: this.org_email,
+                  message: message,
                  }).then((response) =>
               {
                 if(response.body.err){
@@ -65,8 +66,13 @@
 
         data: function () {
             return {
-              nameOrg: '',
-              email: '',
+              org: '',
+              org_name:'',
+              org_email: '',
+              org_phone0: '',
+              org_phone1:'',
+              org_phone2:'',
+              org_web:'',
               dogs:[
 
                 {

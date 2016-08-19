@@ -144,6 +144,27 @@
         },
 
         methods:{
+          submitForm: function(landEmail){
+              console.log("LAND", landEmail);
+              this.$http.post('/email',
+                {user: "NONE",
+                  email: landEmail,
+                  message: "from landing page"}).then((response) =>
+              {
+                if(response.body.err){
+              toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+              toastr.error('Message Sent Falied! Please Try Again!');
+              }else{
+              toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+              toastr.success('Thank you for contacting us! We will get back to you within 24 hours!');
+              $('#landing_form_email').val('');
+              }
+
+            }, (response)=>{
+              toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+              toastr.error('Message Sent Falied! Please Try Again!');
+              });
+            },
 
           contactPage(direction){
 
@@ -290,6 +311,7 @@
                 gooStore:require('../resource/google_play.png'),
                 screenShots:require('../resource/app_mock_up.png'),
                 comingSoon: require('../resource/coming_soon.png'),
+                landEmail: ""
             }
         },
         components:{
