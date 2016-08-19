@@ -74,8 +74,10 @@
         white-space: nowrap;
         margin: auto;
         #cs{
-          font-size: 5.4vw;
-          text-align: center;
+          width: 50%;
+          position: relative;
+          right:-100px;
+          top: 10px;
         }
         img {
           width: 100%;
