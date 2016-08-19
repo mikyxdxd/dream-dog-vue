@@ -1,56 +1,56 @@
 <div id="contact">
-    <div class="container">
-        <div class="team-member-wrapper">
-            <img :src="teamMember" />
-            <div id="caption">Contact our team</div>
-        </div>
+    <!--<div class="container">-->
+        <!--<div class="team-member-wrapper">-->
+            <!--<img :src="teamMember" />-->
+            <!--<div id="caption">Contact our team</div>-->
+        <!--</div>-->
 
-        <div class="form-wrapper">
-          <validator name="validation1">
-            <form id="myform" v-on:submit.prevent="submitForm(userName, email, message)" novalidate>
-              <div class="form-input">
-                <div class="col-s6">
-                  <input type="text" id="userName" v-model="userName"  placeholder="Name/Organization" v-validate:userName="{ required: true}">
+        <!--&lt;!&ndash;<div class="form-wrapper">&ndash;&gt;-->
+          <!--&lt;!&ndash;<validator name="validation1">&ndash;&gt;-->
+            <!--&lt;!&ndash;<form id="myform" v-on:submit.prevent="submitForm(userName, email, message)" novalidate>&ndash;&gt;-->
+              <!--&lt;!&ndash;<div class="form-input">&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="col-s6">&ndash;&gt;-->
+                  <!--&lt;!&ndash;<input type="text" id="userName" v-model="userName"  placeholder="Name/Organization" v-validate:userName="{ required: true}">&ndash;&gt;-->
 
-                </div>
-                <div class="col-s6">
-                  <input type="text" id="email"  v-model="email" placeholder="Email" v-validate:email="['email', 'required']">
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="col-s6">&ndash;&gt;-->
+                  <!--&lt;!&ndash;<input type="text" id="email"  v-model="email" placeholder="Email" v-validate:email="['email', 'required']">&ndash;&gt;-->
 
-                </div>
-                <div class="form-input">
-                  <div class="col-s6">
-                    <div v-if="$validation1.username.dirty && $validation1.username.required" class="error">Please enter a user name.</div>
-                  </div>
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="form-input">&ndash;&gt;-->
+                  <!--&lt;!&ndash;<div class="col-s6">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div v-if="$validation1.username.dirty && $validation1.username.required" class="error">Please enter a user name.</div>&ndash;&gt;-->
+                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
 
-                  <div class="col-s6">
-                    <div v-if="$validation1.email.dirty && $validation1.email.email" class="error" id="err-email">Please enter a valid email address.</div>
-                  </div>
-                </div>
-              </div>
+                  <!--&lt;!&ndash;<div class="col-s6">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div v-if="$validation1.email.dirty && $validation1.email.email" class="error" id="err-email">Please enter a valid email address.</div>&ndash;&gt;-->
+                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+              <!--&lt;!&ndash;</div>&ndash;&gt;-->
 
 
 
-              <textarea id="message" rows="6"  v-model="message" placeholder="Your Message" ></textarea>
+              <!--&lt;!&ndash;<textarea id="message" rows="6"  v-model="message" placeholder="Your Message" ></textarea>&ndash;&gt;-->
 
-              <!--<div>-->
-                <!--<div class="errors">-->
-                  <!--<p v-if="$validation1.username.required">required username</p>-->
-                  <!--<p v-if="$validation1.email.email">invalid email address</p>-->
-                  <!--<p v-if="$validation1.email.required">required email address</p>-->
-                  <!--<p v-if="$validation1.message.required">required message</p>-->
-                <!--</div>-->
-              <!--</div>-->
-              <input type="submit" id="submit-but" value="Submit" v-if="$validation1.valid">
-              <div class="success" style="display: none">
-                <p>Message Sent Successfully! Thank You!</p>
-              </div>
-              <div class="failed" style="display: none">
-                <p>Message Sent Falied! Please Try Again!</p>
-              </div>
-            </form>
-          </validator>
+              <!--&lt;!&ndash;&lt;!&ndash;<div>&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;&lt;!&ndash;<div class="errors">&ndash;&gt;&ndash;&gt;-->
+                  <!--&lt;!&ndash;&lt;!&ndash;<p v-if="$validation1.username.required">required username</p>&ndash;&gt;&ndash;&gt;-->
+                  <!--&lt;!&ndash;&lt;!&ndash;<p v-if="$validation1.email.email">invalid email address</p>&ndash;&gt;&ndash;&gt;-->
+                  <!--&lt;!&ndash;&lt;!&ndash;<p v-if="$validation1.email.required">required email address</p>&ndash;&gt;&ndash;&gt;-->
+                  <!--&lt;!&ndash;&lt;!&ndash;<p v-if="$validation1.message.required">required message</p>&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+              <!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+              <!--&lt;!&ndash;<input type="submit" id="submit-but" value="Submit" v-if="$validation1.valid">&ndash;&gt;-->
+              <!--&lt;!&ndash;<div class="success" style="display: none">&ndash;&gt;-->
+                <!--&lt;!&ndash;<p>Message Sent Successfully! Thank You!</p>&ndash;&gt;-->
+              <!--&lt;!&ndash;</div>&ndash;&gt;-->
+              <!--&lt;!&ndash;<div class="failed" style="display: none">&ndash;&gt;-->
+                <!--&lt;!&ndash;<p>Message Sent Falied! Please Try Again!</p>&ndash;&gt;-->
+              <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</form>&ndash;&gt;-->
+          <!--&lt;!&ndash;</validator>&ndash;&gt;-->
 
-        </div>
-    </div>
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
   <w_footer></w_footer>
 </div>
