@@ -121,6 +121,8 @@
 
         }
 
+
+
         .pur {
           color: #6b1198;
         }
@@ -138,6 +140,32 @@
         //    -webkit-filter: hue-rotate(360deg);
         //  }
         //}
+      }
+
+      #landing_form{
+        margin: 0 auto;
+        #landing_form_email{
+          width: 100%;
+          border: 1px solid #b7b49f;
+          box-sizing: border-box;
+          padding-left: 10px;
+          height: 3.2rem;
+          border-radius: 3px;
+        }
+
+        #landing_form_sub{
+          border:none;
+          width: 30%;
+          right: 0;
+          position: absolute;
+          width: 30%;
+          right: 0;
+          background: #66087c;
+          color: white;
+          border-radius: 0px 5px 5px 0px;
+          padding: 15px;
+          text-transform: capitalize;
+        }
       }
 
     }

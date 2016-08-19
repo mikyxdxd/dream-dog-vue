@@ -23,10 +23,6 @@
         },
         methods: {
           submitForm: function(userName, email, message){
-//            console.log("Submit Form from here");
-//            console.log(userName);
-//            console.log(email);
-//            console.log(message);
             $(".success").css("display", "none");
             $(".failed").css("display", "none");
             var config = {

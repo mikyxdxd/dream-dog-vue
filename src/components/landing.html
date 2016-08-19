@@ -11,7 +11,7 @@
           helps you find the perfect dog to add to your family by appearance, breed, location or shelter!
         </div>
         <div id="landing_form">
-          <input type="text" id="landing_form_email" placeholder="Email me when available for download"><input type="button" value="Sign up" id="landing_form_sub" >
+          <input v-model="landEmail" type="text" id="landing_form_email" placeholder="Email me when available for download"><input type="button" value="Sign up" id="landing_form_sub" @click="submitForm(landEmail)">
         </div>
         <div id="download">
           <div id="cs">
