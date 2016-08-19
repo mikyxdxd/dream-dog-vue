@@ -14,6 +14,50 @@
         </div>
         <!--<div class="s_icon"></div>-->
     </div>
+    <div id="main_caption_sm">
+      <img :src="formDog" />
+    </div>
+    <div id="org_contact">
+      <form v-on:submit.prevent="submitForm(nameOrg, email)">
+        <div class="form_input">
+          <span>*</span><label class="requied_label">REQUIRED</label>
+          <label style="font-weight: 500">There are no fees associated with Dream Dog</label>
+          <div class="col-s6">
+            <label for="org" class="requied_label">Organization/Shelter Name</label><span>*</span>
+            <input type="text" placeholder="Hi!" v-model="nameOrg" id="org">
+          </div>
+          <div class="col-s6">
+            <label for="org_name" class="requied_label">Contact Name</label><span>*</span>
+            <input type="text" placeholder="Nice to meet you" id="org_name">
+          </div>
+
+        </div>
+
+        <div class="form_input">
+          <div class="col-s6">
+            <label for="org_email" class="requied_label">Email</label><span>*</span>
+            <input type="text" placeholder="How can we contact you?" id="org_email">
+          </div>
+          <div class="col-s6">
+            <label for="org_phone0">Phone Number</label>
+            <input type="text" placeholder="xxx" class="org_phone" id="org_phone0">
+            <input type="text" placeholder="xxx" class="org_phone" id="org_phone2">
+            <input type="text" placeholder="xxxx" class="org_phone" id="org_phone1">
+          </div>
+
+        </div>
+
+        <div class="form_input">
+          <div class="col-s12">
+            <label for="org_web">Website</label>
+            <input type="text" placeholder="Have a website? We would love to check it out!" id="org_web">
+          </div>
+
+        </div>
+
+        <input type="submit" value="Send Us An Email" id="org_sub">
+      </form>
+    </div>
 
     <div id="recent_adopt">
         <div id="caption">View our Adorable <b>Adoptable Dogs</b> Now!</div>
@@ -22,9 +66,7 @@
             <div class="one_d" v-for="dog in dogs" @click="showInfo($index)" @mouseleave="hideInfo($index)">
 
                 <div class="card" :style="{'background':'url(' + dog.pic +')'}">
-                    <!--<div class="card-image">-->
-                       <!--<img :src="dog.pic">-->
-                    <!--</div>-->
+
 
                     <div class="dog_info">
 
@@ -38,13 +80,6 @@
 
 
                     </div>
-                    <!--<div class="card-content">-->
-                        <!--<p>I am a very simple card. I am good at containing small bits of information.-->
-                            <!--I am convenient because I require little markup to use effectively.</p>-->
-                    <!--</div>-->
-                    <!--<div class="card-action">-->
-                        <!--<a href="#">This is a link</a>-->
-                    <!--</div>-->
                 </div>
 
             </div>

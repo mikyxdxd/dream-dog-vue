@@ -1,22 +1,26 @@
 <div id="footer">
     <div class="footer-container">
         <div class="left-container">
+          <div id="dog-logo">
             <img :src="footerimg"/>
+          </div>
+
+            <div class="download">
+              <img class="cs" :src="comingSoon"/>
+              <img class="store" :src="appleStore"/>
+              <img class="store" :src="gooogleStore"/>
+            </div>
         </div>
+
 
         <div class="right-container">
             <div class="email">
                 <img class="email-icon" :src="emailicon"/>
-                <a href="mailto:laura@dreamdogapp.com?Subject=Dream%Dog" target="_top">laura@dreamdogapp.com</a>
+                <a href="mailto:laura@dreamdogapp.com?Subject=Dream%Dog" target="_top">contact@dreamdogapp.com</a>
             </div>
-            <div class="download">
-                <div id="cs">
-                    Coming Soon On
-                </div>
-                <img class="store" :src="appleStore"/>
-                <img class="store" :src="gooogleStore"/>
-            </div>
+
             <div class="social">
+                <span>Copyright@2016 Pantoscope Media Inc. </span>
                 <a href="https://twitter.com/DreamDogApp" target="_blank"><img class="social-icon" :src="twit" /></a>
                 <a href="https://www.facebook.com/dreamdogapp/" target="_blank"><img class="social-icon" :src="fb" /></a>
                 <a href="https://www.instagram.com/dreamdogapp/" target="_blank"><img class="social-icon" :src="ins" /></a>

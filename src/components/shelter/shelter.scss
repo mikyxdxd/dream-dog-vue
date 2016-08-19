@@ -16,26 +16,112 @@
       color: #b7b49f;
       margin-bottom: 0.5em;
     }
+    #main_caption_sm{
+      width: 55%;
+      margin: auto;
+      img{
+        width: 100%;
+      }
+    }
+    #org_contact{
+      border-radius: 30px;
+      -webkit-box-shadow: 0px 25px 71px 3px rgba(168,168,168,0.75);
+      -moz-box-shadow: 0px 25px 71px 3px rgba(168,168,168,0.75);
+      box-shadow: 0px 25px 71px 3px rgba(168,168,168,0.75);
+      width: 70%;
+      margin: auto;
+      padding: 30px;
+      label{
+        display: block;
+        margin-bottom: 5px;
+        color: #66077b;
+        font-weight: 600;
+      }
+      .requied_label{
+        display: inline-block;
+      }
+      input{
+        border: 2px solid #b7b49f;
+        padding: 1px 4px;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      span{
+        transform: translateY(15%);
+        color: #00bed6;
+        font-weight: bold;
+        font-size: 26px;
+        display: inline-block;
+      }
+        .form_input{
+          width: 100%;
+        }
+        .col-s6{
+          display: inline-block;
+          width: 49%;
+          white-space: nowrap;
+          //padding: 10px;
+        }
+        .col-s12{
+          display: inline-block;
+          width: 99%;
+          white-space: nowrap;
+          //padding: 10px;
+        }
+        #org{
+          width: 98%;
+          display: block;
+        }
+        #org_name{
+          width: 100%;
+          display: block;
+        }
+        #org_email{
+          width: 98%;
+          display: block;
+        }
+        #org_web{
+          width: 100%;
+          display: block;
+        }
+        .org_phone{
+          width: 33%;
+          display: inline-block;
+        }
+
+        #org_sub{
+          -moz-border-radius:28px;
+          -webkit-border-radius:28px;
+          border-radius:28px;
+          padding: 15px 60px;
+          background-color: #66077b;
+          color: #ffffff;
+          position: relative;
+          left: 40%;
+          top: 55px;
+          border: none;
+        }
+
+    }
     #shelter_icon{
 
       max-width: 70vw;
-      min-width: 900px;
+      min-width: 1000px;
       margin: auto;
       padding:1em 0em;
       text-align: center;
       //-vendor-animation-delay: 2s;
 
       .s_icon{
-
+        max-width: 200px;
+        vertical-align: top;
         display: inline-block;
-        width: 19%;
-        margin-left: 0.8%;
+        margin-left: 0%;
+        margin-bottom: 2%;
         //opacity: 0;
         cursor: pointer;
-        vertical-align: middle;
         img{
-
-          width:100%;
+          width:50%;
         }
 
         &:nth-child(1){
@@ -112,13 +198,13 @@
               padding-bottom: 0.2em;
               font-weight: bold;
 
-          }
-          .addr{
+            }
+            .addr{
 
-            font-size: 0.75em;
-            max-width: 70%;
-            color: #fafafa;
-            margin: 0.5em 0;
+              font-size: 0.75em;
+              max-width: 70%;
+              color: #fafafa;
+              margin: 0.5em 0;
               //font-size: 1.3em;
               padding-bottom: 0.2em;
               font-weight: bold;

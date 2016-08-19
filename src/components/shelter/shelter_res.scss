@@ -10,6 +10,41 @@
       text-align: center;
       color: #b7b49f;
     }
+
+    #main_caption_sm{
+
+      font-size: 6vw;
+      text-align: center;
+      color: #b7b49f;
+    }
+    #org_contact {
+      form {
+        margin: auto;
+        width: 80%;
+        input[type=text] {
+          display: block;
+          width: 89%;
+          margin: auto;
+          margin-top: 4vh;
+          border: 1px solid #b7b49f;
+          border-bottom: 1px solid #b7b49f;
+          border-radius: 7px;
+          padding: 0 5px;
+        }
+        input[type=submit] {
+          display:block;
+          margin: auto;
+          margin-top: 3vh;
+          margin-bottom: 3vh;
+          background-color: #66077b;
+          width: 50%;
+          height: 5vh;
+          color: white;
+          border-radius: 10px;
+          border: 0px;
+        }
+      }
+    }
     #shelter_icon {
 
       margin: auto;

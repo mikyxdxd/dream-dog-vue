@@ -14,6 +14,7 @@
             fb: require('../../resource/facebook.png'),
             ins: require('../../resource/instagram.png'),
             twit:require('../../resource/twitter.png'),
+            comingSoon: require('../../resource/coming_soon.png')
         }
       }
     }

@@ -7,10 +7,10 @@
     background-image: url(/static/img/background_feature.e7e9f95.jpg);
 
     #caption {
-
-      font-size: 3em;
+      padding-top: 1em;
+      font-size: 2.5em;
       text-align: center;
-      color: #b7b49f;
+      color: #1d0729;
       //opacity: 0;
     }
 
@@ -44,11 +44,14 @@
 
 
         .card-content, .card-image {
-          padding: 1em 0;
           //opacity: 0;
           img{
             width: 105%;
           }
+        }
+        .card-content{
+          position: relative;
+          top: -20px;
         }
 
         .caption {
@@ -92,7 +95,7 @@
     }
     #mockup_container > div:nth-child(3) > div.card-content{
       position:relative;
-      top: 25px;
+      top: 5px;
     }
 
   }

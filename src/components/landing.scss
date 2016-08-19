@@ -4,7 +4,7 @@
     #landing_top{
 
       height:100vh;
-      background: #fafafa;
+      background: #fcfcfa;
     }
 
     .active {
@@ -78,15 +78,37 @@
         }
       }
 
+      #landing_form{
+        max-width: 500px;
+        margin: 1em auto 0 auto;
+        input{
+          display: inline-block;
+        }
+        #landing_form_email{
+          width: 63%;
+          border: 2px solid #b7b49f;
+          padding: 0 10px;
+        }
+        #landing_form_sub{
+          width: 30%;
+          background-color: #6b1198;
+          color:white;
+          padding: 15px 0;
+          border:  none;
+          border-radius: 4px;
+        }
+      }
+
       #download {
         max-width: 350px;
         white-space: nowrap;
         margin: auto;
-        margin-top: 1em;
         #cs{
-          font-size: 1.5em;
-          color: black;
-          border-radius: 5px;
+          width: 150px;
+          display: block;
+          position: relative;
+          right: -230px;
+          top: 22px;
         }
         img {
           width: 100%;

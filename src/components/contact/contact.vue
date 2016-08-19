@@ -40,7 +40,7 @@
             this.$http.post('/email',
               {user: userName,
                 email: email,
-                message, message}).then((response) =>
+                message: message}).then((response) =>
             {
               if(response.body.err){
                 //console.log("SENT FAILED");
@@ -51,8 +51,7 @@
                 //console.log("SENT SUCCESS");
                 //console.log(response);
                 $(".success").css("display", "block");
-
-                sr.reveal('.success', config, 100);
+                $('#myform')[0].reset();
                 //alert("Message Sent! Thank You!")
               }
 
