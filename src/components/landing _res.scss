@@ -144,14 +144,17 @@
       }
 
       #landing_form{
+        position: relative;
+        width: 80%;
         margin: 0 auto;
         #landing_form_email{
-          width: 100%;
+          width: 80vw;
           border: 1px solid #b7b49f;
           box-sizing: border-box;
           padding-left: 10px;
           height: 3.2rem;
           border-radius: 3px;
+          font-size: 0.8em;
         }
 
         #landing_form_sub{
