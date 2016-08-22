@@ -1,5 +1,4 @@
 <script>
-  require('./faq.scss')
   export default{
     methods: {
 

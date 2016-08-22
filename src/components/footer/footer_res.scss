@@ -1,21 +1,40 @@
 .res {
   #footer {
-    padding-top: 5vh;
     width: 100%;
+    height: 130px;
   }
 
   .left-container {
-    display: inline-block;
-    width: 30%;
+    display: block;
     padding: 0;
-    img {
-      width: 100%;
+    #dog-logo{
+      display: inline-block;
+      max-width: 30%;
+      img{
+        width: 100%;
+      }
+    }
+
+    .download{
+      float: right;
+      display: inline-block;
+      max-width: 60%;
+      .cs{
+        float:right;
+        width: 70%;
+        position: relative;
+        right: 10px;
+      }
+      .store{
+        float: right;
+        width: 40%;
+      }
     }
   }
 
   .right-container {
-    display: inline-block;
-    width: 68%;
+    margin: -35px -1vw;
+    width: 100%;
     text-align: right;
     vertical-align: sub;
 
@@ -23,18 +42,9 @@
 
       font-size: 4vw;
       text-align: right;
-      padding-bottom: .9vh;
       padding-right: .6vh;
     }
-
-    .store {
-      //max-width: 120px;
-      //max-height: 90px;
-      display: inline-block;
-      width: 40%;
-    }
     .email {
-      padding-bottom: 0.9vh;
       padding-right: 0.6vh;
 
       .email-icon {
@@ -49,7 +59,11 @@
     }
 
     .social {
-      padding-top: 0.9vh;
+      padding: 0.9 0vh;
+      span{
+        color: #bcb595;
+        vertical-align: top;
+      }
     }
     .social-icon {
       max-width: 20px;

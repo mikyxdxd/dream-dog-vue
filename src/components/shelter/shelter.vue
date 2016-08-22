@@ -142,7 +142,7 @@
                       hover: false,
                       bg: require('../../resource/Shelters/PP_normal.png'),
                       bg_h: require('../../resource/Shelters/PP_hover_state.png'),
-                      a:""
+                      a:"http://www.positivepawsrescue.com/"
                     }
 
 

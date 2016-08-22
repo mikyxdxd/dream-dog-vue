@@ -12,7 +12,7 @@
     }
 
     #main_caption_sm {
-      width: 55%;
+      width: 85%;
       margin: auto;
       img {
         width: 100%;
@@ -35,6 +35,7 @@
         font-weight: bold;
         font-size: 26px;
         display: inline-block;
+        line-height: 1em;
       }
       form {
         margin: auto;
@@ -206,6 +207,14 @@
       }
     }
     //min-height:80vh;
+  }
+
+  @media only screen and (max-width: 700px) { //for nexus 6p 5x iphone 6+
+    #recent_adopt #caption {
+      min-width: 500px !important;
+      padding-left: 7% !important;
+      font-size: 1.5em !important;
+    }
   }
 
   @media only screen and (max-width: 440px) { //for nexus 6p 5x iphone 6+

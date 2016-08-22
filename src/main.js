@@ -22,24 +22,27 @@ var app = Vue.extend({
 
       $('#app').addClass('res');
 
-
+      require('./components/header/header_res.scss');
       require('./components/landing _res.scss');
       require('./components/footer/footer_res.scss');
       require('./components/shelter/shelter_res.scss');
       require('./components/navbar/navbar_res.scss');
       require('./components/contact/contact_res.scss');
       require('./components/feature/feature_res.scss');
+      require('./components/faq/faq_res.scss');
 
 
     }else {
 
       $('#app').addClass('non-res');
+      require('./components/header/header.scss');
       require('./components/landing.scss');
       require('./components/footer/footer.scss');
       require('./components/shelter/shelter.scss');
       require('./components/navbar/navbar.scss');
       require('./components/contact/contact.scss');
       require('./components/feature/feature.scss');
+      require('./components/faq/faq.scss');
 
     }
 
