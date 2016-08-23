@@ -3,8 +3,8 @@
     methods: {
     },
     ready(){
-     // $('.content').eq(3).html($('.content').eq(3).html().replace(/\b(here)\b/gi, "<a href='/'>here</a>"));
-     // $('.content').eq(4).html($('.content').eq(4).html().replace(/\b(here)\b/gi, "<a href='/'>here</a>"));
+      $('.content').eq(3).html($('.content').eq(3).html().replace(/\b(here)\b/gi, "<a href=#/form>here</a>"));
+      $('.content').eq(4).html($('.content').eq(4).html().replace(/\b(here)\b/gi, "<a href=#/form>here</a>"));
     },
     template:require('./faq.html'),
     components:{

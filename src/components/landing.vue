@@ -5,6 +5,11 @@
         template: require('./landing.html'),
         ready(){
 
+          if(this.$route.path == '/form'){
+
+            $("html, body").animate({ scrollTop: $('#main_caption_sm').position().top + window.innerHeight - 10}, 600);
+          }
+
         },
 
         methods:{

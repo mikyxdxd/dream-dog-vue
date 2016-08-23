@@ -15,6 +15,9 @@ export default (App) => {
     '/': {
       component: require('./components/landing.vue')
     },
+    '/form':{
+      component: require('./components/landing.vue')
+    },
     '/faq':{
       component: require('./components/faq/faq.vue')
     },
