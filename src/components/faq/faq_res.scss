@@ -1,4 +1,4 @@
-.res{
+.res {
   #faq {
     #faq_top {
 
@@ -26,22 +26,17 @@
 
       display: block;
       vertical-align: top;
-      padding: 1em 0;
+      padding: 3em 0;
       .one_faq {
         display: inline-block;
-        width: 98%;
+        width: 95%;
+        margin: auto;
         vertical-align: top;
-        padding: 1em 0;
         .caption {
-          text-align: center;
-          display: block;
           font-size: 1.4em;
           margin-bottom: 1em;
-          width: 90%;
-          margin: auto;
         }
         .content {
-          text-align: center;
           color: grey;
           font-size: 1.1em;
         }

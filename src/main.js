@@ -20,7 +20,7 @@ var app = Vue.extend({
 
     if((/Android|iPhone|iPod|iPad|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
 
-      $('#app').addClass('res');
+      $('body').addClass('res');
 
       require('./components/header/header_res.scss');
       require('./components/landing _res.scss');
@@ -34,7 +34,7 @@ var app = Vue.extend({
 
     }else {
 
-      $('#app').addClass('non-res');
+      $('body').addClass('non-res');
       require('./components/header/header.scss');
       require('./components/landing.scss');
       require('./components/footer/footer.scss');

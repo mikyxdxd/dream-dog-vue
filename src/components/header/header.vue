@@ -1,4 +1,6 @@
 <script>
+  require('./header.scss')
+  require('./header_res.scss')
   export default{
     methods: {
 

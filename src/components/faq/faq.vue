@@ -1,4 +1,6 @@
 <script>
+  require('./faq.scss')
+  require('./faq_res.scss')
   export default{
     methods: {
 
@@ -45,13 +47,12 @@ We have designed this app simply in the hope that it can help these dogs find th
         },{
 
           caption:`How do I sign up my shelter/rescue group?`,
-          content:`Easy! Simply fill out the shelter/rescue group affiliation form here, and we will send you an email confirming your information within 24 hours!`
-
+          content:`Easy! Simply fill out the shelter/rescue group affiliation form <a v-link="{path:'/'}">here</a>, and we will send you an email confirming your information within 24 hours!`,
+          link:'/123'
         },{
 
           caption:`Can I use Dream Dog just to look at dogs?`,
           content:`Of course! Dream Dog was designed to help you match the image of your dream dog to a real life dog up for adoption. Whether you want to find your ideal adoptable pup, or just to check out some cute dogs, Dream Dog is waiting for you.`
-
         },{
 
           caption:`Do you have an app for cats or other animals?`,

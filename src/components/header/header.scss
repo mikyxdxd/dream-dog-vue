@@ -1,4 +1,4 @@
-.non-res {
+.non-res{
   #header {
     position: fixed;
     top: 0;
@@ -30,7 +30,22 @@
         }
       }
     }
+    }
+
+    #header_content {
+
+      padding-left: 200px;
+      line-height: 1.9em;
+      text-align: right;
+      padding-right: 50px;
+      a{
+        //color:grey;
+        &:hover {
+          color: #0a85c1;
+          cursor: pointer;
+        }
+      }
+    }
 
   }
-}
 
