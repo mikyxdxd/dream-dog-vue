@@ -1,18 +1,17 @@
 .res {
   #feature {
-    height: 570vh;
-    padding: 3vh 0;
+    //height: 570vh;
+    padding: 1vh 0;
+    margin-bottom: 3em;
     //height:100vh !important;
     background: white;
     background-image: url('../../resource/background_feature.jpg');
 
     #caption {
 
-      font-size: 7vw;
+      font-size: 2em;
       text-align: center;
       color: #b7b49f;
-      //opacity: 0;
-      //animation-\
 
     }
 
@@ -40,12 +39,12 @@
 
         .card-image{
           position: relative;
-          top: -80px;
+          margin-top: -50px;
         }
 
         .card-content{
           position: relative;
-          top:-180px;
+          margin-top: -60px;
         }
 
         .caption {
@@ -71,7 +70,13 @@
 
     }
     #mockup_container > div:nth-child(3) > div.card-content{
-      top: -100px !important;
+      top: 0px;
+      margin-top: 0;
+    }
+
+    #mockup_container > div:nth-child(3) >div.card-image{
+
+      margin-top:0px !important;
     }
 
   }

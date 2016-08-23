@@ -75,8 +75,8 @@
         #cs{
           width: 50%;
           position: relative;
-          right:-100px;
-          top: 10px;
+          top: 5px;
+          margin: auto;
         }
         img {
           width: 100%;
@@ -147,6 +147,9 @@
         position: relative;
         width: 80%;
         margin: 0 auto;
+        height: 3.2rem;
+        overflow: hidden;
+        margin-bottom: 2em;
         #landing_form_email{
           width: 80vw;
           border: 1px solid #b7b49f;

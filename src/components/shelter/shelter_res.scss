@@ -6,7 +6,7 @@
     background: white;
     #main_caption {
 
-      font-size: 7vw;
+      font-size: 2em;
       text-align: center;
       color: #b7b49f;
     }
@@ -62,6 +62,7 @@
           color: white;
           border-radius: 10px;
           border: 0px;
+          font-size: 4vw;
         }
       }
     }
@@ -119,6 +120,7 @@
             margin: 0;
             background: transparent;
             background-size: cover !important;
+            
           }
 
           .dog_info{

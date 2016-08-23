@@ -11,10 +11,10 @@
     //transform: translateY(-50%);
     #main_caption{
 
-      font-size: 2em;
+      font-size: 3em;
       text-align: center;
-      color: #1d0729;
-      margin-bottom: 0.5em;
+      color: #cd983a;
+      margin-bottom: 1.5em;
     }
     #main_caption_sm{
       width: 55%;
@@ -52,6 +52,7 @@
         font-weight: bold;
         font-size: 26px;
         display: inline-block;
+
       }
         .form_input{
           width: 100%;
@@ -152,7 +153,7 @@
     #recent_adopt{
 
       margin-top: 5em;
-      background: #fde46b;
+      //background: #fde46b;
       min-height: 30vh;
       //position: absolute;
       width: 100vw;
@@ -163,17 +164,20 @@
 
         padding: 2em 0em;
         padding-top: 3em;
-        width:90%;
+        width: 100%;
+        max-width: inherit;
         .one_d{
+          margin-top:1em;
           background-color: transparent;
           display: inline-block;
-          width: 24%;
+          width: 22%;
           height: 300px;
-          margin-left: 0.5%;
+          margin-left: 2.5%;
           vertical-align: top;
           position: relative;
           text-align: left;
           cursor: pointer;
+
 
           .card{
             position: relative;
@@ -181,6 +185,8 @@
             margin: 0;
             background: transparent;
             background-size: cover !important;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 1px #909090;
           }
 
           .dog_info{
