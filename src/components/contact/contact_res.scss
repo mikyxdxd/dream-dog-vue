@@ -22,23 +22,28 @@
       margin: auto;
       max-width: 560px;
       text-align: center;
-
-      img {
-
-        max-width: 200px;
-        display: block;
-        margin: auto;
-      }
     }
 
     #caption {
-      line-height: 72px;
-      font-size: 2em;
+      line-height: 30px;
+      font-size: 1.5em;
       font-weight: 300;
       color: #124b62;
-      border-bottom: 1px solid rgba(18, 75, 98, 0.17);
       margin: auto;
       display: inline-block;
+    }
+
+    .email{
+      margin: 1em 0;
+      height: 18px;
+      img{
+        height: 100%;
+      }
+      a{
+        color:#5a096f;
+        font-weight: 600;
+      }
+
     }
 
     .form-wrapper {
@@ -48,6 +53,14 @@
       margin-left: auto;
       margin-right: auto;
       //opacity: 0;
+
+      #form_caption{
+        font-size:  1.4em;
+        text-align: center;
+        width: 60%;
+        margin: 0.5em auto;
+        color: #5a096f;
+      }
 
       input {
 

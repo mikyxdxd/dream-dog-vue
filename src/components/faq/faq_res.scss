@@ -3,11 +3,12 @@
     #faq_top {
 
       height: 300px;
-      background: #f6fafd;
+      background: #fcfcfa;
       position: relative;
 
       #caption_content {
-
+        line-height: 40px;
+        color: #5a096f;
         position: relative;
         text-align: center;
         top: 50%;
@@ -15,8 +16,8 @@
         //font-weight: bold;
         transform: translateY(-50%);
         #sub {
-          font-size: 0.5em;
-          color: grey;
+          font-size: 0.4em;
+          color: #5a096f;
           font-weight: 100;
         }
       }
@@ -42,7 +43,7 @@
         }
         .content {
           text-align: center;
-          color: grey;
+          color: #5a096f;
           font-size: 1.1em;
         }
         //div{

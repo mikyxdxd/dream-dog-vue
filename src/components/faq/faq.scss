@@ -3,11 +3,13 @@
     #faq_top {
 
       height: 300px;
-      background: #f6fafd;
+      background: #fcfcfa;
       position: relative;
+      border-bottom: 1px solid #b7b49f;;
 
       #caption_content {
-
+        color: #5a096f;
+        font-weight: 500;
         position: relative;
         text-align: center;
         top: 50%;
@@ -15,8 +17,8 @@
         //font-weight: bold;
         transform: translateY(-50%);
         #sub {
+          color: #5a096f;
           font-size: 0.5em;
-          color: grey;
           font-weight: 100;
         }
       }
@@ -30,14 +32,16 @@
       .one_faq {
         display: inline-block;
         width: 48%;
+        margin-top: 2%;
         margin-left: 2%;
         vertical-align: top;
         .caption {
+          color: #5a096f;
           font-size: 1.4em;
           margin-bottom: 1em;
         }
         .content {
-          color: grey;
+          color: #5a096f;
           font-size: 1.1em;
         }
         //div{

@@ -1,4 +1,4 @@
-
+.non-res {
   #contact {
     //border-bottom: 1px solid rgba(0, 0, 0, .07);
     //display: none;
@@ -25,22 +25,26 @@
       max-width: 560px;
       text-align: center;
 
-      img {
-
-        max-width: 200px;
-        display: block;
-        margin: auto;
-      }
     }
 
     #caption {
-      line-height: 72px;
-      font-size: 2em;
+      line-height: 50px;
+      font-size: 1.7em;
       font-weight: 300;
-      color:  #1d0729;
-      border-bottom: 1px solid rgba(18, 75, 98, 0.17);
+      color: #1d0729;
       margin: auto;
       display: inline-block;
+    }
+
+    .email {
+      height: 18px;
+      img {
+        height: 100%;
+      }
+      a {
+        color: #5a096f;
+        font-weight: 600;
+      }
     }
 
     .form-wrapper {
@@ -49,10 +53,17 @@
       margin-left: auto;
       margin-right: auto;
       //opacity: 0;
-      .form_input{
+      #form_caption{
+        font-size:  1.4em;
+        text-align: center;
+        width: 60%;
+        margin: 1em auto;
+        color: #5a096f;
+      }
+      .form_input {
         width: 100%;
       }
-      .col-s6{
+      .col-s6 {
         display: inline-block;
         width: 49%;
         white-space: nowrap;
@@ -67,11 +78,11 @@
         font-size: 1em;
       }
 
-      #email{
+      #email {
         margin-left: 3%;
       }
 
-      #err-email{
+      #err-email {
         margin-left: 3%;
       }
     }
@@ -143,3 +154,4 @@
     }
 
   }
+}

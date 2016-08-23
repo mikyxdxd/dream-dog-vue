@@ -16,18 +16,18 @@
                     {
                       img: require('../../resource/mock_up_features_discover_breeds.png'),
                       caption: 'discover breeds',
-                      detail: 'Learn about all your favourite breeds'
+                      detail: 'Learn about all your favourite breeds.'
                     },
 
                     {
                         img: require('../../resource/mock_up_features_personal_feed.png'),
                         caption: 'personal feed',
-                        detail: 'Save all your favourite breeds to quickly see when one of your dream dogs appear on the app!'
+                        detail: 'Save all your favourite breeds to quickly see when one of your dream dogs appear within the app!'
                     },
                     {
                         img: require('../../resource/mock_up_features_similar_image.png'),
                         caption: 'similar image search',
-                        detail: 'Have a dog in mind? Now find all dogs that look similar to your ideal pup'
+                        detail: 'Have a dog in mind? Find all dogs that look similar to your ideal pup.'
                     },
                     {
                       img: require('../../resource/mock_up_features_search_breed.png'),

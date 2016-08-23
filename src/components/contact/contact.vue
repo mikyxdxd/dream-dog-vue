@@ -7,7 +7,7 @@
                 userName: '',
                 email: '',
                 message:'',
-                teamMember: require('../../resource/team_members.png')
+                emailicon: require('../../resource/email_icon.png'),
             }
         },
         components:{

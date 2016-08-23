@@ -17,7 +17,7 @@ export default (App) => {
     },
     '/faq':{
       component: require('./components/faq/faq.vue')
-    }
+    },
   })
   router.start(App, '#app')
 }
