@@ -180,7 +180,6 @@
                 gooStore:require('../resource/google_play.png'),
                 screenShots:require('../resource/app_mock_up.png'),
                 comingSoon: require('../resource/coming_soon.png'),
-                landEmail: ""
             }
         },
         components:{
@@ -188,7 +187,7 @@
             feature:require('./feature/feature.vue'),
             contact:require('./contact/contact.vue'),
             foot:require('./footer/footer.vue'),
-            navbar:require('./navbar/navbar')
+            navbar:require('./navbar/navbar'),
         }
     }
 </script>

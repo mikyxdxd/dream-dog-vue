@@ -6,7 +6,7 @@
     template:require('./header.html'),
     data(){
       return {
-
+        logo: require('../../resource/Profile.jpg')
       }
     }
   }
