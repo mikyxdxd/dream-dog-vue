@@ -19,8 +19,8 @@
       '$route.path': {
         handler: function (val, oldVal) {
 
-          if(val == '/') this.currPage = 'home'
-          else this.currPage  = 'help'
+          if(val == '/faq') this.currPage = 'help'
+          else this.currPage  = 'home'
 
         },
         deep: true
