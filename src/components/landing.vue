@@ -7,7 +7,7 @@
 
           if(this.$route.path == '/form'){
 
-            $("html, body").animate({ scrollTop: $('#main_caption_sm').position().top + window.innerHeight - 10}, 600);
+            $("html, body").animate({ scrollTop: $('#shelter').position().top + $('#shelter_icon').height() + 100}, 600);
           }
 
         },
