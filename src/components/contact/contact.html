@@ -14,11 +14,13 @@
             <form id="myform" v-on:submit.prevent="submitForm(userName, email, message)" novalidate>
               <div class="form-input">
                 <div class="col-s6">
-                  <input type="text" id="userName" v-model="userName"  placeholder="Name/Organization" v-validate:userName="{ required: true}">
-
+                  <label id="lab_name">Contact name</label>
+                  <input type="text" id="userName" v-model="userName"  placeholder="Nice to meet you!" v-validate:userName="{ required: true}">
                 </div>
+
                 <div class="col-s6">
-                  <input type="text" id="email"  v-model="email" placeholder="Email" v-validate:email="['email', 'required']">
+                  <label id="lab_email">Email</label>
+                  <input type="text" id="email"  v-model="email" placeholder="How can we contact you?" v-validate:email="['email', 'required']">
 
                 </div>
                 <div class="form-input">
@@ -34,7 +36,7 @@
 
 
 
-              <textarea id="message" rows="6"  v-model="message" placeholder="Your Message" ></textarea>
+              <textarea id="message" rows="6"  v-model="message" placeholder="Let us know what you think" ></textarea>
 
               <!--<div>-->
                 <!--<div class="errors">-->

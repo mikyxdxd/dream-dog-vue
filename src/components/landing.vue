@@ -18,7 +18,8 @@
               this.$http.post('/email',
                 {user: "NONE",
                   email: landEmail,
-                  message: "from landing page"}).then((response) =>
+                  message: "from landing page",
+                  option: "SAVE_EMAIL"}).then((response) =>
               {
                 if(response.body.err){
               toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
@@ -180,7 +181,6 @@
                 gooStore:require('../resource/google_play.png'),
                 screenShots:require('../resource/app_mock_up.png'),
                 comingSoon: require('../resource/coming_soon.png'),
-                landEmail: ""
             }
         },
         components:{
@@ -188,7 +188,7 @@
             feature:require('./feature/feature.vue'),
             contact:require('./contact/contact.vue'),
             foot:require('./footer/footer.vue'),
-            navbar:require('./navbar/navbar')
+            navbar:require('./navbar/navbar'),
         }
     }
 </script>

@@ -1,8 +1,16 @@
 <div id="header">
-  <div id="caption" v-link="{ path: '/' }">Dream Dog</div>
+  <div id="caption" >
+    <img :src="logo" v-link="{ path: '/' }">
+  </div>
   <div id="header_content">
-    <div id="content_a" v-link="{ path: '/faq'}">
-      <a>Any Questions ?</a>
+    <div id="content_a">
+      <div id="faq_container" :style="{'background-image': 'url(' + bone + ')' }">
+        <a v-link="{ path: '/faq'}">Any Questions?</a>
+      </div>
+
     </div>
   </div>
 </div>
+
+
+

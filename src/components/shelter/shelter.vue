@@ -9,7 +9,7 @@
                 {user: user,
                   email: this.org_email,
                   message: message,
-                 }).then((response) =>
+                  option: "NONE"}).then((response) =>
               {
                 if(response.body.err){
                 toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
