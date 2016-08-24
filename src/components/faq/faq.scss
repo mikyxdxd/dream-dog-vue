@@ -1,5 +1,6 @@
 .non-res{
   #faq {
+    padding-bottom: 30px;
     #faq_top {
 
       height: 300px;
@@ -40,10 +41,10 @@
           margin-bottom: 1em;
         }
         .content {
-          color: grey;
+          color: #5a096f;
           font-size: 1.1em;
           a{
-
+            color: purple;
             font-weight: bold;
           }
         }

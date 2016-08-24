@@ -35,6 +35,12 @@ app.post('/email', function (req, res, next) {
   // console.log(req.body);
   let mailOpts, smtptrans, sendText;
   sendText = req.body.message + "\n\n\n\n\n" + "from: " + req.body.user + " Email:" + req.body.email;
+  if(req.body.option == "SAVE_EMAIL"){
+    fs.appendFile('email.txt', req.body.email + '\n', (err)=>{
+      if(err) throw err;
+      console.log('It\'s saved');
+    });
+  }
   mailOpts = {
     from: req.body.user + ":" + req.body.email,
     to: "contact@dreamdogapp.com",

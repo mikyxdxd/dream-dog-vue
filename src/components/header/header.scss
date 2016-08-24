@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   //padding: 1em;
-  background: white;
+  background: #fcfcfa;
   width: 100vw;
   height: 50px;
   box-shadow: 0px 0px 10px 0px #e6e6e6;
@@ -24,15 +24,23 @@
   #header_content {
 
     padding-left: 200px;
+    padding-right: 10px;
     line-height: 1.9em;
     text-align: right;
     //padding-right: 50px;
     height: 100%;
+    #faq_container{
+      width: auto;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
     a {
       color: #66087c;
       display: inline-block;
       height: 100%;
       padding: 0.8em;
+      padding-right: 16px;
       font-size: 1em;
       &:hover {
         color: #66087c;

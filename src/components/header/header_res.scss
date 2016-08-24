@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     //padding: 1em;
-    background: white;
+    background: #fcfcfa;
     width: 100vw;
     height: 50px;
     box-shadow: 0px 0px 10px 0px #e6e6e6;
@@ -27,6 +27,12 @@
       text-align: right;
       //padding-right: 50px;
       height: 100%;
+      #faq_container{
+        width: auto;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
       a {
         color: #66087c;
         display: inline-block;

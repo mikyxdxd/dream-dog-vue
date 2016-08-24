@@ -37,7 +37,8 @@
             this.$http.post('/email',
               {user: userName,
                 email: email,
-                message: message}).then((response) =>
+                message: message,
+                option: "NONE"}).then((response) =>
             {
               if(response.body.err){
                 //console.log("SENT FAILED");
