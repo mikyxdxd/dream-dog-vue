@@ -2,7 +2,6 @@
   #header {
   position: fixed;
   top: 0;
-  //padding: 1em;
   background: #fcfcfa;
   width: 100vw;
   height: 50px;
@@ -11,13 +10,26 @@
   #caption {
     cursor: pointer;
     position: absolute;
-    top: 6px;
+    //top: 6px;
     color: #66087c;
-    padding-left: 20px;
+    padding-left: 10px;
     font-weight: bold;
-    width: 61px;
     img{
-      width: 100%;
+      display: inline-block;
+      height: 50px;
+    }
+    #content{
+      font-size: 1.8em;
+      position: relative;
+      top: -13px;
+      text-transform: uppercase;
+      font-weight: normal ;
+      b{
+        color: #d6a534;
+        background: linear-gradient( to top right,#e2b62d, #95495e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
 
@@ -32,13 +44,14 @@
     #faq_container{
       width: auto;
       display: inline-block;
-      background-repeat: no-repeat;
       background-size: contain;
+      background-repeat: no-repeat;
     }
     a {
       color: #66087c;
       display: inline-block;
       height: 100%;
+      font-weight: bold;
       padding: 0.8em;
       padding-right: 16px;
       font-size: 1em;
