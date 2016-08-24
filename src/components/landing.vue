@@ -21,27 +21,38 @@
         },
 
         methods:{
+          onValid: function () {
+            this.emailValid = true
+          },
+          onInvalid: function () {
+            this.emailValid = false
+          },
           submitForm: function(landEmail){
-              console.log("LAND", landEmail);
-              this.$http.post('/email',
-                {user: "NONE",
-                  email: landEmail,
-                  message: "from landing page",
-                  option: "SAVE_EMAIL"}).then((response) =>
-              {
-                if(response.body.err){
-              toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
-              toastr.error('Message Sent Falied! Please Try Again!');
-              }else{
-              toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
-              toastr.success('Thank you for contacting us! We will get back to you within 24 hours!');
-              $('#landing_form_email').val('');
-              }
+              if(this.emailValid){
+                console.log("non valid");
+                this.$http.post('/email',
+                  {user: "NONE",
+                    email: landEmail,
+                    message: "from landing page",
+                    option: "SAVE_EMAIL"}).then((response) =>
+                {
+                  if(response.body.err){
+                  toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.error('Message Sent Falied! Please Try Again!');
+                }else{
+                  toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.success('Thank you for contacting us! We will get back to you within 24 hours!');
+                  $('#landing_form_email').val('');
+                }
 
-            }, (response)=>{
-              toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
-              toastr.error('Message Sent Falied! Please Try Again!');
-              });
+              }, (response)=>{
+                  toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.error('Message Sent Falied! Please Try Again!');
+                });
+              }else{
+                toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                toastr.error('Please input a valid email address!');
+              }
             },
 
           contactPage(direction){
@@ -184,6 +195,7 @@
         },
         data () {
             return {
+                emailValid: false,
                 dreamDogLogo:require('../resource/Dream_dog_logo.png'),
                 appStore:require('../resource/app_store.png'),
                 gooStore:require('../resource/google_play.png'),

@@ -12,7 +12,10 @@
         </div>
        <validator name="validation2">
         <form id="landing_form" novalidate>
-          <input v-model="landEmail" type="text" id="landing_form_email" placeholder="Email me when available for download" v-validate:landEmail="['email', 'required']"><input type="button" value="Sign up" id="landing_form_sub" @click="submitForm(landEmail)">
+          <input v-model="landEmail" type="text" id="landing_form_email" placeholder="Email me when available for download"
+                 @valid="onValid"
+                 @invalid="onInvalid"
+                 v-validate:landEmail="['email', 'required']"><input type="button" value="Sign up" id="landing_form_sub" @click="submitForm(landEmail)">
         </form>
        </validator>
         <div id="download">
