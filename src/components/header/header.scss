@@ -31,6 +31,10 @@
         -webkit-text-fill-color: transparent;
       }
     }
+    a{
+      color: #66087c;
+
+    }
   }
 
   #header_content {
@@ -41,24 +45,27 @@
     text-align: right;
     //padding-right: 50px;
     height: 100%;
-    #faq_container{
-      width: auto;
+    .tab{
       display: inline-block;
-      background-size: contain;
-      background-repeat: no-repeat;
+      margin-right: 1.5%;
+      height: 100%;
     }
     a {
       color: #66087c;
       display: inline-block;
       height: 100%;
-      font-weight: bold;
       padding: 0.8em;
       padding-right: 16px;
-      font-size: 1em;
+      font-size: 1.1em;
+      font-weight: normal;
       &:hover {
-        color: #66087c;
-        cursor: pointer;
+        font-weight: bold;
+        border-bottom: 3px solid;
       }
+    }
+    a.active{
+      font-weight: bold;
+      border-bottom: 3px solid;
     }
   }
 }
