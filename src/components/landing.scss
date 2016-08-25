@@ -89,6 +89,9 @@
         input{
           display: inline-block;
         }
+        .untouched {
+          box-shadow: none;
+        }
         #landing_form_email{
           width: 100%;
           border: 1px solid #b7b49f;

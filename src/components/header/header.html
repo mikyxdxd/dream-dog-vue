@@ -4,13 +4,10 @@
   </div>
   <div id="header_content">
     <div class="tab">
-      <a v-link="{ path: '/' }" :class={'active':currPage=='home'}>HOME</a>
-      <!--<div id="faq_container">-->
-        <!--<a v-link="{ path: '/faq'}">Any Questions?</a>-->
-      <!--</div>-->
+      <a v-link="{ path: '/' }" :class="{'active':currPage=='home'}">HOME</a>
     </div>
     <div class="tab">
-      <a v-link="{ path: '/faq' }" :class={'active':currPage=='help'}>HELP</a>
+      <a v-link="{ path: '/faq' }" :class="{'active':currPage=='help'}">HELP</a>
       </div>
   </div>
 </div>
