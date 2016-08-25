@@ -1,29 +1,65 @@
 <script>
     export default {
         template: require('./shelter.html'),
+        validators: {
+          email: function (val) {
+            return /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(val)
+          }
+        },
         methods: {
+            onValidOrg: function(){
+              this.validOrg = true;
+            },
+            onInvalidOrg: function () {
+              this.validOrg = false;
+            },
+            onValidName: function(){
+              this.validName = true;
+            },
+            onInvalidName: function(){
+              this.validName = false;
+            },
+            onValidEmail: function(){
+              this.validEmail = true;
+            },
+            onInvalidEmail: function(){
+              this.validEmail = false;
+            },
             submitForm: function(){
-              let user = "Org name: " + this.org + " Contact name: " + this.org_name;
-              let message = "phone: " + this.org_phone0 + "-" + this.org_phone1 + "-" + this.org_phone2 + "\nWebsite:" + this.org_web;
-              this.$http.post('/email',
-                {user: user,
-                  email: this.org_email,
-                  message: message,
-                  option: "NONE"}).then((response) =>
-              {
-                if(response.body.err){
-                toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
-                toastr.error('Message Sent Falied! Please Try Again!');
+              if(this.validEmail && this.validName && this.validOrg){
+                let user = "Org name: " + this.org + " Contact name: " + this.org_name;
+                let message = "phone: " + this.org_phone0 + "-" + this.org_phone1 + "-" + this.org_phone2 + "\nWebsite:" + this.org_web;
+                this.$http.post('/email',
+                  {user: user,
+                    email: this.org_email,
+                    message: message,
+                    option: "NONE"}).then((response) =>
+                {
+                  if(response.body.err){
+                  toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.error('Message Sent Falied! Please Try Again!');
+                }else{
+                  toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.success('Thank you for contacting us! We will get back to you within 24 hours!');
+                  $('form')[0].reset();
+                }
+
+              }, (response)=>{
+                  toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.error('Message Sent Falied! Please Try Again!');
+                });
               }else{
-                toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
-                toastr.success('Thank you for contacting us! We will get back to you within 24 hours!');
-                $('form')[0].reset();
+                if(!this.validName || !this.validOrg){
+                  toastr.options = {"timeOut": "3000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.error('Please input all required fields!');
+                }
+                else if(!this.validEmail){
+                  toastr.options = {"timeOut": "3000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.error('Please input a valid email address!');
+                }
+
               }
 
-            }, (response)=>{
-                toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
-                toastr.error('Message Sent Falied! Please Try Again!');
-              });
             },
 
             changeHoverState: function (shelter) {
@@ -66,6 +102,9 @@
 
         data: function () {
             return {
+              validOrg: false,
+              validName: false,
+              validEmail: false,
               org: '',
               org_name:'',
               org_email: '',

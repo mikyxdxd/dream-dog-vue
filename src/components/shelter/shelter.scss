@@ -13,7 +13,7 @@
 
       font-size: 3em;
       text-align: center;
-      color: #d9a933;
+      color: #1d0729;
       margin-bottom: 1.5em;
     }
     #main_caption_sm{
@@ -46,6 +46,9 @@
         border-radius: 4px;
         box-sizing: border-box;
       }
+      .untouched {
+        box-shadow: none;
+      }
       span{
         transform: translateY(15%);
         color: #00bed6;
@@ -61,7 +64,7 @@
           display: inline-block;
           width: 49%;
           white-space: nowrap;
-          //padding: 10px;
+          vertical-align: bottom;
         }
         .col-s12{
           display: inline-block;

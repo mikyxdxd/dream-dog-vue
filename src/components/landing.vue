@@ -50,7 +50,7 @@
                   toastr.error('Message Sent Falied! Please Try Again!');
                 });
               }else{
-                toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                toastr.options = {"timeOut": "3000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
                 toastr.error('Please input a valid email address!');
               }
             },
