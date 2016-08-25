@@ -11,13 +11,11 @@
     #caption {
       cursor: pointer;
       position: absolute;
-      //top: 6px;
-      color: #66087c;
-      //padding-left: 10px;
-      font-weight: bold;
+      top: 15px;
+      height: 25px;
       img{
         display: inline-block;
-        height: 50px;
+        height: 100%;
       }
       #content{
         font-size: 1.3em;

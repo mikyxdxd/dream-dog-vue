@@ -9,8 +9,8 @@
     template:require('./header.html'),
     data(){
       return {
-        logo: require('../../resource/Profile.jpg'),
-        bone: require('../../resource/bone.png'),
+        logo: require('../../resource/home.png'),
+
         currPage:'home'
       }
     },
