@@ -51,7 +51,7 @@
                 });
               }else{
                 toastr.options = {"timeOut": "3000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
-                toastr.error('Please input a valid email address!');
+                toastr.error('Please enter a valid email address!');
               }
             },
 

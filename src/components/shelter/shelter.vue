@@ -51,11 +51,11 @@
               }else{
                 if(!this.validName || !this.validOrg){
                   toastr.options = {"timeOut": "3000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
-                  toastr.error('Please input all required fields!');
+                  toastr.error('Please enter all required fields!');
                 }
                 else if(!this.validEmail){
                   toastr.options = {"timeOut": "3000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
-                  toastr.error('Please input a valid email address!');
+                  toastr.error('Please enter a valid email address!');
                 }
 
               }
