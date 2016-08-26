@@ -37,16 +37,16 @@
                     option: "SAVE_EMAIL"}).then((response) =>
                 {
                   if(response.body.err){
-                  toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.options = {"timeOut": "5000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
                   toastr.error('Message Sent Falied! Please Try Again!');
                 }else{
-                  toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.options = {"timeOut": "5000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
                   toastr.success('Thank you for contacting us! We will get back to you within 24 hours!');
                   $('#landing_form_email').val('');
                 }
 
               }, (response)=>{
-                  toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.options = {"timeOut": "5000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
                   toastr.error('Message Sent Falied! Please Try Again!');
                 });
               }else{

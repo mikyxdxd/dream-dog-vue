@@ -27,25 +27,25 @@
             },
             submitForm: function(){
               if(this.validEmail && this.validName && this.validOrg){
-                let user = "Org name: " + this.org + " Contact name: " + this.org_name;
-                let message = "phone: " + this.org_phone0 + "-" + this.org_phone1 + "-" + this.org_phone2 + "\nWebsite:" + this.org_web;
+                let user = "Org name: " + this.org + "\nContact name: " + this.org_name + "\nEmail: " + this.org_email;
+                let message = user + "\nphone: " + this.org_phone0 + "-" + this.org_phone1 + "-" + this.org_phone2 + "\nWebsite:" + this.org_web;
                 this.$http.post('/email',
-                  {user: user,
+                  {user: this.org_name,
                     email: this.org_email,
                     message: message,
                     option: "NONE"}).then((response) =>
                 {
                   if(response.body.err){
-                  toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.options = {"timeOut": "5000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
                   toastr.error('Message Sent Falied! Please Try Again!');
                 }else{
-                  toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.options = {"timeOut": "5000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
                   toastr.success('Thank you for contacting us! We will get back to you within 24 hours!');
                   $('form')[0].reset();
                 }
 
               }, (response)=>{
-                  toastr.options = {"timeOut": "10000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
+                  toastr.options = {"timeOut": "5000", "positionClass": "toast-top-full-width", "preventDuplicates": true};
                   toastr.error('Message Sent Falied! Please Try Again!');
                 });
               }else{
@@ -88,16 +88,25 @@
         },
 
         ready: function () {
-//          var config = {
-//            delay    : 100,
-//            distance : '70px',
-//            easing   : 'ease-in-out',
-//            rotate   : { y: -10 },
-//            scale    : 0,
-//            duration: 1000
-//          }
-//            sr.reveal('.s_icon', config, 100);
-
+          $(".org_phone").keydown(function (e) {
+            // Allow: backspace, delete, tab, escape, enter and .
+            if ($.inArray(e.keyCode, [46, 8, 9, 27, 13]) !== -1 ||
+              // Allow: Ctrl+A
+              (e.keyCode == 65 && e.ctrlKey === true) ||
+              // Allow: Ctrl+C
+              (e.keyCode == 67 && e.ctrlKey === true) ||
+              // Allow: Ctrl+X
+              (e.keyCode == 88 && e.ctrlKey === true) ||
+              // Allow: home, end, left, right
+              (e.keyCode >= 35 && e.keyCode <= 39)) {
+              // let it happen, don't do anything
+              return;
+            }
+            // Ensure that it is a number and stop the keypress
+            if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+              e.preventDefault();
+            }
+          });
         },
 
         data: function () {
