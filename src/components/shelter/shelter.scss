@@ -13,7 +13,7 @@
 
       font-size: 3em;
       text-align: center;
-      color: #d9a933;
+      color: #1d0729;
       margin-bottom: 1.5em;
     }
     #main_caption_sm{
@@ -42,9 +42,12 @@
       }
       input{
         border: 1px solid #b7b49f;
-        padding: 1px 4px;
+        padding: 1px 10px;
         border-radius: 4px;
         box-sizing: border-box;
+      }
+      .untouched {
+        box-shadow: none;
       }
       span{
         transform: translateY(15%);
@@ -52,7 +55,6 @@
         font-weight: bold;
         font-size: 26px;
         display: inline-block;
-
       }
         .form_input{
           width: 100%;
@@ -61,13 +63,16 @@
           display: inline-block;
           width: 49%;
           white-space: nowrap;
-          //padding: 10px;
+          vertical-align: bottom;
         }
         .col-s12{
           display: inline-block;
           width: 99%;
           white-space: nowrap;
           //padding: 10px;
+          label{
+            line-height: 30px;
+          }
         }
         #org{
           width: 98%;
@@ -149,7 +154,7 @@
         }
       }
     }
-
+    #recent_adopt_container{background-color: #f8d41e}
     #recent_adopt{
 
       min-height: 30vh;
@@ -159,7 +164,6 @@
       max-width: 1500px;
       margin: auto;
       margin-top: 5em;
-      margin-bottom: 2em;
 
       .container{
 
@@ -188,8 +192,7 @@
             margin: 0;
             background: transparent;
             background-size: cover !important;
-            //border-radius: 50%;
-            //box-shadow: 0px 0px 10px 1px #909090;
+            box-shadow: none;
           }
 
           .dog_info{
@@ -262,7 +265,6 @@
       #caption{
 
         position: absolute;
-        top: 0;
         left: 50%;
         transform: translateX(-50%);
         background-size: contain;
@@ -275,7 +277,7 @@
         padding-bottom: 15px;
         color: white;
         font-size: 1.3vw;
-        top: -1em;
+        top: -1.3em;
       }
     }
     //min-height:80vh;

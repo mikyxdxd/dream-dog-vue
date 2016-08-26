@@ -10,7 +10,7 @@
                 feature_list: [
                     {
                         img: require('../../resource/mock_up_features_search_shelter.png'),
-                        caption: 'search by shelter or people',
+                        caption: 'search by dogs or people',
                         detail: 'Have a specific shelter in mind? Simply type in their name and volia!'
                     },
                     {

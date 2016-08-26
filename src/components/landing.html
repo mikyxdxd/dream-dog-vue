@@ -10,9 +10,14 @@
           <b class="pur">Dogs aren't just pets, </b><span class="colr">they are family members! The</span> <b class="yel">Dream Dog App </b>
           helps you find the perfect dog to add to your family by appearance, breed, location or shelter!
         </div>
-        <div id="landing_form">
-          <input v-model="landEmail" type="text" id="landing_form_email" placeholder="Email me when available for download"><input type="button" value="Sign up" id="landing_form_sub" @click="submitForm(landEmail)">
-        </div>
+       <validator name="validation2">
+        <form id="landing_form" novalidate>
+          <input v-model="landEmail" type="text" id="landing_form_email" placeholder="Email me when available for download"
+                 @valid="onValid"
+                 @invalid="onInvalid"
+                 v-validate:landEmail="['email', 'required']"><input type="button" value="Sign up" id="landing_form_sub" @click="submitForm(landEmail)">
+        </form>
+       </validator>
         <div id="download">
           <div id="cs">
             <img :src="comingSoon" />

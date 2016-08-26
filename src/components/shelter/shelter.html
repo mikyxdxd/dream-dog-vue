@@ -18,47 +18,58 @@
       <img :src="formDog" />
     </div>
     <div id="org_contact">
-      <form v-on:submit.prevent="submitForm()">
-        <div class="form_input">
-          <span>*</span><label class="requied_label">REQUIRED</label>
-          <label style="font-weight: 500">There are no fees associated with Dream Dog</label>
-          <div class="col-s6">
-            <label for="org" class="requied_label">Organization/Shelter Name</label><span>*</span>
-            <input type="text" placeholder="Hi!" v-model="org" id="org">
-          </div>
-          <div class="col-s6">
-            <label for="org_name" class="requied_label">Contact Name</label><span>*</span>
-            <input type="text" placeholder="Nice to meet you" id="org_name" v-model="org_name">
-          </div>
+      <validator name="validation3">
+        <form v-on:submit.prevent="submitForm()" novalidate>
+          <div class="form_input">
+            <span>*</span><label class="requied_label">REQUIRED</label>
+            <label style="font-weight: 500">There are no fees associated with Dream Dog</label>
+            <div class="col-s6">
+              <label for="org" class="requied_label">Organization/Shelter Name</label><span>*</span>
+              <input type="text" placeholder="Hi!" v-model="org" id="org"
+                     @valid="onValidOrg"
+                     @invalid="onInvalidOrg"
+                     v-validate:org="{ required: true}">
+            </div>
+            <div class="col-s6">
+              <label for="org_name" class="requied_label">Contact Name</label><span>*</span>
+              <input type="text" placeholder="Nice to meet you" id="org_name" v-model="org_name"
+                     @valid="onValidName"
+                     @invalid="onInvalidName"
+                     v-validate:org_name="{ required: true}">
+            </div>
 
-        </div>
-
-        <div class="form_input">
-          <div class="col-s6">
-            <label for="org_email" class="requied_label">Email</label><span>*</span>
-            <input type="text" placeholder="How can we contact you?" id="org_email" v-model="org_email">
-          </div>
-          <div class="col-s6">
-            <label for="org_phone0">Phone Number</label>
-            <input type="text" placeholder="xxx" class="org_phone" id="org_phone0" v-model="org_phone0">
-            <input type="text" placeholder="xxx" class="org_phone" id="org_phone1" v-model="org_phone1">
-            <input type="text" placeholder="xxxx" class="org_phone" id="org_phone2" v-model="org_phone2">
           </div>
 
-        </div>
+          <div class="form_input">
+            <div class="col-s6">
+              <label for="org_email" class="requied_label">Email</label><span>*</span>
+              <input type="text" placeholder="How can we contact you?" id="org_email" v-model="org_email"
+                     @valid="onValidEmail"
+                     @invalid="onInvalidEmail"
+                     v-validate:org_email="['email', 'required']">
+            </div>
+            <div class="col-s6">
+              <label for="org_phone0">Phone Number</label>
+              <input type="text" placeholder="xxx" class="org_phone" id="org_phone0" v-model="org_phone0" maxlength="3">
+              <input type="text" placeholder="xxx" class="org_phone" id="org_phone1" v-model="org_phone1" maxlength="3">
+              <input type="text" placeholder="xxxx" class="org_phone" id="org_phone2" v-model="org_phone2" maxlength="4">
+            </div>
 
-        <div class="form_input">
-          <div class="col-s12">
-            <label for="org_web">Website</label>
-            <input type="text" placeholder="Have a website? We would love to check it out!" id="org_web" v-model="org_web">
           </div>
 
-        </div>
+          <div class="form_input">
+            <div class="col-s12">
+              <label for="org_web">Website</label>
+              <input type="text" placeholder="Have a website? We would love to check it out!" id="org_web" v-model="org_web">
+            </div>
 
-        <input type="submit" value="Send Us An Email" id="org_sub">
-      </form>
+          </div>
+
+          <input type="submit" value="Send Us An Email" id="org_sub">
+        </form>
+      </validator>
     </div>
-
+  <div id="recent_adopt_container">
     <div id="recent_adopt">
         <div id="caption">View our Adorable <b>Adoptable Dogs</b> Now!</div>
 
@@ -86,5 +97,5 @@
 
         </div>
     </div>
-
+  </div>
 </div>
