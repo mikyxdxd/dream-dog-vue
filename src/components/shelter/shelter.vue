@@ -132,11 +132,11 @@
                   url:'http://www.huntingtonny.gov/content/13749/13839/16437/16539/default.aspx'
                 },{
 
-                  name:'Bordeaux',
-                  pic:'https://drpem3xzef3kf.cloudfront.net/photos/pets/35729134/2/?bust=1469410735&width=632&no_scale_up=1',
-                  addr:'Ken-Mar Rescue Los Angeles, CA',
-                  intro:`Meet Bordeaux! She is a loveable 2 yr. , Welsh Pembroke Corgi blend. Bordeaux is full grown and weighs 14 lbs.`,
-                  url:' http://www.kenmarrescue.org/our-adoptable-dogs/current-orphans/'
+                  name:'Charlie',
+                  pic:'https://petstablished-app-beta.s3.amazonaws.com/uploads/image/image/99932/test_2F899f5b3e-85f5-4a47-b502-5f0b90cd97e3_2Ftest_image.jpg',
+                  addr:'White River Animal Rescue, White River Junction, VT ',
+                  intro:`Charlie is 25 lbs. Charlie and his litter mates are normal happy 10-week old puppies.`,
+                  url:' http://www.whiteriveranimalrescue.org/Adoptable.html'
 
                 },{
 
