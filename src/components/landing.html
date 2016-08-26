@@ -11,11 +11,11 @@
           helps you find the perfect dog to add to your family by appearance, breed, location or shelter!
         </div>
        <validator name="validation2">
-        <form id="landing_form" novalidate>
+        <form id="landing_form" v-on:submit.prevent="submitForm()"  novalidate>
           <input v-model="landEmail" type="text" id="landing_form_email" placeholder="Email me when available for download"
                  @valid="onValid"
                  @invalid="onInvalid"
-                 v-validate:landEmail="['email', 'required']"><input type="button" value="Sign up" id="landing_form_sub" @click="submitForm(landEmail)">
+                 v-validate:landEmail="['email', 'required']"><input type="submit" value="Sign up" id="landing_form_sub">
         </form>
        </validator>
         <div id="download">
