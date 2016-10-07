@@ -21,6 +21,9 @@ export default (App) => {
     '/faq':{
       component: require('./components/faq/faq.vue')
     },
+    '/pp':{
+      component: require('./components/tos/tos.vue')
+    }
   })
   router.start(App, '#app')
 }
