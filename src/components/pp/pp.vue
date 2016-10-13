@@ -1,9 +1,9 @@
 <script>
+
     export default{
-      template: require('./tos.html'),
+        template: require('./pp.html'),
         data(){
             return{
-
             }
         },
         components:{
