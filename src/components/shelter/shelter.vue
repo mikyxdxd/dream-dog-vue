@@ -28,7 +28,7 @@
             submitForm: function(){
               if(this.validEmail && this.validName && this.validOrg){
                 let user = "Org name: " + this.org + "\nContact name: " + this.org_name + "\nEmail: " + this.org_email;
-                let message = user + "\nphone: " + this.org_phone0 + "-" + this.org_phone1 + "-" + this.org_phone2 + "\nWebsite:" + this.org_web;
+                let message = user + "\nphone: " + '+'+ this.org_phone + '-' + this.org_phone0 + "-" + this.org_phone1 + "-" + this.org_phone2 + "\nWebsite:" + this.org_web;
                 this.$http.post('/email',
                   {user: this.org_name,
                     email: this.org_email,
@@ -117,6 +117,7 @@
               org: '',
               org_name:'',
               org_email: '',
+              org_phone: '',
               org_phone0: '',
               org_phone1:'',
               org_phone2:'',
@@ -198,6 +199,19 @@
 
                 ]
             }
+        },
+
+        filters: {
+          countryNumber: {
+            read: function(val){
+              if (val == '') return;
+              else return '+'+val;
+            },
+            write: function(val, oldVal){
+              var number = +val.replace(/[^\d.]/g, '')
+              return isNaN(number) ? '' : number
+            }
+          }
         }
     }
 </script>

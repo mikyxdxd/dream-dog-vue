@@ -1,0 +1,63 @@
+.non-res {
+  #reset-pw {
+    background-color: #f7d339;
+  }
+
+  .container.rs {
+    margin-bottom: 0;
+    height: calc(100vh - 45px);
+    padding-top: 15vh;
+
+    .form-caption-wrapper {
+      text-align: center;
+      color: #947216;
+      margin-bottom: 8vh;
+      #form-caption {
+        font-size: 2rem;
+      }
+
+      #form-sm-caption {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+
+    .form-container {
+      margin: 0 auto;
+      width: 50%;
+      label {
+        display: block;
+        margin-top: 20px;
+        text-align: left !important;
+        color: #66087c;
+      }
+      .active {
+        color: #66087c;
+      }
+      input[type='password'] {
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 1px 10px;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type='password']:focus {
+        box-shadow: none;
+        border-bottom: none;
+      }
+
+      input[type='submit'] {
+        width: 50%;
+        display: block;
+        margin: 10px auto;
+        border-radius: 20px;
+        border: 1px solid #66087c;
+        padding: 15px 60px;
+        background-color: #66087c;
+        color: #f7d339;
+      }
+    }
+
+  }
+}

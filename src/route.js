@@ -26,6 +26,10 @@ export default (App) => {
     },
     '/tos':{
       component: require('./components/tos/tos.vue')
+    },
+
+    '/resetpassword':{
+      component: require('./components/resetpw/resetpw.vue')
     }
   })
   router.start(App, '#app')

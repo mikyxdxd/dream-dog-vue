@@ -1,0 +1,25 @@
+<div id="reset-pw">
+  <div class="container rs">
+    <div class="reset-form">
+      <div class="form-caption-wrapper">
+        <div id="form-caption">
+          Reset your password
+        </div>
+        <div id="form-sm-caption">
+          Choose a new password
+        </div>
+      </div>
+
+      <div class="form-container">
+        <form v-on:submit.prevent="submitForm()">
+        <label for="ps">NEW PASSWORD (min. 4 characters)</label>
+        <input id="ps" type="password" placeholder="Type your new password" v-model="ps" required>
+        <label for="ps-confirm">NEW PASSWORD CONFIRMATION</label>
+        <input id='ps-confirm' type="password" placeholder="Type your new password one more time" v-model="confirmPs" required>
+        <input type="submit" value="SUBMIT" @click="submitForm()">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
