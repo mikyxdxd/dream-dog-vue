@@ -10,7 +10,8 @@
     data(){
       return {
         logo: require('../../resource/home.png'),
-
+        slogo: require('../../resource/dream_dog_icon.png'),
+        isResetps: this.$route.path.includes('/resetpassword')  ? true : false,
         currPage:'home'
       }
     },

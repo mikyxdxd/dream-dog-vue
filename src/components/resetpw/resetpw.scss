@@ -1,0 +1,104 @@
+.non-res {
+  #reset-pw {
+    background-color: #f7d339;
+  }
+
+  .container.rs {
+    margin-bottom: 0;
+    height: calc(100vh - 45px);
+    padding-top: 15vh;
+
+    .form-caption-wrapper {
+      text-align: center;
+      color: #947216;
+      margin-bottom: 8vh;
+      .form-caption {
+        font-size: 1.7rem;
+        margin-bottom: 5px;
+      }
+
+      .form-sm-caption {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      .divider{
+        width: 10%;
+        margin: 20px auto;
+        background-color: #947216;
+      }
+
+      .after-form{
+        margin-top: 20px;
+        color: #66087c;
+        font-weight: 400;
+        .after-email{
+          a{
+            font-weight: 400;
+            color: #66087c;
+          }
+        }
+      }
+    }
+
+
+    .form-container {
+      margin: 0 auto;
+      width: 50%;
+      label {
+        display: block;
+        margin-top: 20px;
+        text-align: left !important;
+        color: #66087c;
+      }
+      .active {
+        color: #66087c !important;
+      }
+      input[type='password'] {
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 1px 10px;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type='password'] {
+        box-shadow: none;
+        border-bottom: none;
+      }
+
+      input[type='submit'] {
+        width: 50%;
+        display: block;
+        margin: 10px auto;
+        border-radius: 20px;
+        border: 1px solid #66087c;
+        padding: 15px 60px;
+        background-color: #66087c;
+        color: #f7d339;
+      }
+
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-weight: 300;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        font-weight: 300;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        font-weight: 300;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        font-weight: 300;
+      }
+    }
+
+    .lock-container{
+      img{
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,60 @@
+<div id="reset-pw">
+  <div class="container rs animated" v-if="!resetSuccess" transition="fade">
+    <div class="reset-form">
+      <div class="form-caption-wrapper">
+        <div class="form-caption">
+          Reset your password
+        </div>
+        <div class="form-sm-caption">
+          Choose a new password
+        </div>
+      </div>
+
+      <div class="form-container">
+        <form v-on:submit.prevent="submitForm()">
+        <label for="ps">NEW PASSWORD (min. 4 characters)</label>
+        <input id="ps" type="password" placeholder="Type your new password" v-model="ps" required>
+        <label for="ps-confirm">NEW PASSWORD CONFIRMATION</label>
+        <input id='ps-confirm' type="password" placeholder="Type your new password one more time" v-model="confirmPs" required>
+        <input type="submit" value="SUBMIT" @click="submitForm()">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container rs animated" v-if="resetSuccess" transition="fade">
+    <div class="lock-container">
+        <img :src="lock">
+    </div>
+
+    <div class="form-caption-wrapper suc">
+      <div class="form-caption">
+        Password Change Successfully
+      </div>
+      <div class="form-sm-caption">
+        Your password has been changed successfully!
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="form-sm-caption">
+        See you within the Dream Dog app.
+      </div>
+
+      <div class="after-form">
+        <div>THE DREAM DOG TEAM</div>
+        <div class='after-email'>
+          <a href="http://www.dreamdogapp.com" target="_blank">www.dreamdogapp.com</a>
+        </div>
+        <div class='after-email'>
+          <a href="https://twitter.com/dreamdogapp" target="_blank">Twitter: @DreamDogApp</a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+</div>

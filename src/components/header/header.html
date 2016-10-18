@@ -1,4 +1,4 @@
-<div id="header">
+<div id="header" v-if ="!isResetps">
   <div id="caption" v-link="{ path: '/' }">
     <img :src="logo" >
   </div>
@@ -10,4 +10,20 @@
       <a v-link="{ path: '/faq' }" :class="{'active':currPage=='help'}">HELP</a>
       </div>
   </div>
+</div>
+<div id="rsps-header"  v-else>
+  <div id="rsps-header-container">
+    <div id="rsps-caption-left">
+      <img :src="slogo">
+      <div id="caption-text">
+        Password Reset
+      </div>
+    </div>
+    <div id="rsps-caption-right" class="right">
+      <div id="select-lan">
+        English
+      </div>
+    </div>
+  </div>
+
 </div>

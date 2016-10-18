@@ -1,0 +1,33 @@
+.res{
+  .container{
+    margin-bottom: 2em;
+  }
+
+  #tos-main-title{
+    margin-top: 2.5em;
+    text-align: center;
+    padding: 2%;
+    font-size: 2em;
+    font-weight: 400;
+  }
+  .second-title{
+    font-size:1.4em;
+    font-weight: 400;
+  }
+
+  p{
+    font-weight: 300;
+  }
+
+
+  .para-list-style{
+    padding: 0 1em;
+    display: list-item;
+    list-style: none;
+  }
+
+  .para-list-style:before{
+    content: "• ";
+    color: #38126d;
+  }
+}

@@ -4,17 +4,18 @@
         ready(){
 
         },
-        data:()=> {
-        return{
-            footerimg: require('../../resource/footer_ilustrastion.png'),
-            appleStore: require('../../resource/app_store.png'),
-            gooogleStore:require('../../resource/google_play.png'),
-            emailicon: require('../../resource/email_icon.png'),
-            fb: require('../../resource/facebook.png'),
-            ins: require('../../resource/instagram.png'),
-            twit:require('../../resource/twitter.png'),
-            comingSoon: require('../../resource/coming_soon.png')
-        }
+        data(){
+          return{
+              footerimg: require('../../resource/footer_ilustrastion.png'),
+              appleStore: require('../../resource/app_store.png'),
+              gooogleStore:require('../../resource/google_play.png'),
+              emailicon: require('../../resource/email_icon.png'),
+              fb: require('../../resource/facebook.png'),
+              ins: require('../../resource/instagram.png'),
+              twit:require('../../resource/twitter.png'),
+              comingSoon: require('../../resource/coming_soon.png'),
+              isResetps: this.$route.path.includes('/resetpassword') ? true : false,
+          }
       }
     }
 </script>

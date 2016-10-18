@@ -50,6 +50,7 @@
             </div>
             <div class="col-s6">
               <label for="org_phone0">Phone Number</label>
+              <input type="text" placeholder="+1"  class="org_phone" id="org_phone" v-model="org_phone | countryNumber">
               <input type="text" placeholder="xxx" class="org_phone" id="org_phone0" v-model="org_phone0" maxlength="3">
               <input type="text" placeholder="xxx" class="org_phone" id="org_phone1" v-model="org_phone1" maxlength="3">
               <input type="text" placeholder="xxxx" class="org_phone" id="org_phone2" v-model="org_phone2" maxlength="4">

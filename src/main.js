@@ -30,7 +30,8 @@ var app = Vue.extend({
       require('./components/contact/contact_res.scss');
       require('./components/feature/feature_res.scss');
       require('./components/faq/faq_res.scss');
-
+      require('./components/pp/pp_res.scss');
+      require('./components/resetpw/resetpw_res.scss');
 
     }else {
 
@@ -43,7 +44,8 @@ var app = Vue.extend({
       require('./components/contact/contact.scss');
       require('./components/feature/feature.scss');
       require('./components/faq/faq.scss');
-
+      require('./components/pp/pp.scss');
+      require('./components/resetpw/resetpw.scss');
     }
 
   },

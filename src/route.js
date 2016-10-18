@@ -21,6 +21,16 @@ export default (App) => {
     '/faq':{
       component: require('./components/faq/faq.vue')
     },
+    '/pp':{
+      component: require('./components/pp/pp.vue')
+    },
+    '/tos':{
+      component: require('./components/tos/tos.vue')
+    },
+
+    '/resetpassword':{
+      component: require('./components/resetpw/resetpw.vue')
+    }
   })
   router.start(App, '#app')
 }
