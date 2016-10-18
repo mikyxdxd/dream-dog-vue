@@ -12,11 +12,11 @@
       text-align: center;
       color: #947216;
       margin-bottom: 8vh;
-      #form-caption {
+      .form-caption {
         font-size: 2rem;
       }
 
-      #form-sm-caption {
+      .form-sm-caption {
         font-size: 1rem;
         font-weight: 400;
       }
@@ -32,7 +32,7 @@
       color: #66087c;
     }
     .active {
-      color: #66087c;
+      color: #66087c !important;
     }
     input[type='password'] {
       background-color: #ffffff;
@@ -42,7 +42,7 @@
       box-sizing: border-box;
     }
 
-    input[type='password']:focus {
+    input[type='password'] {
       box-shadow: none;
       border-bottom: none;
     }
@@ -56,6 +56,22 @@
       padding: 15px 60px;
       background-color: #66087c;
       color: #f7d339;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      font-size: 0.8rem;
+      font-weight: 300;
     }
   }
 }

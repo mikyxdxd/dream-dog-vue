@@ -1,11 +1,11 @@
 <div id="reset-pw">
-  <div class="container rs">
+  <div class="container rs animated" v-if="!resetSuccess" transition="fade">
     <div class="reset-form">
       <div class="form-caption-wrapper">
-        <div id="form-caption">
+        <div class="form-caption">
           Reset your password
         </div>
-        <div id="form-sm-caption">
+        <div class="form-sm-caption">
           Choose a new password
         </div>
       </div>
@@ -21,5 +21,40 @@
       </div>
     </div>
   </div>
+
+  <div class="container rs animated" v-if="resetSuccess" transition="fade">
+    <div class="lock-container">
+        <img :src="lock">
+    </div>
+
+    <div class="form-caption-wrapper suc">
+      <div class="form-caption">
+        Password Change Successfully
+      </div>
+      <div class="form-sm-caption">
+        Your password has been changed successfully!
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="form-sm-caption">
+        See you within the Dream Dog app.
+      </div>
+
+      <div class="after-form">
+        <div>THE DREAM DOG TEAM</div>
+        <div class='after-email'>
+          <a href="http://www.dreamdogapp.com" target="_blank">www.dreamdogapp.com</a>
+        </div>
+        <div class='after-email'>
+          <a href="https://twitter.com/dreamdogapp" target="_blank">Twitter: @DreamDogApp</a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
 
 </div>
